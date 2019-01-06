@@ -1,0 +1,1058 @@
+﻿l_russian:
+ # ###################################
+ # Reactors
+ # ###################################
+ #Optimized Antimatter Reactor (obsolete)
+ TFW_ANTIMATTER_REACTOR_OPTIMIZED:0 "Antimatter Fusion Reactor"
+ TFW_ANTIMATTER_REACTOR_OPTIMIZED_DESC:0 "This reactor utilizes the power of antimatter fusion." 
+ tech_tfw_antimatter_reactor_optimized:0 "Antimatter Fusion"
+ tech_tfw_antimatter_reactor_optimized_desc:0 "The quantum field theory is constantly evolving. Our recent research reveals that zero point reactors are potentially too dangerous for the entire Galaxy. So we should use other well-tried sources of power such as reactors utilizing energy of controlled antimatter fusion. Despite the fact that technically it's a step backwards.\n\n"
+ TECH_UNLOCK_TFW_ANTIMATTER_OPT_TITLE:0 "§HUnlocks Component:§! $TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ TECH_UNLOCK_TFW_ANTIMATTER_OPT_DESC:0 "§H$TFW_ANTIMATTER_REACTOR_OPTIMIZED$§!\n$TFW_ANTIMATTER_REACTOR_OPTIMIZED_DESC$"
+ 
+ #Darkmatter Reactor (obsolete)
+ TFW_DARKMATTER_REACTOR:0 "Dark Matter Reactor"
+ TFW_DARKMATTER_REACTOR_DESC:0 "This reactor utilizes a power of darkmatter disintegration."
+ tech_tfw_darkmatter_reactor:0 "Dark Matter Power"
+ tech_tfw_darkmatter_reactor_desc:0 "The utilization of baryon dark matter as a source of energy is more effective than antimatter fusion. However this requires more complex technical solutions for its extraction and processing.\n\n"
+ TECH_UNLOCK_TFW_DARKMATTER_TITLE:0 "§HUnlocks Component:§! $TFW_DARKMATTER_REACTOR$"
+ TECH_UNLOCK_TFW_DARKMATTER_DESC:0 "§H$TFW_DARKMATTER_REACTOR$§!\n$TFW_DARKMATTER_REACTOR_DESC$"
+ 
+ #Optimized Darkmatter Reactor (obsolete)
+ TFW_DARKMATTER_REACTOR_OPTIMIZED:0 "Axion Reactor"
+ TFW_DARKMATTER_REACTOR_OPTIMIZED_DESC:0 "This is an advanced version of a Darkmatter reactor." 
+ tech_tfw_darkmatter_reactor_optimized:0 "Axion Extraction"
+ tech_tfw_darkmatter_reactor_optimized_desc:0 "Axion is an elementary particle wich is a component of cold dark matter. We have found application for Axions in our reactors, so we can greatly improve their efficiency.\n\n"
+ TECH_UNLOCK_TFW_DARKMATTER_OPT_TITLE:0 "§HUnlocks Component:§! $TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ TECH_UNLOCK_TFW_DARKMATTER_OPT_DESC:0 "§H$TFW_DARKMATTER_REACTOR_OPTIMIZED$§!\n$TFW_DARKMATTER_REACTOR_OPTIMIZED_DESC$"
+ 
+ #Singularity Reactor
+ TFW_SINGULARITY_REACTOR:0 "Сингулярный реактор"
+ TFW_SINGULARITY_REACTOR_DESC:0 "Использует грубую силу, порождаемую заключенной внутри миниатюрной черной дырой, для производства энергии. Более устойчив к перегрузкам во время боя."
+ tech_tfw_singularity_reactor:0 "Сингулярный реактор"
+ tech_tfw_singularity_reactor_desc:0 "Используя приливные силы искусственно поддерживаемой черной дыры, мы можем увеличить производство энергии на наших кораблях. К сожалению, такие черные дыры не могут быть использованы в сверхсветовых перемещениях.\n\n"
+ TECH_UNLOCK_TFW_SINGULARITY_TITLE:0 "§HКомпонент:§! $TFW_SINGULARITY_REACTOR$"
+ TECH_UNLOCK_TFW_SINGULARITY_DESC:0 "§H$TFW_SINGULARITY_REACTOR$§!\n$TFW_SINGULARITY_REACTOR_DESC$"
+ 
+ #Trisingularity Reactor (optimized)
+ TFW_SINGULARITY_REACTOR_OPTIMIZED:0 "Трисингулярный реактор"
+ TFW_SINGULARITY_REACTOR_OPTIMIZED_DESC:0 "Это высокотехнологичный кластер миниатюрных черных дыр, превосходно синхронизированных для производства большего количества энергии. Более устойчив к перегрузкам во время боя."
+ tech_tfw_singularity_reactor_optimized:0 "Продвинутый сингулярный контроль"
+ tech_tfw_singularity_reactor_optimized_desc:0 "Объединив несколько миниатюрных черных дыр в один кластер и синхронизировав их приливные силы, мы можем достичь положительного прироста выходной мощности.\n\n"
+ TECH_UNLOCK_TFW_SINGULARITY_OPT_TITLE:0 "§HКомпонент:§! $TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ TECH_UNLOCK_TFW_SINGULARITY_OPT_DESC:0 "§H$TFW_SINGULARITY_REACTOR_OPTIMIZED$§!\n$TFW_SINGULARITY_REACTOR_OPTIMIZED_DESC$"
+ 
+ ### ADV BIO ### 
+ TFW_BIO_REACTOR_I:0 "Биореактор I"
+ TFW_BIO_REACTOR_I_DESC:0 "Производит энергию из органических растворов. Данный тип реакторов гораздо проще и дешевле в обслуживании."
+ tech_tfw_bio_reactor_1:0 "Биологические энергоклетки"
+ tech_tfw_bio_reactor_1_desc:0 "Наш прогресс в манипуляции органическим материалом позволяет нам производить большое количество энергии из органических растворов.\n\n"
+ TECH_UNLOCK_TFW_BIO_I_TITLE:0 "§HКомпонент:§! $TFW_BIO_REACTOR_I$"
+ TECH_UNLOCK_TFW_BIO_I_DESC:0 "§H$TFW_BIO_REACTOR_I$§!\n$TFW_BIO_REACTOR_I_DESC$"
+ 
+ TFW_BIO_REACTOR_II:0 "Биореактор II"
+ TFW_BIO_REACTOR_II_DESC:0 "Производит еще больше энергии из органических растворов. Данный тип реакторов гораздо проще и дешевле в обслуживании."
+ tech_tfw_bio_reactor_2:0 "Продвинутые энергоклетки"
+ tech_tfw_bio_reactor_2_desc:0 "Несколько важных улучшений в конструкции наших Биореакторов позволит значительно увеличить их эффективность.\n\n"
+ TECH_UNLOCK_TFW_BIO_II_TITLE:0 "§HКомпонент:§! $TFW_BIO_REACTOR_II$"
+ TECH_UNLOCK_TFW_BIO_II_DESC:0 "§H$TFW_BIO_REACTOR_II$§!\n$TFW_BIO_REACTOR_II_DESC$"
+ 
+ ### ADV SYNTH ### 
+ TFW_WIMP_REACTOR:0 "Вимп-экстрактор"
+ TFW_WIMP_REACTOR_DESC:0 "Использует вимп-взаимодействия для получения энергии. Благодаря повышенной надежности работает более стабильно во время боя, повышая боевую эффективность корабля."
+ tech_tfw_wimp_reactor:0 "Вимп-экстрактор"
+ tech_tfw_wimp_reactor_desc:0 "Мы можем добывать и управлять вимпами - очень массивными частицами холодной черной материи - для производства большого количества энергии.\n\n"
+ TECH_UNLOCK_TFW_SYNTH_I_TITLE:0 "§HКомпонент:§! $TFW_WIMP_REACTOR$"
+ TECH_UNLOCK_TFW_SYNTH_I_DESC:0 "§H$TFW_WIMP_REACTOR$§!\n$TFW_WIMP_REACTOR_DESC$"
+ 
+ TFW_TACHYON_REACTOR:0 "Тахионный реактор"
+ TFW_TACHYON_REACTOR_DESC:0 "Высокотехнологичная тахионная ловушка, которая также может генерировать энергию. Благодаря повышенной надежности работает более стабильно во время боя, повышая боевую эффективность корабля."
+ tech_tfw_tachyon_reactor:0 "Тахионный реактор"
+ tech_tfw_tachyon_reactor_desc:0 "Можно генерировать огромное количество энергии, замедляя кванты тахионов. Правда, захват тахионов - это гораздо более сложная задача, нежели генерирование энергии из процессов их торможения.\n\n"
+ TECH_UNLOCK_TFW_SYNTH_II_TITLE:0 "§HКомпонент:§! $TFW_TACHYON_REACTOR$"
+ TECH_UNLOCK_TFW_SYNTH_II_DESC:0 "§H$TFW_TACHYON_REACTOR$§!\n$TFW_TACHYON_REACTOR_DESC$"
+ 
+ ### ADV PSI ### 
+ TFW_PSI_REACTOR_1:0 "Пси-ячейка"
+ TFW_PSI_REACTOR_1_DESC:0 "Специальная ячейка, содержащая биологический интерфейс, обладающий псионическими способностями. Может производить и конвертировать пси-энергию, также улучшая системы наведения орудий за счет использования внутренних алгоритмов боевого предвидения."
+ tech_tfw_psi_reactor_1:0 "Извлечение пси-энергии"
+ tech_tfw_psi_reactor_1_desc:0 "Исследуя способы по извлечению и использованию псионических сил от биологических пси-интерфейсов, мы можем создать абсолютно новый вид реакторов.\n\n"
+ TECH_UNLOCK_TFW_PSI_I_TITLE:0 "§HКомпонент:§! $TFW_PSI_REACTOR_1$"
+ TECH_UNLOCK_TFW_PSI_I_DESC:0 "§H$TFW_PSI_REACTOR_1$§!\n$TFW_PSI_REACTOR_1_DESC$"
+ 
+ TFW_PSI_REACTOR_2:0 "Пси-улей"
+ TFW_PSI_REACTOR_2_DESC:0 "Компактный кластер синхронизированных пси-ячеек, производящий большое количество энергии. Улучшает системы наведения орудий за счет использования внутренних алгоритмов боевого предвидения."
+ tech_tfw_psi_reactor_2:0 "Синхронизированные пси-потоки"
+ tech_tfw_psi_reactor_2_desc:0 "Мы можем улучшить характеристики наших пси-реакторов, используя синхронизированные пси-потоки от разных пси-интерфейсов, объединенных в единый кластер.\n\n"
+ TECH_UNLOCK_TFW_PSI_II_TITLE:0 "§HКомпонент:§! $TFW_PSI_REACTOR_2$"
+ TECH_UNLOCK_TFW_PSI_II_DESC:0 "§H$TFW_PSI_REACTOR_2$§!\n$TFW_PSI_REACTOR_2_DESC$"
+ 
+ # Dark Matter 2
+ TFW_DARKMATTER_REACTOR_2:0 "Улучшенный реактор темной материи"
+ TFW_DARKMATTER_REACTOR_2_DESC:0 "Улучшенные экстракторы повышают эффективность этого реактора."
+ tech_tfw_darkmatter_reactor_2:0 "Улучшенный реактор темной материи"
+ tech_tfw_darkmatter_reactor_2_desc:0 "Улучшенные экстракторы повышают эффективность этого реактора.\n\n"
+ TECH_UNLOCK_TFW_DARKMATTER_REACTOR_2_TITLE:0 "§HКомпонент:§! $TFW_DARKMATTER_REACTOR_2$"
+ TECH_UNLOCK_TFW_DARKMATTER_REACTOR_2_DESC:0 "§H$TFW_DARKMATTER_REACTOR_2$§!\n$TFW_DARKMATTER_REACTOR_2_DESC$"
+ 
+ # CORVETTE
+ CORVETTE_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ CORVETTE_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ CORVETTE_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ CORVETTE_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ CORVETTE_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ CORVETTE_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ CORVETTE_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ CORVETTE_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ CORVETTE_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ CORVETTE_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ CORVETTE_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ CORVETTE_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # DESTROYER
+ DESTROYER_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ DESTROYER_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ DESTROYER_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ DESTROYER_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ DESTROYER_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ DESTROYER_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ DESTROYER_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ DESTROYER_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ DESTROYER_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ DESTROYER_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ DESTROYER_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ DESTROYER_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # CRUISER
+ CRUISER_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ CRUISER_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ CRUISER_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ CRUISER_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ CRUISER_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ CRUISER_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ CRUISER_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ CRUISER_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ CRUISER_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ CRUISER_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ CRUISER_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ CRUISER_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # BATTLESHIP
+ BATTLESHIP_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ BATTLESHIP_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ BATTLESHIP_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ BATTLESHIP_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ BATTLESHIP_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ BATTLESHIP_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ BATTLESHIP_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ BATTLESHIP_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ BATTLESHIP_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ BATTLESHIP_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ BATTLESHIP_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ BATTLESHIP_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # TITAN
+ TITAN_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ TITAN_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ TITAN_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ TITAN_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ TITAN_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ TITAN_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ TITAN_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ TITAN_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ TITAN_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ TITAN_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ TITAN_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ TITAN_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # COLOSSUS
+ COLOSSUS_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ COLOSSUS_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ COLOSSUS_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ COLOSSUS_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ COLOSSUS_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ COLOSSUS_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ COLOSSUS_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ COLOSSUS_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ COLOSSUS_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ COLOSSUS_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ COLOSSUS_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ COLOSSUS_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # PLATFORM
+ PLATFORM_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ PLATFORM_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ PLATFORM_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ PLATFORM_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ PLATFORM_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ PLATFORM_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ PLATFORM_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ PLATFORM_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ PLATFORM_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ PLATFORM_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ PLATFORM_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ PLATFORM_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ # ION CANNON 
+ ION_CANNON_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ ION_CANNON_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ ION_CANNON_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ ION_CANNON_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ ION_CANNON_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ ION_CANNON_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ ION_CANNON_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ ION_CANNON_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ ION_CANNON_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$" 
+ ION_CANNON_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ ION_CANNON_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$" 
+ ION_CANNON_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$" 
+  
+ # STARBASE
+ STARBASE_TFW_ANTIMATTER_REACTOR_OPTIMIZED:1 "$TFW_ANTIMATTER_REACTOR_OPTIMIZED$"
+ STARBASE_TFW_DARKMATTER_REACTOR:1 "$TFW_DARKMATTER_REACTOR$"
+ STARBASE_TFW_DARKMATTER_REACTOR_OPTIMIZED:1 "$TFW_DARKMATTER_REACTOR_OPTIMIZED$"
+ STARBASE_TFW_SINGULARITY_REACTOR:1 "$TFW_SINGULARITY_REACTOR$"
+ STARBASE_TFW_SINGULARITY_REACTOR_OPTIMIZED:1 "$TFW_SINGULARITY_REACTOR_OPTIMIZED$"
+ STARBASE_TFW_BIO_REACTOR_I:1 "$TFW_BIO_REACTOR_I$"
+ STARBASE_TFW_BIO_REACTOR_II:1 "$TFW_BIO_REACTOR_II$"
+ STARBASE_TFW_PSI_REACTOR_1:1 "$TFW_PSI_REACTOR_1$"
+ STARBASE_TFW_PSI_REACTOR_2:1 "$TFW_PSI_REACTOR_2$"
+ STARBASE_TFW_WIMP_REACTOR:1 "$TFW_WIMP_REACTOR$"
+ STARBASE_TFW_TACHYON_REACTOR:1 "$TFW_TACHYON_REACTOR$"
+ STARBASE_TFW_DARKMATTER_REACTOR_2:1 "$TFW_DARKMATTER_REACTOR_2$"
+ 
+ ###########################
+ # Shield Amplifiers
+ ###########################
+ #
+ TFW_SHIELD_AMPLIFIER_1:0 "Усилитель щита I"
+ TFW_SHIELD_AMPLIFIER_1_DESC:0 "Улучшает характеристики установленных генераторов щитов."
+ tech_tfw_shield_amplifier_1:0 "Усилитель щита I"
+ tech_tfw_shield_amplifier_1_desc:0 "Система усилителя щита состоит из конденсаторов энергии и специального излучателя.\n\n"
+
+ TFW_SHIELD_AMPLIFIER_2:0 "Усилитель щита II"
+ TFW_SHIELD_AMPLIFIER_2_DESC:0 "Улучшает характеристики установленных генераторов щитов."
+ tech_tfw_shield_amplifier_2:0 "Усилитель щита II"
+ tech_tfw_shield_amplifier_2_desc:0 "Система усилителя щита состоит из конденсаторов энергии и специального излучателя.\n\n"
+
+ TFW_SHIELD_AMPLIFIER_3:0 "Усилитель щита III"
+ TFW_SHIELD_AMPLIFIER_3_DESC:0 "Улучшает характеристики установленных генераторов щитов."
+ tech_tfw_shield_amplifier_3:0 "Усилитель щита III"
+ tech_tfw_shield_amplifier_3_desc:0 "Эта сложная система состоит из энергетических конденсаторов, специального излучателя и дополнительных схем защиты с резервными источниками энергии.\n\n"
+ 
+ #HIVE
+ TFW_HIVE_AMPLIFIER_1:0 "Усилитель улья I"
+ TFW_HIVE_AMPLIFIER_1_DESC:0 "Уменьшает задержку ментальных сигналов, повышая маневренность и точность корабля."
+ tech_tfw_hive_amplifier_1:0 "Усилитель улья I"
+ tech_tfw_hive_amplifier_1_desc:0 "Этот узел содержит различные передатчики, улучшающие качество моих ментальных соединений.\n\n"
+ 
+ TFW_HIVE_AMPLIFIER_2:0 "Усилитель улья II"
+ TFW_HIVE_AMPLIFIER_2_DESC:0 "Уменьшает задержку ментальных сигналов, повышая маневренность и точность корабля."
+ tech_tfw_hive_amplifier_2:0 "Усилитель улья II"
+ tech_tfw_hive_amplifier_2_desc:0 "Этот узел содержит различные передатчики, улучшающие качество моих ментальных соединений.\n\n"
+ 
+ TFW_HIVE_AMPLIFIER_3:0 "Усилитель улья III"
+ TFW_HIVE_AMPLIFIER_3_DESC:0 "Уменьшает задержку ментальных сигналов, повышая маневренность и точность корабля."
+ tech_tfw_hive_amplifier_3:0 "Усилитель улья III"
+ tech_tfw_hive_amplifier_3_desc:0 "Этот узел содержит различные передатчики, улучшающие качество моих ментальных соединений, а также дополнительные контуры защиты.\n\n"
+
+ ###########################
+ # Repair Drones
+ ###########################
+ #Standart
+ TFW_AUTO_REPAIR_1:0 "Ремонтный дрон I"
+ TFW_AUTO_REPAIR_1_DESC:0 "Эти дроны восстанавливают поврежденную обшивку и модули корабля."
+ tech_tfw_auto_repair_1:0 "Ремонтные дроны"
+ tech_tfw_auto_repair_1_desc:0 "Автоматизированные беспилотные ремонтные дроны могут восстанавливать наши корабли даже в бою. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+ 
+ TFW_AUTO_REPAIR_2:0 "Ремонтный дрон II"
+ TFW_AUTO_REPAIR_2_DESC:0 "Эти дроны быстрее восстанавливают поврежденную обшивку и модули корабля."
+ tech_tfw_auto_repair_2:0 "Улучшенные ремонтные дроны"
+ tech_tfw_auto_repair_2_desc:0 "Автоматизированные беспилотные ремонтные дроны второго поколения. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+ 
+ TFW_AUTO_REPAIR_3:0 "Ремонтный дрон III"
+ TFW_AUTO_REPAIR_3_DESC:0 "Эти дроны очень быстро восстанавливают поврежденную обшивку и модули корабля."
+ tech_tfw_auto_repair_3:0 "Продвинутые ремонтные дроны"
+ tech_tfw_auto_repair_3_desc:0 "Автоматизированные беспилотные ремонтные дроны третьего поколения. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+
+ #Psi Repair Drones
+ #MOTHER TECH
+ tech_tfw_psi_machinery:0 "Псионические машины"
+ tech_tfw_psi_machinery_desc:0 "Мы можем проектировать машины самого различного назначения, которые смогут принимать, анализировать и выполнять наши псионические команды.\n\n"
+ TECH_UNLOCK_PD_TITLE:0 "§HОткрывает исследования в области:§! Пси-дроны"
+ TECH_UNLOCK_PD_DESC:0 "Автоматизированные псионические дроны различных назначений."
+
+ TFW_AUTO_REPAIR_PSI1:0 "Ремонтный пси-дрон I"
+ TFW_AUTO_REPAIR_PSI1_DESC:0 "Эти пси-дроны восстанавливают поврежденную обшивку и модули корабля."
+ tech_tfw_auto_repair_psi1:0 "Ремонтные пси-дроны"
+ tech_tfw_auto_repair_psi1_desc:0 "Автоматизированные ремонтные пси-дроны могут восстанавливать наши корабли даже в бою. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+
+ TFW_AUTO_REPAIR_PSI2:0 "Ремонтный пси-дрон II"
+ TFW_AUTO_REPAIR_PSI2_DESC:0 "Эти пси-дроны быстрее восстанавливают поврежденную обшивку и модули корабля."
+ tech_tfw_auto_repair_psi2:0 "Улучшенные ремонтные пси-дроны"
+ tech_tfw_auto_repair_psi2_desc:0 "Автоматизированные ремонтные пси-дроны второго поколения. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+
+ TFW_AUTO_REPAIR_PSI3:0 "Ремонтный пси-дрон III"
+ TFW_AUTO_REPAIR_PSI3_DESC:0 "Эти пси-дроны очень быстро восстанавливают поврежденную обшивку и модули корабля."
+ tech_tfw_auto_repair_psi3:0 "Продвинутые ремонтные пси-дроны"
+ tech_tfw_auto_repair_psi3_desc:0 "Автоматизированные ремонтные пси-дроны третьего поколения. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+
+ #Synth Repair Drones
+ TFW_AUTO_REPAIR_SYNTH1: "Ремонтные боты I"
+ TFW_AUTO_REPAIR_SYNTH1_DESC: "Рой небольших ремонтных ботов для наших кораблей."
+ tech_tfw_auto_repair_synth1:0 "Ремонтные боты"
+ tech_tfw_auto_repair_synth1_desc:0 "Рой небольших ремонтных ботов может восстанавливать наши корабли даже в бою. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+ 
+ TFW_AUTO_REPAIR_SYNTH2: "Ремонтные боты II"
+ TFW_AUTO_REPAIR_SYNTH2_DESC: "Рой небольших улучшенных ремонтных ботов для наших кораблей."
+ tech_tfw_auto_repair_synth2:0 "Улучшенные ремонтные боты"
+ tech_tfw_auto_repair_synth2_desc:0 "Рой небольших ремонтных ботов второго поколения. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+ 
+ TFW_AUTO_REPAIR_SYNTH3: "Ремонтные боты III"
+ TFW_AUTO_REPAIR_SYNTH3_DESC: "Рой небольших продвинутых ремонтных ботов для наших кораблей."
+ tech_tfw_auto_repair_synth3:0 "Продвинутые ремонтные боты"
+ tech_tfw_auto_repair_synth3_desc:0 "Рой небольших ремонтных ботов третьего поколения. Эти мобильные платформы просты и дешевы в изготовлении прямо на борту и в случае потери или поломки могут быть быстро заменены.\n\n"
+ 
+ ###########################
+ # Enigmatic Stuff
+ ###########################
+ TFW_ENIGMATIC_DECODER_2:0 "Непостижимый дешифратор"
+ TFW_ENIGMATIC_DECODER_2_DESC:0 "Разработка новых продвинутых алгоритмов для декодера способна повысить его вычислительную мощность, а также эффективность прогнозирования."
+ tech_tfw_enigmatic_decoder_2:0 "Непостижимый дешифратор"
+ tech_tfw_enigmatic_decoder_2_desc:0 "Разработка новых продвинутых алгоритмов для декодера способна повысить его вычислительную мощность, а также эффективность прогнозирования.\n\n"
+ 
+ TFW_ENIGMATIC_ENCODER_2:0 "Непостижимый шифратор"
+ TFW_ENIGMATIC_ENCODER_2_DESC:0 "Повышенная тактовая частота этого шифратора позволяет ему быстрее производить вычисления, значительно улучшая его эффективность."
+ tech_tfw_enigmatic_encoder_2:0 "Непостижимый шифратор"
+ tech_tfw_enigmatic_encoder_2_desc:0 "Повышенная тактовая частота этого шифратора позволяет ему быстрее производить вычисления, значительно улучшая его эффективность.\n\n"
+ 
+ ###########################
+ # Unique Armors
+ ###########################
+ # Crystal-Merged
+ SMALL_TFW_CRYSTAL_ARMOR_3:0 "Малая кристалл-совмещенная обшивка"
+ MEDIUM_TFW_CRYSTAL_ARMOR_3:0 "Средняя кристалл-совмещенная обшивка"
+ LARGE_TFW_CRYSTAL_ARMOR_3:0 "Большая кристалл-совмещенная обшивка"
+ TFW_CRYSTAL_ARMOR_3:0 "Кристалл-совмещенная обшивка"
+ TFW_CRYSTAL_ARMOR_3_DESC:0 "Эта обшивка придает корпусу корабля большую стойкость к повреждениям."
+ tech_tfw_crystal_armor_3:0 "Кристаллиновые полиметаллы"
+ tech_tfw_crystal_armor_3_desc:0 "Дальнейшие эксперименты с процессами кристаллиновой диффузии откроют нам новые пути по повышению живучести наших кораблей.\n\n"
+ # Crystalline Alloy 
+ SMALL_TFW_CRYSTAL_ARMOR_4:0 "Малая кристалл-легированная обшивка"
+ MEDIUM_TFW_CRYSTAL_ARMOR_4:0 "Средняя кристалл-легированная обшивка"
+ LARGE_TFW_CRYSTAL_ARMOR_4:0 "Большая кристалл-легированная обшивка"
+ TFW_CRYSTAL_ARMOR_4:0 "Кристалл-легированная обшивка"
+ TFW_CRYSTAL_ARMOR_4_DESC:0 "Эта обшивка придает корпусу корабля большую стойкость к повреждениям."
+ tech_tfw_crystal_armor_4:0 "Кристаллиновые сплавы"
+ tech_tfw_crystal_armor_4_desc:0 "Новые технические процессы для производства кристаллических сплавов позволяют нам изготавливать улучшенные кристаллические покрытия.\n\n"
+
+ # Dragon Scale Armor 
+ SMALL_TFW_DRAGON_ARMOR_2:0 "Малая укрепленная чешуя дракона"
+ MEDIUM_TFW_DRAGON_ARMOR_2:0 "Средняя укрепленная чешуя дракона"
+ LARGE_TFW_DRAGON_ARMOR_2:0 "Большая укрепленная чешуя дракона"
+ TFW_DRAGON_ARMOR_2:0 "Укрепленная чешуя дракона"
+ TFW_DRAGON_ARMOR_2_DESC:0 "Вмешиваясь в процессы роста чешуек драконьей брони, мы можем достигнуть ее дальнейшего укрепления."
+ tech_tfw_dragon_armor_2:0 "Укрепленная броня из чешуи дракона"
+ tech_tfw_dragon_armor_2_desc:0 "Вмешиваясь в процессы роста чешуек драконьей брони, мы можем достигнуть ее дальнейшего укрепления.\n\n"
+ 
+ ###########################
+ # Armors
+ ###########################
+ #Common
+ TFW_ARMOR_6:0 "Броня из нейтрониевых сплавов"
+ TFW_ARMOR_6_DESC:0 "Чрезвычайно плотная нейтрониевая решетка, легированная специальными элементами, облегчающими ее обработку. Это делает возможным изготовление более прочных элементов брони."
+ SMALL_TFW_ARMOR_6:0 "Малая броня из нейтрониевых сплавов"
+ MEDIUM_TFW_ARMOR_6:0 "Средняя броня из нейтрониевых сплавов"
+ LARGE_TFW_ARMOR_6:0 "Большая броня из нейтрониевых сплавов"
+ tech_tfw_ship_armor_6:0 "Нейтрониевые сплавы"
+ tech_tfw_ship_armor_6_desc:0 "Нейтрониевое вещество из-за своих особых свойств очень тяжело поддается обработке. Несмотря на это, мы разработали особый набор технологических процессов для создания очень прочных нейтрониевых сплавов.\n\n"
+ 
+ TFW_ARMOR_7:0 "Тетранейтрониевая броня"
+ TFW_ARMOR_7_DESC:0 "Состоит из более плотно упакованного нейтрониевого вещества."
+ SMALL_TFW_ARMOR_7:0 "Малая тетранейтрониевая броня"
+ MEDIUM_TFW_ARMOR_7:0 "Средняя тетранейтрониевая броня"
+ LARGE_TFW_ARMOR_7:0 "Большая тетранейтрониевая броня"
+ tech_tfw_ship_armor_7:0 "Стабильный тетранейтроний"
+ tech_tfw_ship_armor_7_desc:0 "Стабилизированное тетранейтрониевое вещество более перспективно для использования в судовой броне, однако для этого сначала нужно решить несколько технических проблем.\n\n"
+
+ ####ADV COMMON ARMOR###
+ TFW_ARMOR_9:0 "Дибарионная броня"
+ TFW_ARMOR_9_DESC:0 "Высокопрочная броня из стабилизированного дибариона."
+ SMALL_TFW_ARMOR_9:0 "Малая дибарионная броня"
+ MEDIUM_TFW_ARMOR_9:0 "Средняя дибарионная броня"
+ LARGE_TFW_ARMOR_9:0 "Большая дибарионная броня"
+ tech_tfw_ship_armor_9:0 "Дибарионное покрытие"
+ tech_tfw_ship_armor_9_desc:0 "Особое покрытие из дибариона - очень плотного и тяжелого вещества ядер нейтронных звезд - способно выдерживать гораздо большее количество попаданий из любого оружия.\n\n"
+
+ TFW_ARMOR_10:0 "Дибарикрамовая броня"
+ TFW_ARMOR_10_DESC:0 "Продвинутый вид брони из дибарионного вещества с улучшенными свойствами."
+ SMALL_TFW_ARMOR_10:0 "Малая дибарикрамовая броня"
+ MEDIUM_TFW_ARMOR_10:0 "Средняя дибарикрамовая броня"
+ LARGE_TFW_ARMOR_10:0 "Большая дибарикрамовая броня"
+ tech_tfw_ship_armor_10:0 "Улучшенная дибарионная броня"
+ tech_tfw_ship_armor_10_desc:0 "Разработка новых технологических процессов по созданию дибарионной брони позволит значительно улучшить ее характеристики.\n\n"
+
+ #####BIO ARMOR#####
+ TFW_BIOARMOR_1:0 "Био-броня"
+ TFW_BIOARMOR_1_DESC:0 "Сочетает в себе способность к саморегенерации с хорошей прочностью структуры."
+ SMALL_TFW_BIOARMOR_1:0 "Малая био-броня"
+ MEDIUM_TFW_BIOARMOR_1:0 "Средняя био-броня"
+ LARGE_TFW_BIOARMOR_1:0 "Большая био-броня"
+ tech_tfw_bioarmor_1:0 "Био-броня"
+ tech_tfw_bioarmor_1_desc:0 "Ускоренная репликация клеток позволяет создать новый тип брони, который обеспечит регенерацию корпуса и хорошую прочность конструкции.\n\n"
+ 
+ TFW_BIOARMOR_2:0 "Улучшенная био-броня"
+ TFW_BIOARMOR_2_DESC:0 "Сочетает в себе способность к саморегенерации с отличной прочностью структуры."
+ SMALL_TFW_BIOARMOR_2:0 "Малая улучшенная био-броня"
+ MEDIUM_TFW_BIOARMOR_2:0 "Средняя улучшенная био-броня"
+ LARGE_TFW_BIOARMOR_2:0 "Большая улучшенная био-броня"
+ tech_tfw_bioarmor_2:0 "Улучшенная био-броня"
+ tech_tfw_bioarmor_2_desc:0 "Дальнейшие генные модификации клеток брони позволяет заметно улучшить ее скорость восстановления.\n\n"
+
+ #####PSI ARMOR#####
+ TFW_PSIARMOR_1:0 "Пси-броня"
+ TFW_PSIARMOR_1_DESC:0 "Снабжена излучателями псионической энергии, блокирующими некоторую часть приходящего урона. Рассеивание псионической энергии также дает прирост к энергетической защите корабля."
+ SMALL_TFW_PSIARMOR_1:0 "Малая пси-броня"
+ MEDIUM_TFW_PSIARMOR_1:0 "Средняя пси-броня"
+ LARGE_TFW_PSIARMOR_1:0 "Большая пси-броня"
+ tech_tfw_psiarmor_1:0 "Пси-броня"
+ tech_tfw_psiarmor_1_desc:0 "Использование простейших псионических излучателей в конструкции брони может увеличить ее эффективность за счет создания локальных потоков пси-энергии на пути приходящего урона.\n\n"
+ 
+ TFW_PSIARMOR_2:0 "Фокусированная пси-броня"
+ TFW_PSIARMOR_2_DESC:0 "Снабжена излучателями псионической энергии, более эффективно блокирующими часть приходящего урона. Рассеивание псионической энергии также дает прирост к энергетической защите корабля."
+ SMALL_TFW_PSIARMOR_2:0 "Малая фокусированная пси-броня"
+ MEDIUM_TFW_PSIARMOR_2:0 "Средняя фокусированная пси-броня"
+ LARGE_TFW_PSIARMOR_2:0 "Большая фокусированная пси-броня"
+ tech_tfw_psiarmor_2:0 "Фокусированная пси-броня"
+ tech_tfw_psiarmor_2_desc:0 "Улучшенные псионические излучатели делают эту броню намного более эффективной в поглощении урона.\n\n"
+
+ #####SYNTH ARMOR ##
+ 
+ 
+ #####MECHs ARMOR ##
+ TFW_ARMOR_8:0 "Плазматическая броня"
+ TFW_ARMOR_8_DESC:0 "Разновидность тетранейтрониевой брони с дополнительным покрытием из плотной плазмы, удерживаемым мощными магнитными полями."
+ SMALL_TFW_ARMOR_8:0 "Малая плазматическая броня"
+ MEDIUM_TFW_ARMOR_8:0 "Средняя плазматическая броня"
+ LARGE_TFW_ARMOR_8:0 "Большая плазматическая броня"
+ tech_tfw_ship_armor_8:0 "Плазменное покрытие"
+ tech_tfw_ship_armor_8_desc:0 "Тетранейтрониевая броня может быть усилена специальным покрытием из плотной холодной плазмы, удерживаемой у поверхности сильными магнитными полями.\n\n"
+
+  
+ ################################################################################
+ # WEAPONS #####
+ 
+ #Energy Torpedoes 3
+ TFW_ENERGY_TORPEDO_3:0 "Дейтериевые торпеды"
+ TFW_ENERGY_TORPEDO_3_DESC:0 "Эти торпеды вооружены зарядом дейтерия, что делает их очень эффективными против корпусных конструкций."
+ tech_tfw_energy_torpedoes_3:0 "Дейтериевые торпеды"
+ tech_tfw_energy_torpedoes_3_desc:0 "Это достаточно простое оружие использует специальные дейтериевые боеголовки, которые запускают термоядерную реакцию, сопровождающуюся выделением большого количества энергии.\n\n"
+
+ #Energy Torpedoes 4
+ TFW_ENERGY_TORPEDO_4:0 "Тритиевые торпеды"
+ TFW_ENERGY_TORPEDO_4_DESC:0 "Эти торпеды вооружены зарядом трития, что делает их очень эффективными против корпусных конструкций."
+ tech_tfw_energy_torpedoes_4:0 "Тритиевые торпеды"
+ tech_tfw_energy_torpedoes_4_desc:0 "Тритиевые боеголовки обладают большей разрушительной силой и могут легко заменить дейтериевые. В то же время основные трудности заключаются в производстве большого количества трития.\n\n"
+
+ #KINETIC_ARTILLERY_3
+ TFW_KINETIC_ARTILLERY_3:0 "Гаусс-артиллерия"
+ TFW_KINETIC_ARTILLERY_3_DESC:0 "Улучшенные гаусс-системы для тяжелых орудийных платформ."
+ tech_tfw_kinetic_artillery_3:0 "Гаусс-артиллерия"
+ tech_tfw_kinetic_artillery_3_desc:0 "Существуют возможности по улучшению орудий на основе систем Гаусса, которые позволят повысить их боевую эффективность.\n\n"
+
+ #KINETIC_ARTILLERY_4
+ TFW_KINETIC_ARTILLERY_4:0 "Продвинутая гаусс-артиллерия"
+ TFW_KINETIC_ARTILLERY_4_DESC:0 "Продвинутые гаусс-системы для тяжелых орудийных платформ."
+ tech_tfw_kinetic_artillery_4:0 "Продвинутая гаусс-артиллерия"
+ tech_tfw_kinetic_artillery_4_desc:0 "Следующее поколение гаусс-артиллерии имеет продвинутое устройство зарядки башни и множество других небольших улучшений.\n\n"
+ 
+ #LASERSTORM
+ SMALL_TFW_LASERSTORM:0 "Малый лазерный шторм"
+ MEDIUM_TFW_LASERSTORM:0 "Средний лазерный шторм"
+ LARGE_TFW_LASERSTORM:0 "Большой лазерный шторм"
+ TFW_LASERSTORM:0 "Лазерный шторм"
+ TFW_LASERSTORM_DESC:0 "Скорострельная лазерная платформа"
+ tech_tfw_laserstorm:0 "Скорострельные лазеры"
+ tech_tfw_laserstorm_desc:0 "Улучшенное охлаждение орудийных стволов значительно увеличит скорострельность лазерных платформ.\n\n"
+
+ #ADV_LASERSTORM
+ SMALL_TFW_ADV_LASERSTORM:0 "Малый лазерный вихрь"
+ MEDIUM_TFW_ADV_LASERSTORM:0 "Средний лазерный вихрь"
+ LARGE_TFW_ADV_LASERSTORM:0 "Большой лазерный вихрь"
+ TFW_ADV_LASERSTORM:0 "Лазерный вихрь"
+ TFW_ADV_LASERSTORM_DESC:0 "Улучшенная скорострельная лазерная платформа"
+ tech_tfw_adv_laserstorm:0 "Улучшенные скорострельные лазеры"
+ tech_tfw_adv_laserstorm_desc:0 "Открытие новых способов охлаждения лазерных орудийных стволов позволяет улучшить их характеристики.\n\n"
+
+ #GAUSS_MORTAR
+ SMALL_TFW_GAUSS_MORTAR:0 "Малая Гаусс-мортира"
+ MEDIUM_TFW_GAUSS_MORTAR:0 "Средняя Гаусс-мортира"
+ LARGE_TFW_GAUSS_MORTAR:0 "Большая Гаусс-мортира"
+ TFW_GAUSS_MORTAR:0 "Гаусс-мортира"
+ TFW_GAUSS_MORTAR_DESC:0 "Следующее поколение орудийных систем, работающих по принципу электромагнетизма."
+ tech_tfw_gauss_6:0 "Осадные Гаусс-орудия"
+ tech_tfw_gauss_6_desc:0 "Улучшенные системы разгона Гаусс-орудий увеличивают скорость их снарядов, эффективно перегружая вражеские энергетические щиты.\n\n"
+ 
+ #GAUSS_HOWITZER
+ SMALL_TFW_GAUSS_HOWITZER:0 "Малая Гаусс-гаубица"
+ MEDIUM_TFW_GAUSS_HOWITZER:0 "Средняя Гаусс-гаубица"
+ LARGE_TFW_GAUSS_HOWITZER:0 "Большая Гаусс-гаубица"
+ TFW_GAUSS_HOWITZER:0 "Гаусс-гаубица"
+ TFW_GAUSS_HOWITZER_DESC:0 "Гаусс-орудие с увеличенной скоростью снарядов, эффективное против вражеских щитов."
+ tech_tfw_gauss_7:0 "Гиперускорение"
+ tech_tfw_gauss_7_desc:0 "Следующая версия Гаусс-мортиры имеет увеличенную скорость снарядов для более эффективного уничтожения вражеских щитов.\n\n"
+ 
+ #AUTOCANNON_4
+ TFW_AUTOCANNON_4:0 "Автопушка «Вулкан»"
+ TFW_AUTOCANNON_4_DESC:0 "Следующая, улучшенная модель скорострельных роторных автопушек."
+ tech_tfw_autocannons_4:0 "Автопушка «Вулкан»"
+ tech_tfw_autocannons_4_desc:0 "Эффективное только на коротких дистанциях, это скорострельное орудие имеет ряд улучшений для быстрого прорыва энергетических щитов.\n\n"
+ 
+ #AUTOCANNON_5
+ TFW_AUTOCANNON_5:0 "Автопушка «Громобой»"
+ TFW_AUTOCANNON_5_DESC:0 "Более эффективная модель скорострельных роторных автопушек."
+ tech_tfw_autocannons_5:0 "Автопушка «Громобой»"
+ tech_tfw_autocannons_5_desc:0 "Улучшенные системы питания и отведения тепла позволяют улучшить характеристики автопушек.\n\n"
+ 
+ #AUTOCANNON_6
+ TFW_AUTOCANNON_6:0 "Автопушка «Мститель»"
+ TFW_AUTOCANNON_6_DESC:0 "Дальнейшее развитие скорострельных роторных автопушек."
+ tech_tfw_autocannons_6:0 "Автопушка «Мститель»"
+ tech_tfw_autocannons_6_desc:0 "Очередное удачное техническое решение способно улучшить характеристики наших автопушек.\n\n"
+ 
+ #Missiles
+ #Energon Missile Launcher
+ TFW_AA_MISSILE_1:0 "Энергонные ракеты"
+ TFW_AA_MISSILE_1_DESC:0 "Эти ракеты используют энергонный заряд, отличающийся большой мощностью взрыва."
+ tech_tfw_aa_missiles_1:0 "Энергонные ракеты"
+ tech_tfw_aa_missiles_1_desc:0 "Наши ракеты могут быть заряжены энергонной материей, отличающейся большой мощностью взрыва.\n\n"
+
+ #Grinder Missile Launcher
+ TFW_AA_MISSILE_2:0 "Ракеты «Гриндер»"
+ TFW_AA_MISSILE_2_DESC:0 "Эти ракеты используют смесь из продвинутых взрывчатых компонентов для создания мощнейших взрывов за вражескими щитами."
+ tech_tfw_aa_missiles_2:0 "Ракеты «Гриндер»"
+ tech_tfw_aa_missiles_2_desc:0 "Эти ракеты используют смесь из продвинутых взрывчатых компонентов для создания мощнейших взрывов за вражескими щитами.\n\n"
+ 
+ #Tandem Missile Launcher
+ TFW_AS_MISSILE_1:0 "Тандемные ракеты"
+ TFW_AS_MISSILE_1_DESC:0 "Эти ракеты могут частично проникать в броню корабля. Из-за своей массы они занимают промежуточное положение между ракетами и торпедами."
+ tech_tfw_as_missiles_1:0 "Тандемные боеголовки"
+ tech_tfw_as_missiles_1_desc:0 "Эти ракеты используют специальные нейтрониевые боеголовки, пробивающие слой брони корабля, после чего основная часть взрывчатого вещества выбрасывается в его внутренние конструкции. Однако, возросшая масса этих ракет имеет некоторые негативные последствия.\n\n"
+
+ #Dybarion Tandem Missiles
+ TFW_AS_MISSILE_2:0 "Дибарионные тандемные ракеты"
+ TFW_AS_MISSILE_2_DESC:0 "Эти ракеты могут частично проникать в броню корабля. Из-за своей массы они занимают промежуточное положение между ракетами и торпедами."
+ tech_tfw_as_missiles_2:0 "Дибарионные тандемные ракеты"
+ tech_tfw_as_missiles_2_desc:0 "Высокоплотное дибарионное вещество гораздо прочнее нейтрониума и позволяет нас увеличить массу заряда, сохраняя общий вес ракеты на том же уровне.\n\n"
+
+ #Swarmer Missiles
+ TFW_SWARMER_MISSILE_3:0 "Ракеты «Тайфун»"
+ TFW_SWARMER_MISSILE_3_DESC:0 "Дальнейшее развитие вихревых ракетных систем с более мощными боеголовками."
+ tech_tfw_swarmer_missiles_3:0 "Ракеты «Тайфун»"
+ tech_tfw_swarmer_missiles_3_desc:0 "Дальнейшее развитие вихревых ракетных систем с более мощными боеголовками.\n\n"
+ 
+ #Vortex Missiles
+ TFW_SWARMER_MISSILE_4:0 "Ракеты «Вихрь»"
+ TFW_SWARMER_MISSILE_4_DESC:0 "Дальнейшее развитие вихревых ракетных систем с улучшенными системами наведения."
+ tech_tfw_swarmer_missiles_4:0 "Ракеты «Вихрь»"
+ tech_tfw_swarmer_missiles_4_desc:0 "Мы улучшили системы наведения наших вихревых ракетных систем, чтобы повысить их эффективность.\n\n"
+ 
+ #Tempest Missiles
+ TFW_SWARMER_MISSILE_5:0 "Ракеты «Ураган»"
+ TFW_SWARMER_MISSILE_5_DESC:0 "Дальнейшее развитие вихревых ракетных систем с улучшенной маневренностью."
+ tech_tfw_swarmer_missiles_5:0 "Ракеты «Ураган»"
+ tech_tfw_swarmer_missiles_5_desc:0 "Мы улучшили маневренность наших вихревых ракетных систем, чтобы повысить их эффективность.\n\n"
+ 
+ #Mother Tech for PT
+ tech_tfw_pt:0 "Плазмоконтейнеры"
+ tech_tfw_pt_desc:0 "Контейнеры плазмы это системы транспортировки плазмы, которые позволят нам разработать новые виды плазменного оружия.\n\n"
+ TECH_UNLOCK_PT_TITLE:0 "§HКомпонент:§! Плазматические ракеты"
+ TECH_UNLOCK_PT_DESC:0 "Плазменные ракеты не могут свободно проникать через вражеские щиты, но наносят огромный урон броне и корпусу корабля."
+
+ #Plasma Missiles
+ SMALL_TFW_P_T1:0 "Малые плазменные ракеты"
+ MEDIUM_TFW_P_T1:0 "Средние плазменные ракеты"
+ LARGE_TFW_P_T1:0 "Большие плазменные ракеты"
+ TFW_P_T1:0 "Плазменные ракеты"
+ TFW_P_T1_DESC:0 "Плазменные ракеты не могут свободно проникать через вражеские щиты, но наносят огромный урон броне и корпусу корабля. Они могут быть установлены в любой слот для перегрузки оборонительных систем противника."
+ tech_tfw_pt1:0 "Плазменные ракеты"
+ tech_tfw_pt1_desc:0 "Плазменные ракеты очень эффективны против брони и корпуса корабля, однако могут быть перехвачены средствами ПВО и не способны проникать через щиты.\n\n"
+
+ #Adv. Plasma Missiles
+ SMALL_TFW_P_T2:0 "Малые хромоплазменные ракеты"
+ MEDIUM_TFW_P_T2:0 "Средние хромоплазменные ракеты"
+ LARGE_TFW_P_T2:0 "Большие хромоплазменные ракеты"
+ TFW_P_T2:0 "Хромоплазменные ракеты"
+ TFW_P_T2_DESC:0 "Эти ракеты используют хромоплазменную материю для нанесения гораздо большего урона. Они могут быть установлены в любой слот для перегрузки оборонительных систем противника."
+ tech_tfw_pt2:0 "Кварк-глюонная плазма"
+ tech_tfw_pt2_desc:0 "Открытие кварк-глюонной плазмы позволяет приспособить ее для использования в плазменных ракетах, что увеличит их наносимый урон.\n\n"
+ 
+ #Torpedoes
+ #Antimatter Torpedoes
+ TFW_TORPEDO_4:0 "Антиматериальные торпеды"
+ TFW_TORPEDO_4_DESC:0 "Эти торпеды способны проникать через энергетические щиты, нанося повышенный урон корпусу корабля за счет боеголовок, начиненных антиматерией."
+ tech_tfw_torpedoes_4:0 "Антиматериальные торпеды"
+ tech_tfw_torpedoes_4_desc:0 "Новый тип торпедных боеголовок, начиненных антиматерией, обладает гораздо большей энергией взрыва за счет процессов аннигиляции антивещества.\n\n"
+ 
+ #Darkmatter Torpedoes
+ TFW_TORPEDO_5:0 "Торпеды с темной материей"
+ TFW_TORPEDO_5_DESC:0 "Эти торпеды способны проникать через энергетические щиты, нанося повышенный урон корпусу корабля за счет боеголовок, начиненных темной материей."
+ tech_tfw_torpedoes_5:0 "Торпеды с темной материей"
+ tech_tfw_torpedoes_5_desc:0 "Темная материя является более эффективным наполнителем для торпедных боеголовок из-за ее высокоэффективных процессов аннигиляции.\n\n"
+ 
+ #Strangelet Torpedoes
+ TFW_TORPEDO_6:0 "Странгелетовые торпеды"
+ TFW_TORPEDO_6_DESC:0 "Эти торпеды способны проникать через энергетические щиты, нанося повышенный урон корпусу корабля за счет боеголовок, начиненных странной материей."
+ tech_tfw_torpedoes_6:0 "Странгелетовые торпеды"
+ tech_tfw_torpedoes_6_desc:0 "Странгелет - небольшой фрагмент странной материи. Эти торпеды запускают процесс превращения обычной материи в странную, что также сопровождается высвобождением энергии.\n\n"
+ 
+ #STORMFIRE PD
+ TFW_STORMFIRE_PD:0 "Оборонительный комплекс «Бастион»"
+ TFW_STORMFIRE_PD_DESC:0 "Улучшенная оборонительная система, обеспечивающая лучшую защиту против вражеских ракет и штурмовой авиации."
+ tech_tfw_stormfire_pd:0 "Оборонительный комплекс «Бастион»"
+ tech_tfw_stormfire_pd_desc:0 "Разработка новых алгоритмов расчета траекторий перехвата целей позволяет увеличить эффективность оборонительных комплексов.\n\n"
+
+ #Peacekeeper P-D
+ TFW_PEACEKEEPER:0 "Оборонительный комплекс «Посредник»"
+ TFW_PEACEKEEPER_DESC:0 "Лазерные системы точечной защиты обладают повышенным уроном и точностью."
+ tech_tfw_peacekeeper:0 "Оборонительный комплекс «Посредник»"
+ tech_tfw_peacekeeper_desc:0 "Использование продвинутых систем охлаждения ведет к созданию лазерного оружия точечной защиты.\n\n"
+
+ TFW_PEACEKEEPER_2:0 "Оборонительный комплекс «Миротворец»"
+ TFW_PEACEKEEPER_2_DESC:0 "Еще одно продвижение в системах лазерной точечной защиты."
+ tech_tfw_peacekeeper_2:0 "Оборонительный комплекс «Миротворец»"
+ tech_tfw_peacekeeper_2_desc:0 "Мы можем улучшить лазерную точечную защиту с помощью новых легких эмиссионных камер.\n\n"
+  
+ #FLAK 4
+ TFW_FLAK_4:0 "Улучшенная зенитная артиллерия"
+ TFW_FLAK_4_DESC:0 "Улучшенная система точечной обороны с увеличенным радиусом действия."
+ tech_tfw_flak_batteries_4:0 "Улучшенная зенитная артиллерия"
+ tech_tfw_flak_batteries_4_desc:0 "Новые улучшенные питающие системы для зенитной артиллерии значительно поднимут ее эффективность против вражеских целей.\n\n"
+ 
+ #PHASERS
+ SMALL_TFW_PHASER_1:0 "Малая мазер-пушка"
+ MEDIUM_TFW_PHASER_1:0 "Средняя мазер-пушка"
+ LARGE_TFW_PHASER_1:0 "Большая мазер-пушка"
+ TFW_PHASER_1:0 "Мазер-пушка"
+ TFW_PHASER_1_DESC:0 "Это оружие чрезмерно эффективно на малых дистанциях и способно проникать сквозь энергетические щиты и слои брони." 
+ tech_tfw_phaser_1:0 "Мазер-пушка"
+ tech_tfw_phaser_1_desc:0 "Мазеры - это микроволновые генераторы, которые можно монтировать на корабли в качестве специальных орудий ближнего боя.\n\n" 
+ 
+ SMALL_TFW_PHASER_2:0 "Малая фазер-пушка"
+ MEDIUM_TFW_PHASER_2:0 "Средняя фазер-пушка"
+ LARGE_TFW_PHASER_2:0 "Большая фазер-пушка"
+ TFW_PHASER_2:0 "Фазер-пушка"
+ TFW_PHASER_2_DESC:0 "Это оружие чрезмерно эффективно на малых дистанциях и способно проникать сквозь энергетические щиты и слои брони." 
+ tech_tfw_phaser_2:0 "Фазовый скачок"
+ tech_tfw_phaser_2_desc:0 "Разработка мазерного оружия позволила нам открыть несколько нетривиальых способов микроволнового усиления. Например, технология фазовых скачков позволит нам получать фазерное излучение более высоких энергий.\n\n" 
+ 
+ SMALL_TFW_PHASER_3:0 "Малый волновой фазер"
+ MEDIUM_TFW_PHASER_3:0 "Средний волновой фазер"
+ LARGE_TFW_PHASER_3:0 "Большой волновой фазер"
+ TFW_PHASER_3:0 "Волновой фазер"
+ TFW_PHASER_3_DESC:0 "Это оружие чрезмерно эффективно на малых дистанциях и способно проникать сквозь энергетические щиты и слои брони." 
+ tech_tfw_phaser_3:0 "Волновые фазеры"
+ tech_tfw_phaser_3_desc:0 "Явление интерференции фазерного излучения позволяет спроектировать фазерные орудия с увеличенным уроном.\n\n" 
+ 
+ #Phase Spear
+ MEDIUM_TFW_PHASE_SPEAR:0 "Средний фазовый гарпун"
+ LARGE_TFW_PHASE_SPEAR:0 "Большой фазовый гарпун"
+ TFW_PHASE_SPEAR:0 "Фазовый гарпун"
+ TFW_PHASE_SPEAR_DESC:0 "Излучает высококогерентные волны, проникающие сквощь щиты и броню."
+ tech_tfw_phase_spear:0 "Усиление фазы"
+ tech_tfw_phase_spear_desc:0 "Используя продвинутые генераторы фазерного излучения, мы смогли добиться более устойчивой волны, действующей на увеличенном расстоянии.\n\n"
+ 
+ ##################SYNTH COMMON WEAPONS####################
+ #Molecular Crusher I
+ TFW_MOL_CRUSHER_S_1:0 "Малый растворитель материи"
+ TFW_MOL_CRUSHER_M_1:0 "Средний растворитель материи" 
+ TFW_MOL_CRUSHER_L_1:0 "Большой растворитель материи"
+ TFW_MOL_CRUSHER_1:0 "Растворитель материи"
+ TFW_MOL_CRUSHER_1_DESC:0 "Бережно спроектирован для уничтожения всех видов неорганических и органических соединений на молекулярном уровне."
+ tech_tfw_molecular_crusher_1:0 "Высоконапряженные магнитные поля"
+ tech_tfw_molecular_crusher_1_desc:0 "Сильнейшие магнитные поля могут эффективно разрушать молекулярные соединения. Это орудие содержит суперпроводниковые генераторы и разгонный блок для создания устойчивой магнитной диполи, эффективной против любой материи.\n\n"
+
+ TFW_MOL_CRUSHER_S_2:0 "Малый ЭМ расщепитель"
+ TFW_MOL_CRUSHER_M_2:0 "Средний ЭМ расщепитель" 
+ TFW_MOL_CRUSHER_L_2:0 "Большой ЭМ расщепитель"
+ TFW_MOL_CRUSHER_2:0 "ЭМ расщепитель"
+ TFW_MOL_CRUSHER_2_DESC:0 "Заметно улучшенный для уничтожения всех видов материи. Независимо от того, сколько в ней органической жизни."
+ tech_tfw_molecular_crusher_2:0 "Электромагнитный расщепитель"
+ tech_tfw_molecular_crusher_2_desc:0 "Это оружие использует более мощные генераторы, чтобы разряжать в цель сильнейшие электромагнитные поля.\n\n"
+ 
+ TFW_MOL_CRUSHER_L_3:0 "Атомный дробитель"
+ TFW_MOL_CRUSHER_3:0 "Атомный дробитель"
+ TFW_MOL_CRUSHER_3_DESC:0 "Более крупная версия электромагнитного расщепителя, создающая более устойчивые электромагнитные поля."
+ tech_tfw_molecular_crusher_3:0 "Атомный дробитель"
+ tech_tfw_molecular_crusher_3_desc:0 "Это более крупная версия электромагнитного разрушителя, создающая более стабильные электромагнитные поля.\n\n"
+    
+ ################################################ADVANCED TYPES OF WEAPONS###################################################################################
+ #MOTHER TECH FOR SYNT RESEARCHES
+ tech_tfw_adv_weapons:0 "Продвинутые компоненты" 
+ tech_tfw_adv_weapons_desc:0 "Существует множество уникальных технических решений, которые могут быть применены для повышения эффективности корабельных систем.\n\n"
+ TECH_UNLOCK_ADV_WEAPONS_TITLE:0 "§HОткрывает:§! Продвинутые компоненты."
+ TECH_UNLOCK_ADV_WEAPONS_DESC:0 "Продвинутые компоненты могут помочь в создании и содержании мощных космических флотов."
+
+ #MOTHER TECH FOR PSI RESEARCHES
+ tech_tfw_focused_psi_flows:0 "Сфокусированные пси-потоки"
+ tech_tfw_focused_psi_flows_desc:0 "Мысли материальны. Более того, они могут быть применены в бою, для этого нужно только создать специальные фокусирующие элементы.\n\n"
+ TECH_UNLOCK_PSI_WEAPONS_TITLE:0 "§HОткрывает:§! Продвинутые псионические технологии."
+ TECH_UNLOCK_PSI_WEAPONS_DESC:0 "Наши Боги благословили нас! Сфокусированная псионическая энергия может быть эффективно использована в нашем оружии."
+
+ #MOTHER TECH FOR BIO RESEARCHES
+ tech_tfw_rapid_cell_replication:0 "Ускоренная репликация клеток"
+ tech_tfw_rapid_cell_replication_desc:0 "Ускоренная репликация клеток открывает возможности по созданию уникального оружия, использующего генетически модифицированные микроорганизмы.\n\n"
+ TECH_UNLOCK_BIO_WEAPONS_TITLE:0 "§HОткрывает:§! Боевые биотехнологии."
+ TECH_UNLOCK_BIO_WEAPONS_DESC:0 "Биотехнологии могут быть должным образом применены в создании продвинутых видов модулей."
+  
+ #BIOCANNON
+ SMALL_TFW_BIOCANNON:0 "Малая био-пушка"
+ MEDIUM_TFW_BIOCANNON:0 "Средняя био-пушка"
+ LARGE_TFW_BIOCANNON:0 "Большая био-пушка"
+ TFW_BIOCANNON:0 "Био-пушка"
+ TFW_BIOCANNON_DESC:0 "Выстреливает сгусток микроорганизмов на основе кремния, эффективно уничтожающих структуры брони. Помимо этого, они также способны поглощать энергетические поля, ослабляя щиты." 
+ tech_tfw_biocannon:0 "Био-пушка"
+ tech_tfw_biocannon_desc:0 "Био-пушка выстреливает сгустком микроорганизмов на основе кремния, эффективно уничтожающих структуры брони. Помимо этого, они также способны поглощать энергетические поля, ослабляя щиты.\n\n" 
+ 
+ #PSICANNON
+ SMALL_TFW_PSICANNON:0 "Малая пси-пушка"
+ MEDIUM_TFW_PSICANNON:0 "Средняя пси-пушка"
+ LARGE_TFW_PSICANNON:0 "Большая пси-пушка"
+ TFW_PSICANNON:0 "Пси-пушка"
+ TFW_PSICANNON_DESC:0 "Создает сильное псионическое поле, одинаково эффективное против щитов и брони корабля." 
+ tech_tfw_psicannon:0 "Пси-пушка"
+ tech_tfw_psicannon_desc:0 "Пси-пушка создает сильное псионическое поле, одинаково эффективное против щитов и брони корабля.\n\n" 
+ 
+ #GRAVICANNON
+ SMALL_TFW_GRAVICANNON:0 "Малая грави-пушка"
+ MEDIUM_TFW_GRAVICANNON:0 "Средняя грави-пушка"
+ LARGE_TFW_GRAVICANNON:0 "Большая грави-пушка"
+ TFW_GRAVICANNON:0 "Грави-пушка"
+ TFW_GRAVICANNON_DESC:0 "С помощью потока гравитонов создает колебания гравитационного поля, искажающие энергетические массивы щитов. Сопутствующий заряд плазменной энергии эффективно действует против брони." 
+ tech_tfw_gravicannon:0 "Грави-пушка"
+ tech_tfw_gravicannon_desc:0 "Грави-пушка с помощью потока гравитонов создает колебания гравитационного поля, искажающие энергетические массивы щитов. Сопутствующий заряд плазменной энергии эффективно действует против брони.\n\n" 
+ 
+ #Tachyonic Destabilizer Aura
+ TFW_JAMMER_AURA:0 "Тахионный дестабилизатор"
+ TFW_JAMMER_AURA_DESC:0 "Создает тахионное поле такой силы, что оно способно преодолевать энергетические щиты и наносить урон различным модулям на поверхности корабля." 
+ TFW_NSC_JAMMER_AURA:0 "Тахионный дестабилизатор"
+ TFW_NSC_JAMMER_AURA_DESC:0 "Создает тахионное поле такой силы, что оно способно преодолевать энергетические щиты и наносить урон различным модулям на поверхности корабля." 
+ tech_tfw_jammer:0 "Тахионный дестабилизатор"
+ tech_tfw_jammer_desc:0 "Тахионный дестабилизатор создает тахионное поле такой силы, что оно способно преодолевать энергетические щиты и наносить урон различным модулям на поверхности корабля.\n\n"
+ tfw_aura_jammer:0 "Тахионные помехи"
+ 
+ #Attractor Aura
+ TFW_ATTRACTOR_AURA:0 "Модуль аттрактора"
+ TFW_ATTRACTOR_AURA_DESC:0 "Использует направленный поток гравитонов. Создает локальные гравитационные ямы, которые негативно влияют на некоторые характеристики попадающих в них кораблей." 
+ TFW_NSC_ATTRACTOR_AURA:0 "Модуль аттрактора"
+ TFW_NSC_ATTRACTOR_AURA_DESC:0 "Использует направленный поток гравитонов. Создает локальные гравитационные ямы, которые негативно влияют на некоторые характеристики попадающих в них кораблей." 
+ tech_tfw_attractor:0 "Модуль аттрактора"
+ tech_tfw_attractor_desc:0 "Аттрактор использует направленный поток гравитонов, создавая локальные гравитационные ямы, которые негативно влияют на некоторые характеристики попадающих в них кораблей.\n\n"
+ tfw_aura_attractor:0 "Гравитационная турбуленция"
+ 
+ #############NEXT TIER#######################
+ #Devourer Torpedoes
+ TFW_INFECTOR:0 "Пожиратель" 
+ TFW_INFECTOR_DESC:0 "Торпеды, заряженные высокоактивными микроорганизмами, специализированными на уничтожении любой брони."
+ tech_tfw_infector:0 "Пожиратель"
+ tech_tfw_infector_desc:0 "Дальнейшее развитие биотехнологий обеспечивает нас особыми органическими торпедами, эффективными против брони и свободно проникающими через щиты.\n\n"
+ 
+ #PSILANCE
+ TFW_PSILANCE:0 "Пси-копье" 
+ TFW_PSILANCE_DESC:0 "Излучает высокоэнергетический псионический луч, одинаково эффективный против брони и щитов."
+ tech_tfw_psilance:0 "Пси-копье"
+ tech_tfw_psilance_desc:0 "Дальнейшее развитие пси-пушек ведет к появлению дальнобойного орудия с улучшенными свойствами.\n\n"
+ 
+ #GRAVILANCE
+ TFW_GRAVILANCE:0 "Грави-копье" 
+ TFW_GRAVILANCE_DESC:0 "Излучает высокоэнергетический поток гравитонов и бозонов, одинаково эффективный против щитов и брони."
+ tech_tfw_gravilance:0 "Грави-копье"
+ tech_tfw_gravilance_desc:0 "Дальнейшее развитие грави-пушек ведет к появлению дальнобойного орудия с улучшенными свойствами.\n\n"
+ 
+ #KINETIC_HAMMER
+ TFW_KINETIC_HAMMER:0 "Кинетический молот" 
+ TFW_KINETIC_HAMMER_DESC:0 "Эта сверхтяжелая пушка является самым эффективным орудием, использующим кинетическую энергию снарядов из специальных сплавов."
+ tech_tfw_kinetic_hammer:0 "Кинетический молот"
+ tech_tfw_kinetic_hammer_desc:0 "После ряда проведенных экспериментов мы можем улучшить ускоряющие системы в наших Гига-пушках, подняв их на новый уровень.\n\n"
+ 
+ #ARC EMITTER III
+ TFW_ARC_EMITTER_3:0 "Сфокусированный излучатель дуги"
+ TFW_ARC_EMITTER_3_DESC:0 "Это высокоточный дуговой излучатель с увеличенными параметрами урона."
+ tech_tfw_arc_emitter_3:0 "Фокусирование дуги"
+ tech_tfw_arc_emitter_3_desc:0 "Дальнейшее развитие наших дуговых излучателей ведет к точно направленным разрядам, более эффективным в бою.\n\n"
+ 
+ #ENERGY LANCE III
+ TFW_ENERGY_LANCE_3:0 "Энергонное копье"
+ TFW_ENERGY_LANCE_3_DESC:0 "Энергонное копье максимально использует все преимущества энергонных накопителей."
+ tech_tfw_energy_lance_3:0 "Энергонное возбуждение"
+ tech_tfw_energy_lance_3_desc:0 "Специальные энергонные накопители, используемые в этом оружии, позволяют излучать более мощный тахионный поток, повышая его боевую эффективность.\n\n"
+ 
+ ###########################
+ # SHIELDS
+ ###########################
+ #VI
+ TFW_STAB_HYPER_SHIELD:0 "Стабилизированные гиперщиты"
+ TFW_STAB_HYPER_SHIELD_DESC:0 "Гиперщиты, сталибизированные мощным потоками бозонов."
+ SMALL_TFW_STAB_HYPER_SHIELD:0 "Малые стабилизированные гиперщиты"
+ MEDIUM_TFW_STAB_HYPER_SHIELD:0 "Средние стабилизированные гиперщиты"
+ LARGE_TFW_STAB_HYPER_SHIELD:0 "Большие стабилизированные гиперщиты"
+ tech_tfw_stab_hyper_shields:0 "Гиперстабилизация"
+ tech_tfw_stab_hyper_shields_desc:0 "Существует несколько путей по стабилизации гиперщитов, например, воздействуя на них мощным потоком бозонов.\n\n"
+ 
+ #VII 
+ TFW_OPT_HYPER_SHIELD:0 "Оптимизированные гиперщиты"
+ TFW_OPT_HYPER_SHIELD_DESC:0 "Гиперщиты, оптимизированные за счет более эффективного использования отведенного тепла в улучшенных генераторах."
+ SMALL_TFW_OPT_HYPER_SHIELD:0 "Малые Optimized Hyper Shields"
+ MEDIUM_TFW_OPT_HYPER_SHIELD:0 "Средние Optimized Hyper Shields"
+ LARGE_TFW_OPT_HYPER_SHIELD:0 "Большие Optimized Hyper Shields"
+ tech_tfw_opt_hyper_shields:0 "Гипероптимизация"
+ tech_tfw_opt_hyper_shields_desc:0 "Используя более эффективные генераторы с повышенным КПД, можно добиться усиления устанавливаемых щитов.\n\n"
+
+ #VIII 
+ TFW_ENERGON_SHIELD:0 "Энергонные щиты"
+ TFW_ENERGON_SHIELD_DESC:0 "Генераторы этих щитов используют специальные энергонные излучатели."
+ SMALL_TFW_ENERGON_SHIELD:0 "Малые энергонные щиты"
+ MEDIUM_TFW_ENERGON_SHIELD:0 "Средние энергонные щит"
+ LARGE_TFW_ENERGON_SHIELD:0 "Большие энергонные щит"
+ tech_tfw_energon_shields:0 "Энергонная эмиссия"
+ tech_tfw_energon_shields_desc:0 "Специально спроектированные энергонные излучатели способны повысить эффективность щитов.\n\n"
+
+ #IX 
+ TFW_CASCADE_SHIELD:0 "Каскадные щиты"
+ TFW_CASCADE_SHIELD_DESC:0 "Генераторы этих щитов эффективно используют каскадные эффекты, возникающие в их контурах."
+ SMALL_TFW_CASCADE_SHIELD:0 "Малые каскадные щиты"
+ MEDIUM_TFW_CASCADE_SHIELD:0 "Средние каскадные щиты"
+ LARGE_TFW_CASCADE_SHIELD:0 "Большие каскадные щиты"
+ tech_tfw_cascade_shields:0 "Каскадные щиты"
+ tech_tfw_cascade_shields_desc:0 "Каскадные щиты эффективно используют стабилизированные каскадные эффекты, возникающие в высокоэнергетических схемах.\n\n"
+
+ #X
+ TFW_RESONANT_SHIELD:0 "Резонирующие щиты"
+ TFW_RESONANT_SHIELD_DESC:0 "Эти продвинутые щиты используют резонансы каскадных процессов в своих генераторах."
+ SMALL_TFW_RESONANT_SHIELD:0 "Малые резонирующие щиты"
+ MEDIUM_TFW_RESONANT_SHIELD:0 "Средние резонирующие щиты"
+ LARGE_TFW_RESONANT_SHIELD:0 "Большие резонирующие щиты"
+ tech_tfw_resonant_shields:0 "Резонирующие щиты"
+ tech_tfw_resonant_shields_desc:0 "Дальнейшее улучшение каскадной стабилизации в генераторах высоких энергий приводит к резонансным явлениям, увеличивающим эффективность щитов.\n\n"
+
+ # SPECIAL
+ # PSI (granted by Shroud)
+ TFW_PSI_SHIELD_II:0 "Фокусированные пси-щиты"
+ TFW_PSI_SHIELD_II_DESC:0 "Улучшенные псионические излучатели способны повысить мощность пси-щитов."
+ SMALL_TFW_PSI_SHIELD_II:0 "Малые фокусированные пси-щиты"
+ MEDIUM_TFW_PSI_SHIELD_II:0 "Средние фокусированные пси-щиты"
+ LARGE_TFW_PSI_SHIELD_II:0 "Большие фокусированные пси-щиты"
+ tech_tfw_psionic_shield_2:0 "Улучшенные пси-излучатели"
+ tech_tfw_psionic_shield_2_desc:0 "Используя специально спроектированные излучатели, можно повысить мощность псионических щитов.\n\n"
+ 
+ # Enigmatic (granted by FE)
+ TFW_DARK_MATTER_DEFLECTOR_II:0 "Улучшенные отражатели темной материи"
+ TFW_DARK_MATTER_DEFLECTOR_II_DESC:0 "Состоят из новых, специально спроектированных конденсаторов и излучателей, использующих энергию темной материи."
+ SMALL_TFW_DARK_MATTER_DEFLECTOR_II:0 "Малые улучшенные отражатели темной материи"
+ MEDIUM_TFW_DARK_MATTER_DEFLECTOR_II:0 "Средние улучшенные отражатели темной материи"
+ LARGE_TFW_DARK_MATTER_DEFLECTOR_II:0 "Большие улучшенные отражатели темной материи"
+ tech_tfw_dark_matter_deflector_2:0 "Улучшенные отражатели темной материи"
+ tech_tfw_dark_matter_deflector_2_desc:0 "Сложная задача - улучшить такую изысканную технологию, но наш научный прогресс позволяет это сделать.\n\n"
+ 
+ ######################################################################################
+ #Zero-Point Thrusters (OBSOLETE AFTER 2.0.2)
+ TFW_SHIP_THRUSTER_5:0 "Zero-Point Thrusters"
+ TFW_SHIP_THRUSTER_5_DESC:0 "These thrusters utilize the quantum vacuum to assist with thrust."
+ DESTROYER_TFW_SHIP_THRUSTER_5:0 "$TFW_SHIP_THRUSTER_5$"
+ DESTROYER_TFW_SHIP_THRUSTER_5_DESC:0 "$TFW_SHIP_THRUSTER_5_DESC$"
+ CRUISER_TFW_SHIP_THRUSTER_5:0 "$TFW_SHIP_THRUSTER_5$"
+ CRUISER_TFW_SHIP_THRUSTER_5_DESC:0 "$TFW_SHIP_THRUSTER_5_DESC$"
+ BATTLESHIP_TFW_SHIP_THRUSTER_5:0 "$TFW_SHIP_THRUSTER_5$"
+ BATTLESHIP_TFW_SHIP_THRUSTER_5_DESC:0 "$TFW_SHIP_THRUSTER_5_DESC$"
+ TITAN_TFW_SHIP_THRUSTER_5:0 "$TFW_SHIP_THRUSTER_5$"
+ TITAN_TFW_SHIP_THRUSTER_5_DESC:0 "$TFW_SHIP_THRUSTER_5_DESC$"
+ COLOSSUS_TFW_SHIP_THRUSTER_5:0 "$TFW_SHIP_THRUSTER_5$"
+ COLOSSUS_TFW_SHIP_THRUSTER_5_DESC:0 "$TFW_SHIP_THRUSTER_5_DESC$" 
+ tech_tfw_thrusters_5:0 "Zero-Point Thrusters"
+ tech_tfw_thrusters_5_desc:0 "Zero-Point or Quantum Vacuum thrusters don't need any propellant as they utilize the quantum vacuum to assist with thrust.\n\n"
+ TECH_TFW_THRUSTER_5_TITLE:0 "§HКомпонент:§! $TFW_SHIP_THRUSTER_5$"
+ TECH_TFW_THRUSTER_5_DESC:0 "$TFW_SHIP_THRUSTER_5_DESC$"
+ 
+ #Raider Thrusters
+ TFW_RAIDER_THRUSTER_1:0 "Двигатели рейдера"
+ TFW_RAIDER_THRUSTER_1_DESC:0 "Отличный выбор для тех, кто предпочитает тактику быстрых набегов и засад с заметно увеличенной досветовой скоростью, а не честную битву."
+ DESTROYER_TFW_RAIDER_THRUSTER_1:0 "$TFW_RAIDER_THRUSTER_1$"
+ DESTROYER_TFW_RAIDER_THRUSTER_1_DESC:0 "$TFW_RAIDER_THRUSTER_1_DESC$"
+ CRUISER_TFW_RAIDER_THRUSTER_1:0 "$TFW_RAIDER_THRUSTER_1$"
+ CRUISER_TFW_RAIDER_THRUSTER_1_DESC:0 "$TFW_RAIDER_THRUSTER_1_DESC$"
+ BATTLESHIP_TFW_RAIDER_THRUSTER_1:0 "$TFW_RAIDER_THRUSTER_1$"
+ BATTLESHIP_TFW_RAIDER_THRUSTER_1_DESC:0 "$TFW_RAIDER_THRUSTER_1_DESC$"
+ TITAN_TFW_RAIDER_THRUSTER_1:0 "$TFW_RAIDER_THRUSTER_1$"
+ TITAN_TFW_RAIDER_THRUSTER_1_DESC:0 "$TFW_RAIDER_THRUSTER_1_DESC$"
+ tech_tfw_raider_thrusters_1:0 "Двигатели рейдера"
+ tech_tfw_raider_thrusters_1_desc:0 "Этот тип двигателей характеризуется повышенным пределом скоростей, однако опасность перегрузки ограничивает возможности маневрирования на таких скоростях, особенно для массивных кораблей.\n\n"
+ TECH_TFW_RAIDER_THRUSTER_1_TITLE:0 "§HКомпонент:§! $TFW_RAIDER_THRUSTER_1$"
+ TECH_TFW_RAIDER_THRUSTER_1_DESC:0 "$TFW_RAIDER_THRUSTER_1_DESC$"
+
+ TFW_RAIDER_THRUSTER_2:0 "Двигатели корсара"
+ TFW_RAIDER_THRUSTER_2_DESC:0 "Отличный выбор для тех, кто предпочитает тактику быстрых набегов и засад с заметно увеличенной досветовой скоростью, а не честную битву."
+ DESTROYER_TFW_RAIDER_THRUSTER_2:0 "$TFW_RAIDER_THRUSTER_2$"
+ DESTROYER_TFW_RAIDER_THRUSTER_2_DESC:0 "$TFW_RAIDER_THRUSTER_2_DESC$"
+ CRUISER_TFW_RAIDER_THRUSTER_2:0 "$TFW_RAIDER_THRUSTER_2$"
+ CRUISER_TFW_RAIDER_THRUSTER_2_DESC:0 "$TFW_RAIDER_THRUSTER_2_DESC$"
+ BATTLESHIP_TFW_RAIDER_THRUSTER_2:0 "$TFW_RAIDER_THRUSTER_2$"
+ BATTLESHIP_TFW_RAIDER_THRUSTER_2_DESC:0 "$TFW_RAIDER_THRUSTER_2_DESC$"
+ TITAN_TFW_RAIDER_THRUSTER_2:0 "$TFW_RAIDER_THRUSTER_2$"
+ TITAN_TFW_RAIDER_THRUSTER_2_DESC:0 "$TFW_RAIDER_THRUSTER_2_DESC$"
+ tech_tfw_raider_thrusters_2:0 "Двигатели корсара"
+ tech_tfw_raider_thrusters_2_desc:0 "Этот тип двигателей характеризуется значительно превышенным пределом скоростей, однако опасность перегрузки ограничивает возможности маневрирования на таких скоростях, особенно для массивных кораблей.\n\n"
+ TECH_TFW_RAIDER_THRUSTER_2_TITLE:0 "§HКомпонент:§! $TFW_RAIDER_THRUSTER_2$"
+ TECH_TFW_RAIDER_THRUSTER_2_DESC:0 "$TFW_RAIDER_THRUSTER_2_DESC$"
+ 
+ #STRIKE CRAFT
+ # common
+ TFW_BOMBER_4:0 "Тактическое звено бомбардировщиков"
+ TFW_BOMBER_4_DESC:0 "Эти бомбардировщики чуть более устойчивы к вражескому огню и наносят увеличенный урон кораблям."
+ tech_tfw_strike_craft_4:0 "Тактическое звено бомбардировщиков"
+ tech_tfw_strike_craft_4_desc:0 "Мы можем значительно улучшить некоторые важные параметры наших штурмовиков, такие как урон и живучесть.\n\n"
+
+ TFW_BOMBER_5:0 "Тактическое звено бомбардировщиков"
+ TFW_BOMBER_5_DESC:0 "Эти бомбардировщики чуть более устойчивы к вражескому огню и наносят увеличенный урон кораблям."
+ tech_tfw_strike_craft_5:0 "Тактическое звено бомбардировщиков"
+ tech_tfw_strike_craft_5_desc:0 "Мы можем значительно улучшить некоторые важные параметры наших штурмовиков, такие как урон и живучесть.\n\n"
+  
+ # materialists
+ TFW_DRONE_BOMBER:0 "Звено дронов-бомбардировщиков"
+ TFW_DRONE_BOMBER_DESC:0 "Эти беспилотные дроны контролируются их пилотами дистанционно, практически не теряя в боевой эффективности."
+ tech_tfw_strike_drone:0 "Звено дронов-бомбардировщиков"
+ tech_tfw_strike_drone_desc:0 "Эти беспилотные дроны контролируются их пилотами дистанционно, практически не теряя в боевой эффективности.\n\n"
+
+ TFW_DRONE_BOMBER_2:0 "Звено дронов-бомбардировщиков"
+ TFW_DRONE_BOMBER_2_DESC:0 "Эти беспилотные дроны контролируются их пилотами дистанционно, практически не теряя в боевой эффективности."
+ tech_tfw_strike_drone_2:0 "Звено дронов-бомбардировщиков"
+ tech_tfw_strike_drone_2_desc:0 "Эти беспилотные дроны контролируются их пилотами дистанционно, практически не теряя в боевой эффективности.\n\n"
+
+ # spiritualists
+ TFW_PSI_BOMBER:0 "Звено пси-бомбардировщиков"
+ TFW_PSI_BOMBER_DESC:0 "Наши пилоты могут дистанционно управлять этими дронами через специальные пси-интерфейсы, практически не теряя в боевой эффективности."
+ tech_tfw_psi_strike_craft:0 "Звено пси-бомбардировщиков"
+ tech_tfw_psi_strike_craft_desc:0 "Наши пилоты могут дистанционно управлять этими дронами через специальные пси-интерфейсы, практически не теряя в боевой эффективности.\n\n"
+
+ TFW_PSI_BOMBER_2:0 "Звено пси-бомбардировщиков"
+ TFW_PSI_BOMBER_2_DESC:0 "Наши пилоты могут дистанционно управлять этими дронами через специальные пси-интерфейсы, практически не теряя в боевой эффективности."
+ tech_tfw_psi_strike_craft_2:0 "Звено пси-бомбардировщиков"
+ tech_tfw_psi_strike_craft_2_desc:0 "Наши пилоты могут дистанционно управлять этими дронами через специальные пси-интерфейсы, практически не теряя в боевой эффективности.\n\n"
+
+ # machines
+ TFW_STRIKE_SWARM:0 "Ударный рой"
+ TFW_STRIKE_SWARM_DESC:0 "Эти высокоинтеллектуальные дроны спроектированы для преодоления обороны противника с помощью численности и продвинутой тактики."
+ tech_tfw_machine_strike_swarm:0 "Ударный рой"
+ tech_tfw_machine_strike_swarm_desc:0 "Эти высокоинтеллектуальные дроны спроектированы для преодоления оборны противника с помощью численности и продвинутой тактики.\n\n"
+
+ TFW_STRIKE_SWARM_2:0 "Ударный рой"
+ TFW_STRIKE_SWARM_2_DESC:0 "Эти высокоинтеллектуальные дроны спроектированы для преодоления обороны противника с помощью численности и продвинутой тактики."
+ tech_tfw_machine_strike_swarm_2:0 "Ударный рой"
+ tech_tfw_machine_strike_swarm_2_desc:0 "Эти высокоинтеллектуальные дроны спроектированы для преодоления оборны противника с помощью численности и продвинутой тактики.\n\n"
+ 
+ # hive
+ TFW_STRIKE_HIVE:0 "Ударный улей"
+ TFW_STRIKE_HIVE_DESC:0 "Эти продвинутые штурмовики превосходно спроектированы для преодоления обороны противника."
+ tech_tfw_strike_craft_hive:0 "Ударный улей"
+ tech_tfw_strike_craft_hive_desc:0 "Эти продвинутые штурмовики превосходно спроектированы для преодоления обороны противника."
+
+ TFW_STRIKE_HIVE_2:0 "Ударный улей"
+ TFW_STRIKE_HIVE_2_DESC:0 "Эти продвинутые штурмовики превосходно спроектированы для преодоления обороны противника."
+ tech_tfw_strike_craft_hive_2:0 "Ударный улей"
+ tech_tfw_strike_craft_hive_2_desc:0 "Эти продвинутые штурмовики превосходно спроектированы для преодоления обороны противника."
+
+ # building
+ tfw_building_strike_base:0 "Авиабаза"
+ tfw_building_strike_base_desc:0 "Авиабаза позволяет строить и содержать флот ударной авиации, предназначенных для ведения боя в условиях наличия планетарной атмосферы и гравитации." 
+ 
+ # armies
+ # vanilla
+ tfw_strike_craft_army_0:0 "Звено легких бомбардировщиков"
+ tfw_strike_craft_army_0_desc:0 "Эти многофункциональные бомбардировщики, в отличие от своих космических аналогов, предназначены для ведения боя в условиях наличия планетарной атмосферы и гравитации. Они могут базироваться на транспортных судах для проведения планетарных вторжений."
+ tfw_strike_craft_army_1:0 "Звено улучшенных бомбардировщиков"
+ tfw_strike_craft_army_1_desc:0 "Улучшенные бомбардировщики, предназначенные для ведения боя в условиях наличия планетарной атмосферы и гравитации. Они могут базироваться на транспортных судах для проведения планетарных вторжений."
+ tfw_strike_craft_army_2:0 "Звено продвинутых бомбардировщиков"
+ tfw_strike_craft_army_2_desc:0 "Продвинутые бомбардировщики, предназначенные для ведения боя в условиях наличия планетарной атмосферы и гравитации. Они могут базироваться на транспортных судах для проведения планетарных вторжений."
+ 
+ # common
+ tfw_strike_wing:0 "Tactical Bomber Squadron"
+ tfw_strike_wing_desc:0 ""
+ tfw_strike_wing_2:0 "Strike Bomber Squadron"
+ tfw_strike_wing_2_desc:0 ""
+ 
+ # drone
+ tfw_drone_strike_wing:0 "Drone Bomber Wing"
+ tfw_drone_strike_wing_desc:0 ""
+ tfw_drone_strike_wing_2:0 "Heavy Drone Bomber Wing"
+ tfw_drone_strike_wing_2_desc:0 ""
+ 
+ # psi drone
+ tfw_psi_strike_wing:0 "Psi Drone Wing"
+ tfw_psi_strike_wing_desc:0 ""
+ tfw_psi_strike_wing_2:0 "Heavy Psi Drone Wing"
+ tfw_psi_strike_wing_2_desc:0 ""
+ 
+ # machine
+ tfw_machine_strike_wing:0 "Strike Swarm"
+ tfw_machine_strike_wing_desc:0 ""
+ tfw_machine_strike_wing_2:0 "Strike Horde"
+ tfw_machine_strike_wing_2_desc:0 ""
+ 
+ # hive
+ tech_tfw_strike_hive_advance:0 "Тактики роя"
+ tech_tfw_strike_hive_advance_desc:0 "Используя преимущества нашего гештальт-сознания, мы можем значительно модифицировать наши тактики ведения боя, главным образом за счет специальных мощных ударных роев."
+ 
+ TFW_STRIKE_HIVE_DEF_1:0 "Ударный рой I"
+ TFW_STRIKE_HIVE_DEF_1_DESC:0 "Рой небольших боевых кораблей, которые используют максимальные преимущества в координации и маневренности, доступные только для гештальт-сознания."
+ tech_tfwr_strike_craft_1_hive:0 "Ударный рой I"
+ tech_tfwr_strike_craft_1_hive_desc:0 "Улучшение конструкции корпуса штурмовиков, в частности, установка дополнительных маневровых двигателей, позволит нам лучше приспособиться к условиям маневренного боя. Однако, при этом придется частично пожертвовать мощностью энергетических щитов.\n\n"
+
+ TFW_STRIKE_HIVE_DEF_2:0 "Ударный рой II"
+ TFW_STRIKE_HIVE_DEF_2_DESC:0 "Рой небольших боевых кораблей, которые используют максимальные преимущества в координации и маневренности, доступные только для гештальт-сознания."
+ tech_tfwr_strike_craft_2_hive:0 "Ударный рой II"
+ tech_tfwr_strike_craft_2_hive_desc:0 ".\n\n"
+
+ TFW_STRIKE_HIVE_DEF_3:0 "Ударный рой III"
+ TFW_STRIKE_HIVE_DEF_3_DESC:0 "Рой небольших боевых кораблей, которые используют максимальные преимущества в координации и маневренности, доступные только для гештальт-сознания."
+ tech_tfwr_strike_craft_3_hive:0 "Ударный рой III"
+ tech_tfwr_strike_craft_3_hive_desc:0 ".\n\n" 
+ 
+ TFW_STRIKE_HIVE:0 "Ударный рой IV"
+ TFW_STRIKE_HIVE_DESC:0 "Рой небольших боевых кораблей, которые используют максимальные преимущества в координации и маневренности, доступные только для гештальт-сознания."
+ tech_tfw_strike_craft_hive:0 "Ударный рой IV"
+ tech_tfw_strike_craft_hive_desc:0 "We are the most experienced in swarm tactics. Our advanced strike craft will crush enemy defenses."
+
+ TFW_STRIKE_HIVE_2:0 "Ударный рой V"
+ TFW_STRIKE_HIVE_2_DESC:0 "Рой небольших боевых кораблей, которые используют максимальные преимущества в координации и маневренности, доступные только для гештальт-сознания."
+ tech_tfw_strike_craft_hive_2:0 "Ударный рой V"
+ tech_tfw_strike_craft_hive_2_desc:0 "The further development of our tactical strike craft is mainly intended to improve its protection."
+ 
+ #############SENSORS#################
+ TFW_SHIP_SENSOR_5:0 "Вортексные сенсоры"
+ TFW_SHIP_SENSOR_5_DESC:0 "Эти улучшенные тахионные сенсоры работают в более широком диапазоне и имеют повышенную точность приема."
+ tech_tfw_sensors_5:0 "Вортексные сенсоры"
+ tech_tfw_sensors_5_desc:0 "Улучшенные тахионные сенсоры с улучшенными антеннами работают в более широких диапазонах и имеют повышенную точность приема.\n\n" 
+ 
+ TFW_SHIP_SENSOR_6:0 "Струнные сенсоры"
+ TFW_SHIP_SENSOR_6_DESC:0 "Струнные сенсоры получают информацию, анализирующую колебания ближайших замкнутых квантовых строк. Эти сенсоры способны работать на больших диапазонах."
+ tech_tfw_sensors_6:0 "Струнный анализ"
+ tech_tfw_sensors_6_desc:0 "Глубокое развитие теории струн открывает несколько новых способов разработки датчиков с расширенными возможностями.\n\n" 
+ 
+ TFW_SHIP_SENSOR_7:0 "D-бранные сенсоры"
+ TFW_SHIP_SENSOR_7_DESC:0 "Эти сенсоры выполняют самый глубокий анализ колебаний D-браны и работают на чрезвычайно больших диапазонах."
+ tech_tfw_sensors_7:0 "Анализ d-бран"
+ tech_tfw_sensors_7_desc:0 "Наше глубокое понимание М-теории позволяет нам разрабатывать усовершенствованные сенсоры, которые отлично работают на гораздо больших расстояниях.\n\n"
+
+ TFW_SHIP_PSI_SENSOR:0 "Прогнозирующие сенсоры"
+ TFW_SHIP_PSI_SENSOR_DESC:0 "Эти сенсоры используют специальные псионические алгоритмы в обработке данных, что позволяет им работать с повышенной точностью."
+ tech_tfw_psi_sensors:0 "Прогнозирующие сенсоры"
+ tech_tfw_psi_sensors_desc:0 "Прогнозирующие сенсоры используют специальные псионические алгоритмы в обработке данных, что позволяет им работать с повышенной точностью.\n\n"
+ 
+ TECH_UNLOCK_TFW_SENSOR_5_TITLE:0 "§HКомпонент:§! $TFW_SHIP_SENSOR_5$"
+ TECH_UNLOCK_TFW_SENSOR_5_DESC:0 "§H$TFW_SHIP_SENSOR_5$§!\n$TFW_SHIP_SENSOR_5_DESC$"
+ TECH_UNLOCK_TFW_SENSOR_6_TITLE:0 "§HКомпонент:§! $TFW_SHIP_SENSOR_6$"
+ TECH_UNLOCK_TFW_SENSOR_6_DESC:0 "§H$TFW_SHIP_SENSOR_6$§!\n$TFW_SHIP_SENSOR_6_DESC$"
+ TECH_UNLOCK_TFW_SENSOR_7_TITLE:0 "§HКомпонент:§! $TFW_SHIP_SENSOR_7$"
+ TECH_UNLOCK_TFW_SENSOR_7_DESC:0 "§H$TFW_SHIP_SENSOR_7$§!\n$TFW_SHIP_SENSOR_7_DESC$"
+ TECH_UNLOCK_TFW_SENSOR_8_TITLE:0 "§HКомпонент:§! $TFW_SHIP_PSI_SENSOR$"
+ TECH_UNLOCK_TFW_SENSOR_8_DESC:0 "§H$TFW_SHIP_PSI_SENSOR$§!\n$TFW_SHIP_PSI_SENSOR_DESC$"
+ 

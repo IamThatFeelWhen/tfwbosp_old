@@ -1,0 +1,231 @@
+# ########################
+#  	ENERGY LANCE 3		 #
+# ########################
+weapon_component_template = {
+	key = "TFW_ENERGY_LANCE_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	damage = { min = 1000.0 max = 2500.0 }
+	windup = { min = 1.0 max = 19.0 }
+	total_fire_time = 70
+	range = 150.0
+	accuracy = 0.85
+	power = -300.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			rare_crystals = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.0
+	
+	hull_damage = 1.50
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+
+	icon = "GFX_tfw_energy_lance_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_energy_lance_3" }
+	component_set = "TFW_ENERGY_LANCE_3"
+	projectile_gfx = "tfw_energy_lance_3"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  	KINETIC HAMMER	 #
+# ####################
+weapon_component_template = {
+	key = "TFW_KINETIC_HAMMER"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 1100.0 max = 3200.0 }
+	windup = { min = 1.0 max = 19.0 }
+	total_fire_time = 80
+	range = 150.0
+	accuracy = 0.75
+	type = instant
+	power = -300.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			volatile_motes = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.0
+	
+	hull_damage = 1.25
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.75
+	armor_penetration = 0.0
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_tfw_kinetic_hammer"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_kinetic_hammer" }
+	component_set = "TFW_KINETIC_HAMMER"
+	projectile_gfx = "tfw_kinetic_hammer"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  Arc Emitter III	 #
+# ####################
+weapon_component_template = {
+	key = "TFW_ARC_EMITTER_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	damage = { min = 1.0 max = 2100.0 }
+	windup = { min = 1.0 max = 19.0 }
+	total_fire_time = 71
+	range = 150.0
+	accuracy = 1.0
+	type = instant
+	power = -300.0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			rare_crystals = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.0
+	
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0
+
+	firing_arc = 35.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_tfw_arc_emitter_3"
+	icon_frame = 1	
+	
+	prerequisites = { "tech_tfw_arc_emitter_3" }
+	component_set = "TFW_ARC_EMITTER_3"
+	projectile_gfx = "tfw_arc_emitter_3"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+
+# #######################
+#  MOLECULAR CRUSHER XL #
+# #######################
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_L_3"   
+	size = extra_large    
+	entity = "invisible_turret_entity"
+	damage = { min = 500.0 max = 1800.0 }
+	windup = { min = 1.0 max = 25.0 }
+	type = instant
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t8_cost_tfw
+		}		
+		upkeep = {
+			energy = @xl_t8_upkeep_energy_tfw
+			alloys = @xl_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 65
+	range = 150.0
+	accuracy = 0.85
+	tracking = 0.0
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25	
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_tfw_mol_crusher_3"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_3" }   
+	component_set = "TFW_MOL_CRUSHER_3"   
+	projectile_gfx = "tfw_mol_crusher_3"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 4
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}

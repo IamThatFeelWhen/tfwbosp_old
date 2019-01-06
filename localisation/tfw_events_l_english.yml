@@ -1,0 +1,76 @@
+﻿l_english:
+ #l_spanish:
+ #l_french:
+ #l_german:
+ #l_braz_por:
+ #l_polish:
+
+ ####################################
+ # Menu Events (originally created by Malthus for MEM)
+ ####################################
+ # Event Chain
+ tfw_options_chain_title:0 "TFW's Bunch o' Ship Parts Options"
+ tfw_options_chain_desc:0 "Here you can turn on/off some stuff provided by §HTFW's BOSP mod§!. When you press the on/off button it deactivates/activates the global flag making spawn chance §Hequal to zero§! for technologies of specific groups of modded stuff. It means that you and AI will never take a chance to recieve this stuff in game but it will be available via cheats. Also it means that you can turn on/off any stuff at any time in your game, but the already researched components will be with you to the end."
+
+ # Options Project
+ TFW_OPTIONS_PROJECT:0 "Activate Menu"
+ TFW_OPTIONS_PROJECT_DESC:0 "This project opens the options menu."
+ TFW_OPTIONS_REMOVAL_PROJECT:0 "Remove Menu"
+ TFW_OPTIONS_REMOVAL_PROJECT_DESC:0 "This project deactivates the Menu permanently in this playthrough. Do this only if you do not want to see or use it anymore."
+
+ # Basic Functions
+ tfw_options.back:0 "BACK"
+ tfw_options.exit:0 "EXIT"
+
+ # Main Menu
+ tfw_options.4.name:0 "Main Menu"
+ tfw_options.4.desc:0 "From here you can choose between various option categories."
+ tfw_options.4.c:0 "Weapons Options"
+ tfw_options.4.cc:0 "Strike Craft Options" 
+ tfw_options.4.d:0 "Reactors Options"
+ tfw_options.4.e:0 "Armors Options"
+ tfw_options.4.f:0 "Shields Options"
+ tfw_options.4.g:0 "Sensors Options"
+ tfw_options.4.h:0 "Other Stuff Options"
+
+ # Weapons Menu
+ tfw_options.7.name:0 "Mod Weapons"
+ tfw_options.7.desc:0 "From here you can turn on/off all technologies unlocking mod weapons."
+ tfw_options.7.a:0 "§GTurn on§! Weapons"
+ tfw_options.7.b:0 "§RTurn off§! Weapons"
+ 
+ # Strike Craft Menu
+ tfw_options.70.name:0 "Mod Strike Craft"
+ tfw_options.70.desc:0 "From here you can turn on/off all technologies unlocking mod strike craft."
+ tfw_options.70.a:0 "§GTurn on§! Strike Craft"
+ tfw_options.70.b:0 "§RTurn off§! Strike Craft"
+  
+ # Reactors Menu
+ tfw_options.8.name:0 "Mod Reactors"
+ tfw_options.8.desc:0 "From here you can turn on/off all technologoes unlocking mod reactors."
+ tfw_options.8.a:0 "§GTurn on§! Reactors"
+ tfw_options.8.b:0 "§RTurn off§! Reactors"
+ 
+ # Armors Menu
+ tfw_options.9.name:0 "Mod Armors"
+ tfw_options.9.desc:0 "From here you can turn on/off all technologies unlocking mod armors."
+ tfw_options.9.a:0 "§GTurn on§! Armors"
+ tfw_options.9.b:0 "§RTurn off§! Armors"
+ 
+ # Shields Menu
+ tfw_options.10.name:0 "Mod Shields"
+ tfw_options.10.desc:0 "From here you can turn on/off all technologies unlocking mod shields."
+ tfw_options.10.a:0 "§GTurn on§! Shields"
+ tfw_options.10.b:0 "§RTurn off§! Shields"
+ 
+ # Sensors Menu
+ tfw_options.11.name:0 "Mod Sensors"
+ tfw_options.11.desc:0 "From here you can turn on/off all technologies unlocking mod sensors."
+ tfw_options.11.a:0 "§GTurn on§! Sensors"
+ tfw_options.11.b:0 "§RTurn off§! Sensors"
+ 
+ # Aux Menu
+ tfw_options.12.name:0 "Mod Auxilliary Stuff"
+ tfw_options.12.desc:0 "From here you can turn on/off all technologies unlocking other mod stuff such as auxilliary things and thrusters."
+ tfw_options.12.a:0 "§GTurn on§! Aux"
+ tfw_options.12.b:0 "§RTurn off§! Aux"

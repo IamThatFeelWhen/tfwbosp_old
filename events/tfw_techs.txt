@@ -1,0 +1,823 @@
+namespace = tfw_techs
+ 
+# Enigmatic Deflector 2
+country_event = {
+	id = tfw_techs.1
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_dark_matter_deflector"
+		NOT = { has_global_flag = tfw_bosp_shields_off }
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_dark_matter_deflector_2
+	}
+}
+
+# Enigmatic Reactor 2
+country_event = {
+	id = tfw_techs.2
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_dark_matter_power_core"
+		NOT = { has_global_flag = tfw_bosp_reactors_off }
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_darkmatter_reactor_2
+	}
+}
+
+# Dragon Scale Armor 2
+country_event = {
+	id = tfw_techs.3
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_dragon_armor"
+		NOT = { has_global_flag = tfw_bosp_armors_off }
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_dragon_armor_2
+	}
+}
+
+# Enigmatic Decoder
+country_event = {
+	id = tfw_techs.4
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_enigmatic_decoder"
+		NOT = { has_global_flag = tfw_bosp_aux_off }
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_enigmatic_decoder_2
+	}
+}
+
+# Enigmatic Encoder
+country_event = {
+	id = tfw_techs.5
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_enigmatic_encoder"
+		NOT = { has_global_flag = tfw_bosp_aux_off }
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_enigmatic_encoder_2
+	}
+}
+
+# Psionic Shields 2
+country_event = {
+	id = tfw_techs.8
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_psionic_shield"
+		has_technology = "tech_tfw_focused_psi_flows"
+		NOT = { has_global_flag = tfw_bosp_shields_off }
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_psionic_shield_2
+	}
+}
+
+############# Strike Craft ##################
+# Spiritualists
+# I
+country_event = {
+	id = tfw_techs.10
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			last_increased_tech = "tech_strike_craft_1"
+			last_increased_tech = "tech_strike_craft_2"
+			last_increased_tech = "tech_strike_craft_3"
+			last_increased_tech = "tech_tfw_strike_craft_4"
+			last_increased_tech = "tech_tfw_strike_craft_5"
+		}
+		has_technology = "tech_tfw_psi_machinery"
+		NOT = { has_global_flag = tfw_bosp_strkcrft_off }
+	}
+
+	after = { 
+		if = {
+			limit = { 
+				has_technology = "tech_strike_craft_1"
+				NOR = {
+					has_technology = tech_strike_craft_2
+					has_technology = tech_strike_craft_3
+					has_technology = tech_tfw_strike_craft_4
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfwr_strike_craft_1_psi"
+				}
+			}
+			add_research_option = tech_tfwr_strike_craft_1_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_1_psi
+				progress = 0.3
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_2"
+				NOR = {
+					has_technology = tech_strike_craft_3
+					has_technology = tech_tfw_strike_craft_4
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfwr_strike_craft_2_psi"
+				}
+			}
+			add_research_option = tech_tfwr_strike_craft_2_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_2_psi
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+		}		
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_3"
+				NOR = {
+					has_technology = tech_tfw_strike_craft_4
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfwr_strike_craft_3_psi"
+				}
+			}
+			add_research_option = tech_tfwr_strike_craft_3_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_3_psi
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_2_psi message = no }
+		}		
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_4"
+				NOR = {
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfw_psi_strike_craft"
+				}
+			}
+			add_research_option = tech_tfw_psi_strike_craft
+			add_tech_progress = {
+				tech = tech_tfw_psi_strike_craft
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_2_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_3_psi message = no }
+		}
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_5"
+				NOT = { has_technology = "tech_tfw_psi_strike_craft_2" }
+			}
+			add_research_option = tech_tfw_psi_strike_craft_2
+			add_tech_progress = {
+				tech = tech_tfw_psi_strike_craft_2
+				progress = 0.3	
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_2_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_3_psi message = no }
+			give_technology = { tech = tech_tfw_psi_strike_craft message = no }
+		}	
+	}
+}
+
+# II
+country_event = {
+	id = tfw_techs.11
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_tfw_psi_machinery"
+		OR = {
+			has_technology = "tech_strike_craft_1"
+			has_technology = "tech_strike_craft_2"
+			has_technology = "tech_strike_craft_3"
+			has_technology = "tech_tfw_strike_craft_4"
+			has_technology = "tech_tfw_strike_craft_5"
+		}
+		NOT = { has_global_flag = tfw_bosp_strkcrft_off }
+	}
+	
+	after = { 
+		if = {
+			limit = { 
+				has_technology = "tech_strike_craft_1"
+				NOR = {
+					has_technology = tech_strike_craft_2
+					has_technology = tech_strike_craft_3
+					has_technology = tech_tfw_strike_craft_4
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfwr_strike_craft_1_psi"
+				}
+			}
+			add_research_option = tech_tfwr_strike_craft_1_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_1_psi
+				progress = 0.3
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_2"
+				NOR = {
+					has_technology = tech_strike_craft_3
+					has_technology = tech_tfw_strike_craft_4
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfwr_strike_craft_2_psi"
+				}
+			}
+			add_research_option = tech_tfwr_strike_craft_2_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_2_psi
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_3"
+				NOR = {
+					has_technology = tech_tfw_strike_craft_4
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfwr_strike_craft_3_psi"
+				}
+			}
+			add_research_option = tech_tfwr_strike_craft_3_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_3_psi
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_2_psi message = no }
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_4"
+				NOR = {
+					has_technology = tech_tfw_strike_craft_5
+					has_technology = "tech_tfw_psi_strike_craft"
+				}
+			}
+			add_research_option = tech_tfw_psi_strike_craft
+			add_tech_progress = {
+				tech = tech_tfw_psi_strike_craft
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_2_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_3_psi message = no }
+		}
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_5"
+				NOT = { has_technology = "tech_tfw_psi_strike_craft_2" }
+			}
+			add_research_option = tech_tfw_psi_strike_craft_2
+			add_tech_progress = {
+				tech = tech_tfw_psi_strike_craft_2
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_tfwr_strike_craft_1_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_2_psi message = no }
+			give_technology = { tech = tech_tfwr_strike_craft_3_psi message = no }
+			give_technology = { tech = tech_tfw_psi_strike_craft message = no }
+		}		
+	}
+}
+
+# III
+country_event = {
+	id = tfw_techs.12
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			last_increased_tech = "tech_tfwr_strike_craft_1_psi"
+			last_increased_tech = "tech_tfwr_strike_craft_2_psi"
+			last_increased_tech = "tech_tfwr_strike_craft_3_psi"
+			last_increased_tech = "tech_tfw_psi_strike_craft"
+			last_increased_tech = "tech_tfw_psi_strike_craft_2"
+		}
+		NOT = { has_global_flag = tfw_bosp_strkcrft_off }
+	}
+	
+	after = { 
+		if = {
+			limit = { 
+				has_technology = "tech_tfwr_strike_craft_1_psi"
+				NOR = {
+					has_technology = tech_tfwr_strike_craft_2_psi
+					has_technology = tech_tfwr_strike_craft_3_psi
+					has_technology = tech_tfw_psi_strike_craft
+					has_technology = tech_tfw_psi_strike_craft_2
+					has_technology = "tech_strike_craft_1"
+				}
+			}
+			add_research_option = tech_strike_craft_1
+			add_tech_progress = {
+				tech = tech_strike_craft_1
+				progress = 0.3
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfwr_strike_craft_2_psi"
+				NOR = {
+					has_technology = tech_tfwr_strike_craft_3_psi
+					has_technology = tech_tfw_psi_strike_craft
+					has_technology = tech_tfw_psi_strike_craft_2
+					has_technology = "tech_strike_craft_2"
+				}
+			}
+			add_research_option = tech_strike_craft_2
+			add_tech_progress = {
+				tech = tech_strike_craft_2
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_strike_craft_1 message = no }
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfwr_strike_craft_3_psi"
+				NOR = {
+					has_technology = tech_tfw_psi_strike_craft
+					has_technology = tech_tfw_psi_strike_craft_2
+					has_technology = "tech_strike_craft_3"
+				}
+			}
+			add_research_option = tech_strike_craft_3
+			add_tech_progress = {
+				tech = tech_strike_craft_3
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_strike_craft_1 message = no }
+			give_technology = { tech = tech_strike_craft_2 message = no }
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_psi_strike_craft"
+				NOR = {
+					has_technology = tech_tfw_psi_strike_craft_2
+					has_technology = "tech_tfw_strike_craft_4"
+				}
+			}
+			add_research_option = tech_tfw_strike_craft_4
+			add_tech_progress = {
+				tech = tech_tfw_strike_craft_4
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_strike_craft_1 message = no }
+			give_technology = { tech = tech_strike_craft_2 message = no }
+			give_technology = { tech = tech_strike_craft_3 message = no }
+		}
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_psi_strike_craft_2"
+				NOT = { has_technology = "tech_tfw_strike_craft_5" }
+			}
+			add_research_option = tech_tfw_strike_craft_5
+			add_tech_progress = {
+				tech = tech_tfw_strike_craft_5
+				progress = 0.3
+			}	
+			give_technology = { tech = tech_strike_craft_1 message = no }
+			give_technology = { tech = tech_strike_craft_2 message = no }
+			give_technology = { tech = tech_strike_craft_3 message = no }
+			give_technology = { tech = tech_tfw_strike_craft_4 message = no }
+		}		
+	}
+}
+
+# Materialists
+# I
+country_event = {
+	id = tfw_techs.16
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_strike_craft_1"
+		has_technology = "tech_droid_workers"
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfwr_strike_craft_1_materialist"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfwr_strike_craft_1_materialist
+		add_tech_progress = {
+			tech = tech_tfwr_strike_craft_1_materialist
+			progress = 0.5
+		}		
+	}
+}
+
+# II
+country_event = {
+	id = tfw_techs.17
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_strike_craft_2"
+		has_technology = "tech_droid_workers"
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfwr_strike_craft_2_materialist"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfwr_strike_craft_2_materialist
+		add_tech_progress = {
+			tech = tech_tfwr_strike_craft_2_materialist
+			progress = 0.5
+		}		
+	}
+}
+
+# III
+country_event = {
+	id = tfw_techs.18
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_strike_craft_3"
+		has_technology = "tech_droid_workers"
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfwr_strike_craft_3_materialist"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfwr_strike_craft_3_materialist
+		add_tech_progress = {
+			tech = tech_tfwr_strike_craft_3_materialist
+			progress = 0.5
+		}		
+	}
+}
+
+# IV
+country_event = {
+	id = tfw_techs.19
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_tfw_strike_craft_4"
+		has_technology = "tech_synthetic_workers"
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfw_strike_drone"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_strike_drone
+		add_tech_progress = {
+			tech = tech_tfw_strike_drone
+			progress = 0.5
+		}		
+	}
+}
+
+# V
+country_event = {
+	id = tfw_techs.20
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_tfw_strike_craft_5"
+		has_technology = "tech_synthetic_workers"
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfw_strike_drone_2"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_strike_drone_2
+		add_tech_progress = {
+			tech = tech_tfw_strike_drone_2
+			progress = 0.5
+		}		
+	}
+}
+
+# Opposite effect
+country_event = {
+	id = tfw_techs.21
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_droid_workers"
+		OR = {
+			has_technology = "tech_strike_craft_1"
+			has_technology = "tech_strike_craft_2"
+			has_technology = "tech_strike_craft_3"
+		}
+		NOT = { has_global_flag = tfw_bosp_strkcrft_off }
+	}
+	
+	immediate = { 
+		if = {
+			limit = { 
+				has_technology = "tech_strike_craft_1"
+				NOT = { has_technology = "tech_tfwr_strike_craft_1_materialist" }
+			}
+			add_research_option = tech_tfwr_strike_craft_1_materialist
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_1_materialist
+				progress = 0.5
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_2"
+				NOT = { has_technology = "tech_tfwr_strike_craft_2_materialist" }
+			}
+			add_research_option = tech_tfwr_strike_craft_2_materialist
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_2_materialist
+				progress = 0.5
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_3"
+				NOT = { has_technology = "tech_tfwr_strike_craft_3_materialist" }
+			}
+			add_research_option = tech_tfwr_strike_craft_3_materialist
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_3_materialist
+				progress = 0.5
+			}	
+		}		
+	}
+}
+
+# Opposite effect
+country_event = {
+	id = tfw_techs.22
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_synthetic_workers"
+		OR = {
+			has_technology = "tech_tfw_strike_craft_4"
+			has_technology = "tech_tfw_strike_craft_5"
+		}
+		NOT = { has_global_flag = tfw_bosp_strkcrft_off }
+	}
+	
+	immediate = { 
+		if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_4"
+				NOT = { has_technology = "tech_tfw_strike_drone" }
+			}
+			add_research_option = tech_tfw_strike_drone
+			add_tech_progress = {
+				tech = tech_tfw_strike_drone
+				progress = 0.5
+			}	
+		}
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_5"
+				NOT = { has_technology = "tech_tfw_strike_drone_2" }
+			}
+			add_research_option = tech_tfw_strike_drone_2
+			add_tech_progress = {
+				tech = tech_tfw_strike_drone_2
+				progress = 0.5
+			}	
+		}		
+	}
+}
+
+# Machines (assimilators)
+# II
+country_event = {
+	id = tfw_techs.23
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_strike_craft_2"
+		has_valid_civic = civic_machine_assimilator
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfwr_strike_craft_2_machine"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfwr_strike_craft_2_machine
+		add_tech_progress = {
+			tech = tech_tfwr_strike_craft_2_machine
+			progress = 0.5
+		}		
+	}
+}
+
+# III
+country_event = {
+	id = tfw_techs.24
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_strike_craft_3"
+		has_valid_civic = civic_machine_assimilator
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfwr_strike_craft_3_machine"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfwr_strike_craft_3_machine
+		add_tech_progress = {
+			tech = tech_tfwr_strike_craft_3_machine
+			progress = 0.5
+		}		
+	}
+}
+
+# IV
+country_event = {
+	id = tfw_techs.25
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_tfw_strike_craft_4"
+		has_valid_civic = civic_machine_assimilator
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfw_machine_strike_swarm"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_machine_strike_swarm
+		add_tech_progress = {
+			tech = tech_tfw_machine_strike_swarm
+			progress = 0.5
+		}		
+	}
+}
+
+# V
+country_event = {
+	id = tfw_techs.26
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		last_increased_tech = "tech_tfw_strike_craft_5"
+		has_valid_civic = civic_machine_assimilator
+		NOR = { 
+			has_global_flag = tfw_bosp_strkcrft_off 
+			has_technology = "tech_tfw_machine_strike_swarm_2"
+		}
+	}
+	
+	immediate = { 
+		add_research_option = tech_tfw_machine_strike_swarm_2
+		add_tech_progress = {
+			tech = tech_tfw_machine_strike_swarm_2
+			progress = 0.5
+		}		
+	}
+}
+
+# Opposite effect
+country_event = {
+	id = tfw_techs.27
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_valid_civic = civic_machine_assimilator
+		OR = {
+			has_technology = "tech_tfwr_strike_craft_2_machine"
+			has_technology = "tech_tfwr_strike_craft_3_machine"
+			has_technology = "tech_tfw_machine_strike_swarm"
+			has_technology = "tech_tfw_machine_strike_swarm_2"
+		}
+		NOT = { has_global_flag = tfw_bosp_strkcrft_off }
+	}
+	
+	immediate = { 
+		if = {
+			limit = { 
+				has_technology = "tech_strike_craft_1"
+				NOT = { has_technology = "tech_tfwr_strike_craft_1_psi" }
+			}
+			add_research_option = tech_tfwr_strike_craft_1_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_1_psi
+				progress = 0.5
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_2"
+				NOT = { has_technology = "tech_tfwr_strike_craft_2_psi" }
+			}
+			add_research_option = tech_tfwr_strike_craft_2_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_2_psi
+				progress = 0.5
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_strike_craft_3"
+				NOT = { has_technology = "tech_tfwr_strike_craft_3_psi" }
+			}
+			add_research_option = tech_tfwr_strike_craft_3_psi
+			add_tech_progress = {
+				tech = tech_tfwr_strike_craft_3_psi
+				progress = 0.5
+			}	
+		}	
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_4"
+				NOT = { has_technology = "tech_tfw_psi_strike_craft" }
+			}
+			add_research_option = tech_tfw_psi_strike_craft
+			add_tech_progress = {
+				tech = tech_tfw_psi_strike_craft
+				progress = 0.5
+			}	
+		}
+		else_if = {
+			limit = { 
+				has_technology = "tech_tfw_strike_craft_5"
+				NOT = { has_technology = "tech_tfw_psi_strike_craft_2" }
+			}
+			add_research_option = tech_tfw_psi_strike_craft_2
+			add_tech_progress = {
+				tech = tech_tfw_psi_strike_craft_2
+				progress = 0.5
+			}	
+		}		
+	}
+}

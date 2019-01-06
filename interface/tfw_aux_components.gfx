@@ -1,0 +1,132 @@
+###########REPAIR_DRONES
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_1.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_3.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_psi1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_psi1.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_psi2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_psi2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_psi3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_psi3.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_synth1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_synth1.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_synth2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_synth2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_auto_repair_synth3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_auto_repair_synth3.dds"
+	}
+}
+
+#########Shield Amplifiers
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_shield_amplifier_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_shield_amplifier_1.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_shield_amplifier_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_shield_amplifier_2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_shield_amplifier_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_shield_amplifier_3.dds"
+	}
+}
+
+#########Hive Amplifier
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_hive_amplifier_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_hive_amplifier_1.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_hive_amplifier_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_hive_amplifier_2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_hive_amplifier_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_hive_amplifier_3.dds"
+	}
+}
+
+##############################################
+########Hostile Aura Attractor
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_attractor"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_aura_attractor.dds"
+	}
+}
+
+#############################################
+#######Enigmatic Stuff
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_enigmatic_decoder_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_enigmatic_decoder_2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_enigmatic_encoder_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_enigmatic_encoder_2.dds"
+	}
+}

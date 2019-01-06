@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tfw_singularity_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_singularity_reactor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tfw_singularity_opt_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_singularity_opt_reactor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tfw_bioreactor_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_bioreactor_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tfw_bioreactor_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_bioreactor_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tfw_wimp_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_wimp_reactor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tfw_tachyon_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_tachyon_reactor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tfw_reactor_psi1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_reactor_psi1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tfw_reactor_psi2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_reactor_psi2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tfw_darkmatter_reactor_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_darkmatter_reactor_2.dds"
+	}
+		
+} #Don't loose me mate

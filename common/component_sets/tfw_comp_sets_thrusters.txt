@@ -1,0 +1,14 @@
+###THRUSTERS###
+component_set = {
+	key = "TFW_RAIDER_THRUSTER_1"
+	
+	icon = "GFX_tfw_raider_thruster_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_RAIDER_THRUSTER_2"
+	
+	icon = "GFX_tfw_raider_thruster_2"
+	icon_frame = 1	
+}

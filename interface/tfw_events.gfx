@@ -1,0 +1,9 @@
+spriteTypes = {
+	# used in Options Menu
+	spriteType = {
+		name = "GFX_evt_tfw_options"
+		texturefile = "gfx/event_pictures/tfw_options.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes
+	}
+}

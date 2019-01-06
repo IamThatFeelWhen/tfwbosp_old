@@ -1,0 +1,87 @@
+###ARMOR###
+################################################
+# Unique Armors
+component_set = {
+	key = "TFW_CRYSTAL_ARMOR_3"
+	
+	icon = "GFX_tfw_crystal_armor_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_CRYSTAL_ARMOR_4"
+	
+	icon = "GFX_tfw_crystal_armor_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_DRAGON_ARMOR_2"
+	
+	icon = "GFX_tfw_dragon_armor_2"
+	icon_frame = 1	
+}
+
+###############################################
+component_set = {
+	key = "TFW_ARMOR_6"
+	
+	icon = "GFX_tfw_armor_6"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ARMOR_7"
+	
+	icon = "GFX_tfw_armor_7"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TFW_ARMOR_8"
+	
+	icon = "GFX_tfw_armor_8"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ARMOR_9"
+	
+	icon = "GFX_tfw_armor_9"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TFW_ARMOR_10"
+	
+	icon = "GFX_tfw_armor_10"
+	icon_frame = 1	
+}
+
+##########################Bio Ascension
+component_set = {
+	key = "TFW_BIOARMOR_1"
+	
+	icon = "GFX_tfw_armor_9_bio"
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_BIOARMOR_2"
+	
+	icon = "GFX_tfw_armor_10_bio"
+	icon_frame = 1	
+}
+
+##########################Psi Ascension
+component_set = {
+	key = "TFW_PSIARMOR_1"
+	
+	icon = "GFX_tfw_armor_9_psi"
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_PSIARMOR_2"
+	
+	icon = "GFX_tfw_armor_10_psi"
+	icon_frame = 1	
+}

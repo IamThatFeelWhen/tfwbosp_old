@@ -1,0 +1,52 @@
+##################################Attractor#################################
+utility_component_template = {
+	key = "TFW_ATTRACTOR_AURA"
+	icon = "GFX_tfw_attractor"
+	icon_frame = 1
+	size = medium
+	prerequisites = { "tech_tfw_attractor" }
+	power = 0
+
+#	size_restriction = { titan rs_ea_cruiser }
+	component_set = "ship_aura_components"
+	
+	hostile_aura = {
+		name = "tfw_aura_attractor"
+		system_wide = yes
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_tfw_attractor_aura
+			priority = 5
+		}
+		
+		modifier = {
+			ship_windup_mult = 0.5
+			ship_disengage_chance_mult = -0.50
+			ship_evasion_mult = -0.10
+			ship_speed_mult = -0.6
+		}
+		
+		graphics = {
+			ship_effect = {
+				entity = "tfw_negative_effect_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_missile
+		}
+		modifier = {
+			factor = 2.0
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+}

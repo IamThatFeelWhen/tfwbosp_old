@@ -1,0 +1,776 @@
+# #######################
+#  Energy Torpedoes 	#
+# #######################
+
+# ## Energy Torpedoes (III)
+weapon_component_template = {
+	key = "TFW_ENERGY_TORPEDO_3"
+	size = large
+	entity = "turret_energy_torpedo_entity"
+	type = instant
+	damage = { min = 608.0 max = 1352.0 }
+	windup = { min = 2.0 max = 19.0 }
+	total_fire_time = 150
+	range = 130.0
+	accuracy = 0.90
+	power = -110
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			exotic_gases = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.0
+	
+	hull_damage = 1.75
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0
+	
+	icon = "GFX_tfw_energy_torpedo_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_energy_torpedoes_3" }
+	component_set = "TFW_ENERGY_TORPEDO_3"
+	projectile_gfx = "tfw_deiterium_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "TFW_ENERGY_TORPEDO_4"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ## Energy Torpedoes (IV)
+weapon_component_template = {
+	key = "TFW_ENERGY_TORPEDO_4"
+	size = large
+	entity = "turret_energy_torpedo_entity"
+	type = instant
+	damage = { min = 791.0 max = 1758.0 }
+	windup = { min = 2.0 max = 19.0 }
+	total_fire_time = 150
+	range = 130.0
+	accuracy = 0.90
+	power = -130
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t8_cost_tfw
+			exotic_gases = @l_t8_rare_tfw
+		}		
+		upkeep = {
+			energy = @l_t8_upkeep_energy_tfw
+			alloys = @l_t8_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.0
+	
+	hull_damage = 1.75
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0
+	
+	icon = "GFX_tfw_energy_torpedo_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_energy_torpedoes_4" }
+	component_set = "TFW_ENERGY_TORPEDO_4"
+	projectile_gfx = "tfw_tritium_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  	LASERSTORM
+# ####################
+###SMALL
+weapon_component_template = {
+	key = "SMALL_TFW_LASERSTORM"   #localisation
+	size = small     #size on ship part
+	entity = "small_laser_gun_entity"
+	type = instant
+	damage = { min = 22.0 max = 58.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -22
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			rare_crystals = @s_t6_rare
+		}		
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 35
+	range = 40.0
+	accuracy = 0.9
+	tracking = 0.5
+
+	hull_damage = 1.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_laserstorm"    #linked to */interface
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_laserstorm" }   #tech required in order to show up in ship editor
+	component_set = "TFW_LASERSTORM"    #link to component_sets
+	projectile_gfx = "laserstorm_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_TFW_ADV_LASERSTORM"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+###MEDIUM
+weapon_component_template = {
+	key = "MEDIUM_TFW_LASERSTORM"   #localisation
+	size = medium     #size on ship part
+	entity = "medium_laser_gun_entity"
+	type = instant
+	damage = { min = 55.0 max = 145.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -38
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			rare_crystals = @m_t6_rare
+		}		
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 35
+	range = 60.0
+	accuracy = 0.9
+	tracking = 0.3
+
+	hull_damage = 1.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_laserstorm"    #linked to */interface
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_laserstorm" }   #tech required in order to show up in ship editor
+	component_set = "TFW_LASERSTORM"    #link to component_sets
+	projectile_gfx = "laserstorm_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_TFW_ADV_LASERSTORM" 
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+###LARGE
+weapon_component_template = {
+	key = "LARGE_TFW_LASERSTORM"   #localisation
+	size = large     #size on ship part
+	entity = "large_laser_gun_entity"
+	type = instant
+	damage = { min = 132.0 max = 348.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -76
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			rare_crystals = @l_t6_rare
+		}		
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 35
+	range = 80.0
+	accuracy = 0.9
+	tracking = 0.05
+
+	hull_damage = 1.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_laserstorm"    #linked to */interface
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_laserstorm" }   #tech required in order to show up in ship editor
+	component_set = "TFW_LASERSTORM"    #link to component_sets
+	projectile_gfx = "laserstorm_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_TFW_ADV_LASERSTORM"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  ADV_LASERSTORM
+# ####################
+
+###SMALL
+weapon_component_template = {
+	key = "SMALL_TFW_ADV_LASERSTORM"   #localisation
+	size = small     #size on ship part
+	entity = "small_laser_gun_entity"
+	type = instant
+	damage = { min = 28.0 max = 71.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			rare_crystals = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 35
+	range = 40.0
+	accuracy = 0.9
+	tracking = 0.5
+
+	hull_damage = 1.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_adv_laserstorm"    #linked to */interface
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_adv_laserstorm" }   #tech required in order to show up in ship editor
+	component_set = "TFW_ADV_LASERSTORM"    #link to component_sets
+	projectile_gfx = "adv_laserstorm_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+###MEDIUM
+weapon_component_template = {
+	key = "MEDIUM_TFW_ADV_LASERSTORM"   #localisation
+	size = medium     #size on ship part
+	entity = "medium_laser_gun_entity"
+	type = instant
+	damage = { min = 70.0 max = 178.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -47
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			rare_crystals = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 35
+	range = 60.0
+	accuracy = 0.9
+	tracking = 0.3
+
+	hull_damage = 1.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_adv_laserstorm"    #linked to */interface
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_adv_laserstorm" }   #tech required in order to show up in ship editor
+	component_set = "TFW_ADV_LASERSTORM"    #link to component_sets
+	projectile_gfx = "adv_laserstorm_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+###LARGE
+weapon_component_template = {
+	key = "LARGE_TFW_ADV_LASERSTORM"   #localisation
+	size = large     #size on ship part
+	entity = "large_laser_gun_entity"
+	type = instant
+	damage = { min = 168.0 max = 426.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -96
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			rare_crystals = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 35
+	range = 80.0
+	accuracy = 0.9
+	tracking = 0.05
+
+	hull_damage = 1.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_adv_laserstorm"    #linked to */interface
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_adv_laserstorm" }   #tech required in order to show up in ship editor
+	component_set = "TFW_ADV_LASERSTORM"    #link to component_sets
+	projectile_gfx = "adv_laserstorm_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+################PHASER##################
+# ## PHASER 1
+###SMALL
+weapon_component_template = {
+	key = "SMALL_TFW_PHASER_1"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 1.0 max = 39.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -22
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			rare_crystals = @s_t6_rare
+		}		
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 30.0
+	accuracy = 1.0
+	tracking = 0.6
+	
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0	
+	
+	icon = "GFX_tfw_phaser_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phaser_1" }
+	component_set = "TFW_PHASER_1"
+	projectile_gfx = "tfw_phaser_1_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5	
+	upgrades_to = "SMALL_TFW_PHASER_2"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}		
+}
+
+###MEDIUM
+weapon_component_template = {
+	key = "MEDIUM_TFW_PHASER_1"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 1.0 max = 98.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -38
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			rare_crystals = @m_t6_rare
+		}		
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 50.0
+	accuracy = 1.0
+	tracking = 0.35
+	
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0	
+	
+	icon = "GFX_tfw_phaser_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phaser_1" }
+	component_set = "TFW_PHASER_1"
+	projectile_gfx = "tfw_phaser_1_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	upgrades_to = "MEDIUM_TFW_PHASER_2"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ## PHASER 2
+###SMALL
+weapon_component_template = {
+	key = "SMALL_TFW_PHASER_2"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 1.0 max = 50.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			rare_crystals = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 30.0
+	accuracy = 1.0
+	tracking = 0.6
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0		
+	
+	icon = "GFX_tfw_phaser_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phaser_2" }
+	component_set = "TFW_PHASER_2"
+	projectile_gfx = "tfw_phaser_2_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	upgrades_to = "SMALL_TFW_PHASER_3"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+###MEDIUM
+weapon_component_template = {
+	key = "MEDIUM_TFW_PHASER_2"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 1.0 max = 125.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -47
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			rare_crystals = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}	
+	total_fire_time = 50
+	range = 50.0
+	accuracy = 1.0
+	tracking = 0.35
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0		
+	
+	icon = "GFX_tfw_phaser_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phaser_2" }
+	component_set = "TFW_PHASER_2"
+	projectile_gfx = "tfw_phaser_2_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	upgrades_to = "MEDIUM_TFW_PHASER_3"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ## PHASER 3
+###SMALL
+weapon_component_template = {
+	key = "SMALL_TFW_PHASER_3"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 1.0 max = 63.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -35
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t8_cost_tfw
+			rare_crystals = @s_t8_rare_tfw
+		}		
+		upkeep = {
+			energy = @s_t8_upkeep_energy_tfw
+			alloys = @s_t8_upkeep_alloys_tfw
+		}
+	}	
+	total_fire_time = 50
+	range = 30.0
+	accuracy = 1.0
+	tracking = 0.6
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0	
+	
+	icon = "GFX_tfw_phaser_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phaser_3" }
+	component_set = "TFW_PHASER_3"
+	projectile_gfx = "tfw_phaser_3_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+###MEDIUM
+weapon_component_template = {
+	key = "MEDIUM_TFW_PHASER_3"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 1.0 max = 158.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -57
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t8_cost_tfw
+			rare_crystals = @m_t8_rare_tfw
+		}		
+		upkeep = {
+			energy = @m_t8_upkeep_energy_tfw
+			alloys = @m_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 50
+	range = 50.0
+	accuracy = 1.0
+	tracking = 0.35
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0		
+	
+	icon = "GFX_tfw_phaser_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phaser_3" }
+	component_set = "TFW_PHASER_3"
+	projectile_gfx = "tfw_phaser_3_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  PHASE SPEAR
+# ####################
+###LARGE
+weapon_component_template = {
+	key = "LARGE_TFW_PHASE_SPEAR"
+	size = large
+	entity = "large_laser_gun_entity"
+	damage = { min = 1.0 max = 181.0 }
+	windup = { min = 2.0 max = 20.0 }
+	type = instant
+	power = -110
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t9_cost_tfw
+			rare_crystals = @l_t9_rare_tfw
+		}		
+		upkeep = {
+			energy = @l_t9_upkeep_energy_tfw
+			alloys = @l_t9_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 50
+	range = 60.0
+	accuracy = 1.0
+	tracking = 0.25
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0	
+	
+	icon = "GFX_tfw_phase_spear"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_phase_spear" }
+	component_set = "TFW_PHASE_SPEAR"
+	projectile_gfx = "darkmatter_emitter_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}		
+}
+

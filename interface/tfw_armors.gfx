@@ -1,0 +1,107 @@
+###########UNIQUE
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_crystal_armor_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_crystal_armor_3.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_crystal_armor_4"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_crystal_armor_4.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_dragon_armor_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_dragon_armor_2.dds"
+	}
+}
+
+#########COMMON
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_6"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_6.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_7"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_7.dds"
+	}
+}
+
+# Adv Common
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_8"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_8.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_9"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_9.dds"
+	}
+}
+
+# Adv Bio
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_1_bio"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_1_bio.dds"
+	}
+}
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_2_bio"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_2_bio.dds"
+	}
+}
+
+#Adv Psi
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_1_psi"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_1_psi.dds"
+	}
+}
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_2_psi"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_2_psi.dds"
+	}
+}
+
+#Adv Synth
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_1_synth"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_1_synth.dds"
+	}
+}
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_2_synth"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_2_synth.dds"
+	}
+}
+
+#Adv Mech
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_1_mech"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_1_mech.dds"
+	}
+}
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_armor_2_mech"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_armor_2_mech.dds"
+	}
+}

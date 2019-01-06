@@ -1,0 +1,82 @@
+#######################STORMFIRE PD
+weapon_component_template = {
+	key = "TFW_STORMFIRE_PD"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	type = point_defence
+	
+	icon = "GFX_tfw_stormfire_pd"
+	icon_frame = 1
+	
+	damage = { min = 2.5 max = 10.0 }
+	windup = { min = 0 max = 0 }
+	total_fire_time = 5.0
+	range = 30.0
+	accuracy = 0.75
+	tracking = 0.4
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 0.0
+	armor_damage = 0.0
+	armor_penetration = 0.0	
+	
+	power = -14
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 17
+		}
+		upkeep = {
+			energy = 0.17
+			alloys = 0.017
+		}
+	}
+	
+	prerequisites = { "tech_tfw_stormfire_pd" }
+	component_set = "TFW_STORMFIRE_PD"
+	projectile_gfx = "red_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+}
+
+
+#########################FLAK 4###################################################
+weapon_component_template = {
+	key = "TFW_FLAK_4"
+	size = point_defence
+	type = point_defence
+	entity = "small_kinetic_gun_entity"
+	power = -14
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 17
+		}
+		upkeep = {
+			energy = 0.17
+			alloys = 0.017
+		}
+	}
+	damage = { min = 2.5 max = 7.5 }
+	windup = { min = 0 max = 0 }
+	total_fire_time = 5.0
+	range = 30.0
+	accuracy = 0.75
+	tracking = 0.8
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 0.0
+	armor_damage = 0.0
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_flak_batteries_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_flak_batteries_4" }
+	component_set = "TFW_FLAK_4"
+	projectile_gfx = "flak_pd_3"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+}

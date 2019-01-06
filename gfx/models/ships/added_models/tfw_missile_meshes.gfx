@@ -1,0 +1,38 @@
+objectTypes = {
+
+#A-S
+	pdxmesh = {
+		name = "as_missile_mesh"
+		file = "gfx/models/ships/added_models/tfw_missile_as.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+		shader = "PdxMeshShip"
+		}
+	}
+
+#A-A
+	pdxmesh = {
+		name = "aa_missile_mesh"
+		file = "gfx/models/ships/added_models/tfw_missile_aa.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+		shader = "PdxMeshShip"
+		}
+	}
+
+#Bio Missile
+	pdxmesh = {
+		name = "tfw_biomissile_mesh"
+		file = "gfx/models/ships/added_models/tfw_biomissile.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+		shader = "PdxMeshShip"		
+		}
+	}
+	
+}
+
+

@@ -1,0 +1,8 @@
+namespace = tfw_bosp_flag
+
+event = {
+    id = tfw_bosp_flag.1
+    hide_window = yes
+    fire_only_once = yes
+    immediate = { set_global_flag = "has_tfw_bosp" }
+}

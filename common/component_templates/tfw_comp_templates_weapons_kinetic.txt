@@ -1,0 +1,564 @@
+# ####################
+#  	Gauss Mortar	 #
+# ####################
+
+weapon_component_template = {
+	type = instant
+	key = "SMALL_TFW_GAUSS_MORTAR"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 18.0 max = 58.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -22
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			volatile_motes = @s_t6_rare
+		}		
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 25
+	range = 50.0
+	accuracy = 0.75
+	tracking = 0.5
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_gauss_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gauss_6" }
+	component_set = "TFW_GAUSS_MORTAR"
+	projectile_gfx = "tfw_gauss_6_small"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SMALL_TFW_GAUSS_HOWITZER"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TFW_GAUSS_MORTAR"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 45.0 max = 145.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -38
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			volatile_motes = @m_t6_rare
+		}		
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 25
+	range = 75.0
+	accuracy = 0.75
+	tracking = 0.3
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_gauss_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gauss_6" }
+	component_set = "TFW_GAUSS_MORTAR"
+	projectile_gfx = "tfw_gauss_6_medium"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_TFW_GAUSS_HOWITZER"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TFW_GAUSS_MORTAR"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 108.0 max = 348.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -76
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			volatile_motes = @l_t6_rare
+		}		
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 25
+	range = 100.0
+	accuracy = 0.75
+	tracking = 0.05
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_gauss_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gauss_6" }
+	component_set = "TFW_GAUSS_MORTAR"
+	projectile_gfx = "tfw_gauss_6_large"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "LARGE_TFW_GAUSS_HOWITZER"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  	Gauss Howitz	 #
+# ####################
+
+weapon_component_template = {
+	type = instant
+	key = "SMALL_TFW_GAUSS_HOWITZER"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 23.0 max = 71.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			volatile_motes = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 25
+	range = 50.0
+	accuracy = 0.75
+	tracking = 0.5
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_gauss_7"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gauss_7" }
+	component_set = "TFW_GAUSS_HOWITZER"
+	projectile_gfx = "tfw_gauss_7_small"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TFW_GAUSS_HOWITZER"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 58.0 max = 178.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -47
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			volatile_motes = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 25
+	range = 75.0
+	accuracy = 0.75
+	tracking = 0.3
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_gauss_7"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gauss_7" }
+	component_set = "TFW_GAUSS_HOWITZER"
+	projectile_gfx = "tfw_gauss_7_medium"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TFW_GAUSS_HOWITZER"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 138.0 max = 426.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -96
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			volatile_motes = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 25
+	range = 100.0
+	accuracy = 0.75
+	tracking = 0.05
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_gauss_7"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gauss_7" }
+	component_set = "TFW_GAUSS_HOWITZER"
+	projectile_gfx = "tfw_gauss_7_large"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  Autocannon 4
+# ####################
+weapon_component_template = {
+	type = instant
+	key = "TFW_AUTOCANNON_4"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 20.0 max = 34.0 }
+	windup = { min = 2.0 max = 14.0 }
+	power = -22
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			volatile_motes = @s_t6_rare
+		}		
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 15
+	range = 30.0
+	accuracy = 0.85
+	tracking = 0.75
+
+	hull_damage = 1.25
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.25
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_autocannon_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_autocannons_4" }
+	component_set = "TFW_AUTOCANNON_4"
+	projectile_gfx = "tfw_autocannon_4_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "TFW_AUTOCANNON_5"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  Autocannon 5
+# ####################
+weapon_component_template = {
+	type = instant
+	key = "TFW_AUTOCANNON_5"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 28.0 max = 42.0 }
+	windup = { min = 2.0 max = 14.0 }
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			volatile_motes = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 15
+	range = 30.0
+	accuracy = 0.85
+	tracking = 0.75
+
+	hull_damage = 1.25
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.25
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_autocannon_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_autocannons_5" }
+	component_set = "TFW_AUTOCANNON_5"
+	projectile_gfx = "tfw_autocannon_5_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "TFW_AUTOCANNON_6"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  Autocannon 6
+# ####################
+weapon_component_template = {
+	type = instant
+	key = "TFW_AUTOCANNON_6"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 38.0 max = 52.0 }
+	windup = { min = 2.0 max = 14.0 }
+	power = -35
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t8_cost_tfw
+			volatile_motes = @s_t8_rare_tfw
+		}		
+		upkeep = {
+			energy = @s_t8_upkeep_energy_tfw
+			alloys = @s_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 15
+	range = 30.0
+	accuracy = 0.85
+	tracking = 0.75
+
+	hull_damage = 1.25
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 0.25
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_autocannon_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_autocannons_6" }
+	component_set = "TFW_AUTOCANNON_6"
+	projectile_gfx = "tfw_autocannon_6_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  Kinetic Artillery 3
+# ####################
+# Large
+weapon_component_template = {
+	type = instant
+	key = "TFW_KINETIC_ARTILLERY_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 254.0 max = 761.0 }
+	windup = { min = 3.0 max = 25.0 }
+	power = -110
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			volatile_motes = @l_t6_rare
+		}		
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 120.0
+	accuracy = 0.75
+	tracking = 0.0
+
+	hull_damage = 1.25
+	shield_damage = 2.0
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_kinetic_artillery_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_kinetic_artillery_3" }
+	component_set = "TFW_KINETIC_ARTILLERY_3"
+	projectile_gfx = "tfw_kinetic_artillery_3"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "TFW_KINETIC_ARTILLERY_4"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  Kinetic Artillery 4
+# ####################
+# Large
+weapon_component_template = {
+	type = instant
+	key = "TFW_KINETIC_ARTILLERY_4"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 330.0 max = 989.0 }
+	windup = { min = 3.0 max = 25.0 }
+	power = -130
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			volatile_motes = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 120.0
+	accuracy = 0.75
+	tracking = 0.0
+
+	hull_damage = 1.25
+	shield_damage = 2.0
+	shield_penetration = 0.0
+	armor_damage = 0.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_kinetic_artillery_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_kinetic_artillery_4" }
+	component_set = "TFW_KINETIC_ARTILLERY_4"
+	projectile_gfx = "tfw_kinetic_artillery_4"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}

@@ -1,0 +1,182 @@
+@hit2 = 5
+@hit3 = 10
+@hit4 = 15
+@hit5 = 20
+@hit6 = 25
+@hit7 = 30
+@hit7psi = 35
+
+@cost1 = 2
+@cost2 = 4
+@cost3 = 6
+@cost4 = 8
+@cost5 = 10
+@cost6 = 12
+@cost7 = 14
+@cost7psi = 14
+
+@power1 = -5
+@power2 = -10
+@power3 = -15
+@power4 = -20
+@power5 = -25
+@power6 = -30
+@power7 = -35
+
+@sensor1 = 1
+@sensor2 = 2
+@sensor3 = 3
+@sensor4 = 4
+@sensor5 = 5
+@sensor6 = 6
+@sensor7 = 7
+@sensor7psi = 8
+
+@hyperlane1 = 2
+@hyperlane2 = 4
+@hyperlane3 = 6
+@hyperlane4 = 8
+@hyperlane5 = 10
+@hyperlane6 = 12
+@hyperlane7 = 14
+
+#########################SHIP SENSORS################################
+utility_component_template = {
+	key = "TFW_SHIP_SENSOR_5"
+	size = medium
+	icon = "GFX_tfw_sensor_5"
+	icon_frame = 1
+	power = @power5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost5
+		}
+	}
+	sensor_range = @sensor5
+	hyperlane_range = @hyperlane5
+	upgrades_to = "TFW_SHIP_SENSOR_6"
+	
+	ship_modifier = {
+		ship_tracking_add = @hit5
+	}
+	
+	prerequisites = { "tech_tfw_sensors_5" }
+	component_set = "sensor_components"
+	
+	ai_weight = {
+		weight = 1500
+	}	
+}
+
+utility_component_template = {
+	key = "TFW_SHIP_SENSOR_6"
+	size = medium
+	icon = "GFX_tfw_sensor_6"
+	icon_frame = 1
+	power = @power6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost6
+		}
+	}
+	sensor_range = @sensor6
+	hyperlane_range = @hyperlane6
+	upgrades_to = "TFW_SHIP_SENSOR_7"
+	
+	ship_modifier = {
+		ship_tracking_add = @hit6
+	}
+	
+	prerequisites = { "tech_tfw_sensors_6" }
+	component_set = "sensor_components"
+	
+	ai_weight = {
+		weight = 2000
+	}	
+}
+
+utility_component_template = {
+	key = "TFW_SHIP_SENSOR_7"
+	size = medium
+	icon = "GFX_tfw_sensor_7"
+	icon_frame = 1
+	power = @power7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost7
+		}
+	}
+	sensor_range = @sensor7
+	hyperlane_range = @hyperlane7
+	
+	ship_modifier = {
+		ship_tracking_add = @hit7
+	}
+	
+	prerequisites = { "tech_tfw_sensors_7" }
+	component_set = "sensor_components"
+	
+	ai_weight = {
+		weight = 2500
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+	}	
+}
+
+utility_component_template = {
+	key = "TFW_SHIP_PSI_SENSOR"
+	size = medium
+	icon = "GFX_tfw_psi_sensor"
+	icon_frame = 1
+	power = @power7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost7psi
+			sr_zro = 0.222
+		}
+	}
+	sensor_range = @sensor7psi
+	hyperlane_range = @hyperlane7
+	
+	ship_modifier = {
+		ship_tracking_add = @hit7psi
+	}
+	
+	prerequisites = { "tech_tfw_psi_sensors" }
+	component_set = "sensor_components"
+	
+	ai_weight = {
+		weight = 3000
+		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = "ethic_spiritualist"
+				has_ethic = "ethic_fanatic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}	
+
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}

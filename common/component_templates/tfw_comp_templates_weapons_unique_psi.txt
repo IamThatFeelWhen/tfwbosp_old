@@ -1,0 +1,217 @@
+# ####################
+#  	PSI CANNON		 #
+# ####################
+# Small
+weapon_component_template = {
+	key = "SMALL_TFW_PSICANNON"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	damage = { min = 50.0 max = 144.0 }
+	windup = { min = 2.0 max = 10.0 }
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @s_t8_upkeep_energy_tfw
+			alloys = @s_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 50
+	range = 40.0
+	accuracy = 0.85
+	tracking = 0.4
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_psicannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_psicannon" }
+	component_set = "TFW_PSICANNON"
+	projectile_gfx = "tfw_psicannon_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 1
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_PSICANNON"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	damage = { min = 125.0 max = 360.0 }
+	windup = { min = 2.0 max = 10.0 }
+	power = -47
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @m_t8_upkeep_energy_tfw
+			alloys = @m_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 50
+	range = 60.0
+	accuracy = 0.85
+	tracking = 0.2
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_psicannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_psicannon" }
+	component_set = "TFW_PSICANNON"
+	projectile_gfx = "tfw_psicannon_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 1
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_PSICANNON"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	damage = { min = 300.0 max = 864.0 }
+	windup = { min = 2.0 max = 10.0 }
+	power = -96
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @l_t8_upkeep_energy_tfw
+			alloys = @l_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 50
+	range = 80.0
+	accuracy = 0.85
+	tracking = 0.05
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_psicannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_psicannon" }
+	component_set = "TFW_PSICANNON"
+	projectile_gfx = "tfw_psicannon_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 1
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}
+}
+
+# ####################
+#  	PSI LANCE		 #
+# ####################
+weapon_component_template = {
+	key = "TFW_PSILANCE"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	damage = { min = 1300.0 max = 2750.0 }
+	windup = { min = 1.0 max = 15.0 }
+	power = -300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @xl_t8_upkeep_energy_tfw
+			alloys = @xl_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 80
+	range = 150.0
+	accuracy = 0.85
+	tracking = 0.0
+
+	hull_damage = 1.25
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_tfw_psilance"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_psilance" }
+	component_set = "TFW_PSILANCE"
+	projectile_gfx = "tfw_psilance_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 2
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}

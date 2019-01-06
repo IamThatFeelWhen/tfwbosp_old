@@ -1,0 +1,167 @@
+###STRIKE_CRAFT###
+################################### COMMMON ##################################
+#I 
+#II 
+#III
+#IV
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_bomber_4"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_bomber_4.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_bomber_5"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_bomber_5.dds"
+	}
+}
+
+################################# SPIRITUALISTS ######################################
+#I
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_psi_bomber_def_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_psi_bomber_def_1.dds"
+	}
+}
+#II 
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_psi_bomber_def_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_psi_bomber_def_2.dds"
+	}
+}
+#III
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_psi_bomber_def_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_psi_bomber_def_3.dds"
+	}
+}
+#IV
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_psi_bomber"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_psi_bomber.dds"
+	}
+}
+#V
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_psi_bomber_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_psi_bomber_2.dds"
+	}
+}
+
+################################# MATERIALISTS ######################################
+#I
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_drone_bomber_def_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_drone_bomber_def_1.dds"
+	}
+}
+#II
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_drone_bomber_def_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_drone_bomber_def_2.dds"
+	}
+}
+#III
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_drone_bomber_def_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_drone_bomber_def_3.dds"
+	}
+}
+#IV
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_drone_bomber"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_drone_bomber.dds"
+	}
+}
+#V
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_drone_bomber_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_drone_bomber_2.dds"
+	}
+}
+
+################################# MACHINES ######################################
+#I
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_machine_strike_swarm_def_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_machine_strike_swarm_def_1.dds"
+	}
+}
+#II
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_machine_strike_swarm_def_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_machine_strike_swarm_def_2.dds"
+	}
+}
+#III
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_machine_strike_swarm_def_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_machine_strike_swarm_def_3.dds"
+	}
+}
+#IV
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_machine_strike_swarm"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_machine_strike_swarm.dds"
+	}
+}
+#V
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_machine_strike_swarm_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_machine_strike_swarm_2.dds"
+	}
+}
+
+################################# HIVE ######################################
+#I
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_strike_craft_hive_def_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_strike_craft_hive_def_1.dds"
+	}
+}
+#II
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_strike_craft_hive_def_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_strike_craft_hive_def_2.dds"
+	}
+}
+#III
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_strike_craft_hive_def_3"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_strike_craft_hive_def_3.dds"
+	}
+}
+#IV
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_strike_craft_hive"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_strike_craft_hive.dds"
+	}
+}
+#V
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_strike_craft_hive_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_strike_craft_hive_2.dds"
+	}
+}

@@ -1,0 +1,554 @@
+# #################################################################
+# Projectile Weapons (All using ballistic meshes and sprite meshes)
+# #################################################################
+
+##############Energy Torpedoes###############################
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_deiterium_torpedoes"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "tfw_deiterium_torpedoes_hit_entity"
+	shield_hit_entity = "tfw_deiterium_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "tfw_deiterium_torpedoes_muzzle_entity"
+	
+	#ballistic specific
+	entity = "tfw_deiterium_torpedoes_entity"
+	speed = 90.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_tritium_torpedoes"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "tfw_tritium_torpedoes_hit_entity"
+	shield_hit_entity = "tfw_tritium_torpedoes_shield_hit_entity"
+	muzzle_flash_entity = "tfw_tritium_torpedoes_muzzle_entity"
+	
+	#ballistic specific
+	entity = "tfw_tritium_torpedoes_entity"
+	speed = 90.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+##############Kinetic Artillery 3###############################
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_kinetic_artillery_3"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "tfw_kinetic_artillery_3_hit_entity"
+	shield_hit_entity = "tfw_kinetic_artillery_3_shield_hit_entity"
+	muzzle_flash_entity = "tfw_kinetic_artillery_3_muzzle_entity"
+	
+	#ballistic specific
+	entity = "tfw_kinetic_artillery_3_entity"
+	speed = 350.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+		
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+##############Kinetic Artillery 4###############################
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_kinetic_artillery_4"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "tfw_kinetic_artillery_4_hit_entity"
+	shield_hit_entity = "tfw_kinetic_artillery_4_shield_hit_entity"
+	muzzle_flash_entity = "tfw_kinetic_artillery_4_muzzle_entity"
+	
+	#ballistic specific
+	entity = "tfw_kinetic_artillery_4_entity"
+	speed = 400.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+		
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#############GAUSS_MORTAR########################
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gauss_6_small"
+	color = { 1.0 	1.0 	0.13	1.0 }
+	hit_entity = "advanced_railgun_small_hit_entity"
+	shield_hit_entity = "advanced_railgun_small_shield_hit_entity"
+	muzzle_flash_entity = "gauss_mortar_small_muzzle_entity"
+	
+	#ballistic specific
+	entity = "gauss_mortar_tracer_round_small_entity"
+	speed = 600.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gauss_6_medium"
+	color = { 1.0 	1.0 	0.13	1.0 }
+	hit_entity = "advanced_railgun_medium_hit_entity"
+	shield_hit_entity = "advanced_railgun_medium_shield_hit_entity"
+	muzzle_flash_entity = "gauss_mortar_medium_muzzle_entity"
+	
+	#ballistic specific
+	entity = "gauss_mortar_tracer_round_medium_entity"
+	speed = 600.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gauss_6_large"
+	color = { 1.0 	1.0 	0.13	1.0 }
+	hit_entity = "advanced_railgun_large_hit_entity"
+	shield_hit_entity = "advanced_railgun_large_shield_hit_entity"
+	muzzle_flash_entity = "gauss_mortar_large_muzzle_entity"
+	
+	#ballistic specific
+	entity = "gauss_mortar_tracer_round_large_entity"
+	speed = 600.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#############GAUSS_HOWITZER########################
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gauss_7_small"
+	color = { 1.0 	0.5 	0.5	1.0 }
+	hit_entity = "advanced_railgun_small_hit_entity"
+	shield_hit_entity = "advanced_railgun_small_shield_hit_entity"
+	muzzle_flash_entity = "gauss_howitzer_small_muzzle_entity"
+	
+	#ballistic specific
+	entity = "gauss_howitzer_tracer_round_small_entity"
+	speed = 650.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gauss_7_medium"
+	color = { 1.0 	0.5	   0.5	1.0 }
+	hit_entity = "advanced_railgun_medium_hit_entity"
+	shield_hit_entity = "advanced_railgun_medium_shield_hit_entity"
+	muzzle_flash_entity = "gauss_howitzer_medium_muzzle_entity"
+	
+	#ballistic specific
+	entity = "gauss_howitzer_tracer_round_medium_entity"
+	speed = 650.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gauss_7_large"
+	color = { 1.0 	0.5 	0.5	1.0 }
+	hit_entity = "advanced_railgun_large_hit_entity"
+	shield_hit_entity = "advanced_railgun_large_shield_hit_entity"
+	muzzle_flash_entity = "gauss_howitzer_large_muzzle_entity"
+	
+	#ballistic specific
+	entity = "gauss_howitzer_tracer_round_large_entity"
+	speed = 650.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#######################KINETIC_HAMMER#################################
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_kinetic_hammer"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "tfw_kinetic_hammer_hit_entity"
+	shield_hit_entity = "tfw_kinetic_hammer_shield_hit_entity"
+	muzzle_flash_entity = "tfw_kinetic_hammer_muzzle_entity"
+	#windup_entity = "tfw_kinetic_hammer_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_kinetic_hammer_entity"
+	speed = 500.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#######################Unique synth stuff#################################
+#1
+#Small
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_s_1"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_1_small_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_1_small_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_1_small_muzzle_entity"
+	#windup_entity = "tfw_phaser_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_1_small_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+#Medium
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_m_1"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_1_medium_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_1_medium_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_1_medium_muzzle_entity"
+	#windup_entity = "tfw_phaser_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_1_medium_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+#Large
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_l_1"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_1_large_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_1_large_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_1_large_muzzle_entity"
+	#windup_entity = "tfw_phaser_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_1_large_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#2
+#Small
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_s_2"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_2_small_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_2_small_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_2_small_muzzle_entity"
+	#windup_entity = "tfw_phaser_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_2_small_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+#Medium
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_m_2"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_2_medium_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_2_medium_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_2_medium_muzzle_entity"
+	#windup_entity = "tfw_phaser_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_2_medium_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+#Large
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_l_2"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_2_large_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_2_large_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_2_large_muzzle_entity"
+	#windup_entity = "tfw_phaser_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_2_large_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#XL
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_mol_crusher_3"
+	color = { 0.0	0.72	0.92	1.0 }
+	hit_entity = "tfw_mol_crusher_3_hit_entity"
+	shield_hit_entity = "tfw_mol_crusher_3_shield_hit_entity"
+	muzzle_flash_entity = "tfw_mol_crusher_3_muzzle_entity"
+	windup_entity = "tfw_mol_crusher_3_windup_entity"
+	
+	#ballistic specific
+	entity = "tfw_mol_crusher_3_entity"
+	speed = 50.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+############################Biological Ascension####################################################
+########Bio-cannon
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_biocannon_small"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "biocannon_small_hit_entity"
+	shield_hit_entity = "biocannon_small_shield_hit_entity"
+	muzzle_flash_entity = "biocannon_small_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "biocannon_small_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_biocannon_medium"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "biocannon_medium_hit_entity"
+	shield_hit_entity = "biocannon_medium_shield_hit_entity"
+	muzzle_flash_entity = "biocannon_medium_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "biocannon_medium_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_biocannon_large"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "biocannon_large_hit_entity"
+	shield_hit_entity = "biocannon_large_shield_hit_entity"
+	muzzle_flash_entity = "biocannon_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "biocannon_large_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+############################Psionic Ascension####################################################
+########Psi-cannon
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_psicannon_small"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "psicannon_small_hit_entity"
+	shield_hit_entity = "psicannon_small_shield_hit_entity"
+	muzzle_flash_entity = "psicannon_small_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "psicannon_small_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_psicannon_medium"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "psicannon_medium_hit_entity"
+	shield_hit_entity = "psicannon_medium_shield_hit_entity"
+	muzzle_flash_entity = "psicannon_medium_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "psicannon_medium_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_psicannon_large"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "psicannon_large_hit_entity"
+	shield_hit_entity = "psicannon_large_shield_hit_entity"
+	muzzle_flash_entity = "psicannon_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "psicannon_large_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+############################Synthetic Ascension####################################################
+########Gravi-cannon
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gravicannon_small"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "gravicannon_small_hit_entity"
+	shield_hit_entity = "gravicannon_small_shield_hit_entity"
+	muzzle_flash_entity = "gravicannon_small_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "gravicannon_small_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gravicannon_medium"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "gravicannon_medium_hit_entity"
+	shield_hit_entity = "gravicannon_medium_shield_hit_entity"
+	muzzle_flash_entity = "gravicannon_medium_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "gravicannon_medium_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "tfw_gravicannon_large"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "gravicannon_large_hit_entity"
+	shield_hit_entity = "gravicannon_large_shield_hit_entity"
+	muzzle_flash_entity = "gravicannon_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "gravicannon_large_entity"
+	speed = 100.0			#preferred speed of the projectile
+	max_duration = 3.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

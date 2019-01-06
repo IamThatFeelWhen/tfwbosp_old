@@ -1,0 +1,536 @@
+##########################
+# Originally Created
+# by Malthus for More Event Mod
+##########################
+
+namespace = tfw_options
+
+# Fired by on actions 
+event = {
+	id = tfw_options.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		IF = {
+			limit = {
+				NOR = {
+					count_country = { limit = { is_ai = no } count > 1 }
+					has_global_flag = has_tfw_bosp_unique
+				}
+			}
+			random_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = tfw_options.2 days = 5 }
+			}
+		}
+	}
+}
+
+# Game Start Event to create the project
+country_event = {
+	id = tfw_options.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		begin_event_chain = {
+			event_chain = tfw_options_chain
+			target = THIS
+		}
+		capital_scope = {
+			enable_special_project = {
+				name = TFW_OPTIONS_PROJECT
+				location = this
+				owner = PREV
+			}
+			enable_special_project = {
+				name = TFW_OPTIONS_REMOVAL_PROJECT
+				location = this
+				owner = PREV
+			}
+		}
+	}
+}
+
+# Bridge Event from Project to Menu
+planet_event = {
+	id = tfw_options.3
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			end_event_chain = tfw_options_chain
+			begin_event_chain = {
+				event_chain = tfw_options_chain
+				target = THIS
+			}
+			capital_scope = {
+				enable_special_project = {
+					name = TFW_OPTIONS_PROJECT
+					location = this
+					owner = PREV
+				}
+				enable_special_project = {
+					name = TFW_OPTIONS_REMOVAL_PROJECT
+					location = this
+					owner = PREV
+				}
+			}
+		}
+		owner = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+}
+
+planet_event = {
+	id = tfw_options.300
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			end_event_chain = tfw_options_chain
+		}
+	}
+}
+
+# Main Menu
+country_event = {
+	id = tfw_options.4
+	title = tfw_options.4.name
+	desc = tfw_options.4.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# Weapons on/off
+	option = {
+		name = tfw_options.4.c
+		
+		hidden_effect = {
+			country_event = { id = tfw_options.7 }
+		}
+	}
+
+	# Strike Craft on/off
+	option = {
+		name = tfw_options.4.cc
+		
+		hidden_effect = {
+			country_event = { id = tfw_options.70 }
+		}
+	}
+	
+	# Reactors on/off
+	option = {
+		name = tfw_options.4.d
+		
+		hidden_effect = {
+			country_event = { id = tfw_options.8 }
+		}
+	}
+
+	# Armors on/off
+	option = {
+		name = tfw_options.4.e
+		hidden_effect = {
+			country_event = { id = tfw_options.9 }
+		}
+	}
+	
+	# Shields on/off
+	option = {
+		name = tfw_options.4.f
+		hidden_effect = {
+			country_event = { id = tfw_options.10 }
+		}
+	}
+		
+	# Sensors on/off
+	option = {
+		name = tfw_options.4.g
+		hidden_effect = {
+			country_event = { id = tfw_options.11 }
+		}
+	}	
+
+	# Auxilliary on/off
+	option = {
+		name = tfw_options.4.h
+		hidden_effect = {
+			country_event = { id = tfw_options.12 }
+		}
+	}	
+		
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+# Weapons Submenu
+country_event = {
+	id = tfw_options.7
+	title = tfw_options.7.name
+	desc = tfw_options.7.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate mod Weapons
+	option = {
+		name = tfw_options.7.a
+		trigger = {
+			has_global_flag = tfw_bosp_weapons_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_weapons_off
+			#reopen the menu
+			country_event = { id = tfw_options.7 days = 1 }
+		}
+	}
+	
+	# deactivate mod Weapons
+	option = {
+		name = tfw_options.7.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_weapons_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_weapons_off
+			#reopen the menu
+			country_event = { id = tfw_options.7 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+# Strike Craft Submenu
+country_event = {
+	id = tfw_options.70
+	title = tfw_options.70.name
+	desc = tfw_options.70.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate mod Strike Craft
+	option = {
+		name = tfw_options.70.a
+		trigger = {
+			has_global_flag = tfw_bosp_strkcrft_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_strkcrft_off
+			#reopen the menu
+			country_event = { id = tfw_options.70 days = 1 }
+		}
+	}
+	
+	# deactivate mod Strike Craft
+	option = {
+		name = tfw_options.70.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_strkcrft_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_strkcrft_off
+			#reopen the menu
+			country_event = { id = tfw_options.70 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+# Reactors submenu
+country_event = {
+	id = tfw_options.8
+	title = tfw_options.8.name
+	desc = tfw_options.8.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate Reactors
+	option = {
+		name = tfw_options.8.a
+		trigger = {
+			has_global_flag = tfw_bosp_reactors_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_reactors_off
+			#reopen the menu
+			country_event = { id = tfw_options.8 days = 1 }
+		}
+	}
+	
+	# deactivate Reactors
+	option = {
+		name = tfw_options.8.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_reactors_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_reactors_off
+			#reopen the menu
+			country_event = { id = tfw_options.8 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+# Armors Submenu
+country_event = {
+	id = tfw_options.9
+	title = tfw_options.9.name
+	desc = tfw_options.9.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate Armors
+	option = {
+		name = tfw_options.9.a
+		trigger = {
+			has_global_flag = tfw_bosp_armors_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_armors_off
+			#reopen the menu
+			country_event = { id = tfw_options.9 days = 1 }
+		}
+	}
+	
+	# deactivate Armors
+	option = {
+		name = tfw_options.9.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_armors_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_armors_off
+			#reopen the menu
+			country_event = { id = tfw_options.9 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+# Shields Submenu
+country_event = {
+	id = tfw_options.10
+	title = tfw_options.10.name
+	desc = tfw_options.10.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate Shields
+	option = {
+		name = tfw_options.10.a
+		trigger = {
+			has_global_flag = tfw_bosp_shields_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_shields_off
+			#reopen the menu
+			country_event = { id = tfw_options.10 days = 1 }
+		}
+	}
+	
+	# deactivate Shields
+	option = {
+		name = tfw_options.10.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_shields_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_shields_off
+			#reopen the menu
+			country_event = { id = tfw_options.10 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+# Sensors Submenu
+country_event = {
+	id = tfw_options.11
+	title = tfw_options.11.name
+	desc = tfw_options.11.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate Armors
+	option = {
+		name = tfw_options.11.a
+		trigger = {
+			has_global_flag = tfw_bosp_sensors_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_sensors_off
+			#reopen the menu
+			country_event = { id = tfw_options.11 days = 1 }
+		}
+	}
+	
+	# deactivate Armors
+	option = {
+		name = tfw_options.11.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_sensors_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_sensors_off
+			#reopen the menu
+			country_event = { id = tfw_options.11 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}
+
+
+# Auxilliary Submenu
+country_event = {
+	id = tfw_options.12
+	title = tfw_options.12.name
+	desc = tfw_options.12.desc
+	picture = GFX_evt_tfw_options
+	
+	is_triggered_only = yes
+	
+	# activate Armors
+	option = {
+		name = tfw_options.12.a
+		trigger = {
+			has_global_flag = tfw_bosp_aux_off
+		}
+		hidden_effect = {
+			remove_global_flag = tfw_bosp_aux_off
+			#reopen the menu
+			country_event = { id = tfw_options.12 days = 1 }
+		}
+	}
+	
+	# deactivate Armors
+	option = {
+		name = tfw_options.12.b
+		trigger = {
+			NOT = {
+				has_global_flag = tfw_bosp_aux_off
+			}
+		}
+		hidden_effect = {
+			set_global_flag = tfw_bosp_aux_off
+			#reopen the menu
+			country_event = { id = tfw_options.12 days = 1 }
+		}
+	}
+	
+	# Back to previous Menu
+	option = {
+		name = tfw_options.back
+		hidden_effect = {
+			country_event = { id = tfw_options.4 }
+		}
+	}
+	
+	# Exit EVENT
+	option = {
+		name = tfw_options.exit
+	}
+}

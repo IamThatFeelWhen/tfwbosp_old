@@ -1,0 +1,24 @@
+#Triggered on game start, no scope
+on_game_start = {
+    events = {
+        tfw_bosp_flag.1 #Allows Modders to know if Bunch of Ship Parts is active.
+		tfw_options.1 #Start options project 
+    }
+}
+
+##############Tech Actions###############
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		tfw_techs.1
+		tfw_techs.2
+		tfw_techs.3
+		tfw_techs.4
+		tfw_techs.5
+		tfw_techs.8		
+		tfw_techs.10	
+		tfw_techs.11	
+		tfw_techs.12	
+	}
+}

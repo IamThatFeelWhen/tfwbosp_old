@@ -1,0 +1,189 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 500
+@tier1cost2 = 750
+@tier1cost3 = 1000
+
+@tier2cost1 = 1500
+@tier2cost2 = 2000
+@tier2cost3 = 2500
+
+@tier3cost1 = 4000
+@tier3cost2 = 5000
+@tier3cost3 = 6000
+
+@tier4cost1 = 8000
+@tier4cost2 = 10000
+@tier4cost3 = 12000
+#-----
+@tier4cost4 = 13500
+
+@tier5cost1 = 15000
+@tier5cost2 = 17500
+@tier5cost3 = 20000
+#-----
+@tier5cost4 = 23000
+@tier5cost5 = 26000
+@tier5cost6 = 29000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+
+@tier2weight1 = 85
+@tier2weight2 = 75
+@tier2weight3 = 70
+
+@tier3weight1 = 65
+@tier3weight2 = 60
+@tier3weight3 = 50
+
+@tier4weight1 = 45
+@tier4weight2 = 40
+@tier4weight3 = 35
+#-----
+@tier4weight4 = 32
+
+@tier5weight1 = 30
+@tier5weight2 = 25
+@tier5weight3 = 20
+#-----
+@tier5weight4 = 16
+@tier5weight5 = 12
+@tier5weight6 = 10
+
+# ##################
+# Ship Thrusters
+# ##################
+
+#Zero-Point Thrusters
+#Removed after 2.0.2
+
+#Raider Thrusters 1
+tech_tfw_raider_thrusters_1 = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 4
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = all	
+	prerequisites = { "tech_thrusters_4" }
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.1
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_aux_off"
+		}	
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_TFW_RAIDER_THRUSTER_1_TITLE"
+			desc = "TECH_TFW_RAIDER_THRUSTER_1_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.1
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_ai_personality_behaviour = slaver }
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_aux_off"
+		}	
+	}
+}
+
+#Raider Thrusters 2
+tech_tfw_raider_thrusters_2 = {
+	area = engineering
+	cost = @tier4cost4
+	tier = 5
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = all	
+	prerequisites = { "tech_tfw_raider_thrusters_1" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.1
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_aux_off"
+		}	
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_TFW_RAIDER_THRUSTER_2_TITLE"
+			desc = "TECH_TFW_RAIDER_THRUSTER_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.1
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { has_ai_personality_behaviour = slaver }
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_aux_off"
+		}	
+	}
+}

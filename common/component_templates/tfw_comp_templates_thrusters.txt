@@ -1,0 +1,399 @@
+# Icons set here are the ones show in the actual slot.
+@cost1 = 3
+@cost2 = 6
+@cost3 = 9
+@cost4 = 12
+@cost5 = 15
+@cost6 = 19
+@cost7 = 22
+
+@power_1 = -10
+@power_2 = -15
+@power_3 = -20
+@power_4 = -25
+@power_5 = -30
+@power_6 = -37
+@power_7 = -42
+
+@destroyer_power_1 = -20
+@destroyer_power_2 = -30
+@destroyer_power_3 = -40
+@destroyer_power_4 = -50
+@destroyer_power_5 = -60
+@destroyer_power_6 = -73
+@destroyer_power_7 = -83
+
+@cruiser_power_1 = -40
+@cruiser_power_2 = -60
+@cruiser_power_3 = -80
+@cruiser_power_4 = -100
+@cruiser_power_5 = -120
+@cruiser_power_6 = -145
+@cruiser_power_7 = -165
+
+@battleship_power_1 = -80
+@battleship_power_2 = -120
+@battleship_power_3 = -160
+@battleship_power_4 = -200
+@battleship_power_5 = -240
+@battleship_power_6 = -290
+@battleship_power_7 = -330
+
+@titan_power_1 = -160
+@titan_power_2 = -240
+@titan_power_3 = -320
+@titan_power_4 = -400
+@titan_power_5 = -480
+@titan_power_6 = -570
+@titan_power_7 = -650
+
+@colossus_power_1 = -200
+@colossus_power_2 = -300
+@colossus_power_3 = -400
+@colossus_power_4 = -500
+@colossus_power_5 = -600
+@colossus_power_6 = -700
+@colossus_power_7 = -800
+
+@destroyer_cost1 = 6
+@destroyer_cost2 = 12
+@destroyer_cost3 = 18
+@destroyer_cost4 = 24
+@destroyer_cost5 = 30
+@destroyer_cost6 = 38
+@destroyer_cost7 = 44
+
+@cruiser_cost1 = 12
+@cruiser_cost2 = 24
+@cruiser_cost3 = 36
+@cruiser_cost4 = 48
+@cruiser_cost5 = 60
+@cruiser_cost6 = 75
+@cruiser_cost7 = 87
+
+@battleship_cost1 = 24
+@battleship_cost2 = 48
+@battleship_cost3 = 72
+@battleship_cost4 = 96
+@battleship_cost5 = 120
+@battleship_cost6 = 150
+@battleship_cost7 = 174
+
+@titan_cost1 = 48
+@titan_cost2 = 96
+@titan_cost3 = 144
+@titan_cost4 = 192
+@titan_cost5 = 240
+@titan_cost6 = 292
+@titan_cost7 = 340
+
+@colossus_cost1 = 60
+@colossus_cost2 = 120
+@colossus_cost3 = 180
+@colossus_cost4 = 240
+@colossus_cost5 = 300
+@colossus_cost6 = 360
+@colossus_cost7 = 420
+
+### Raider Thrusters 
+utility_component_template = {
+	key = "TFW_RAIDER_THRUSTER_1"
+	size = small
+	icon = "GFX_tfw_raider_thruster_1"
+	icon_frame = 1
+	power = @power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.15
+		ship_evasion_add = 10
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { corvette }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_TFW_RAIDER_THRUSTER_1"
+	size = small
+	icon = "GFX_tfw_raider_thruster_1"
+	icon_frame = 1
+	power = @destroyer_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.15
+		ship_evasion_add = 8
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_TFW_RAIDER_THRUSTER_1"
+	size = small
+	icon = "GFX_tfw_raider_thruster_1"
+	icon_frame = 1
+	power = @cruiser_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.15
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser StrikeCruiser Battlecruiser rs_battlecruiser rs_ea_cruiser rs_support_cruiser }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_TFW_RAIDER_THRUSTER_1"
+	size = small
+	icon = "GFX_tfw_raider_thruster_1"
+	icon_frame = 1
+	power = @battleship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.15
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { battleship SCX_Carrier Carrier supportship rs_dreadnought }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_TFW_RAIDER_THRUSTER_1"
+	size = small
+	icon = "GFX_tfw_raider_thruster_1"
+	icon_frame = 1
+	power = @titan_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.15
+		ship_evasion_add = 2
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_1" }
+	component_set = "thruster_components"
+	size_restriction = { titan SCX_Dreadnought Dreadnought Flagship rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d rs_heavy_dreadnought_type_e rs_heavy_dreadnought_type_f rs_heavy_dreadnought_type_g rs_heavy_dreadnought_type_h }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+
+### Corsair Thrusters 
+utility_component_template = {
+	key = "TFW_RAIDER_THRUSTER_2"
+	size = small
+	icon = "GFX_tfw_raider_thruster_2"
+	icon_frame = 1
+	power = @power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost7
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.33
+		ship_evasion_add = 10
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { corvette }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_TFW_RAIDER_THRUSTER_2"
+	size = small
+	icon = "GFX_tfw_raider_thruster_2"
+	icon_frame = 1
+	power = @destroyer_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost7
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.33
+		ship_evasion_add = 8
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_TFW_RAIDER_THRUSTER_2"
+	size = small
+	icon = "GFX_tfw_raider_thruster_2"
+	icon_frame = 1
+	power = @cruiser_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost7
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.33
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser StrikeCruiser Battlecruiser rs_battlecruiser rs_ea_cruiser rs_support_cruiser }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_TFW_RAIDER_THRUSTER_2"
+	size = small
+	icon = "GFX_tfw_raider_thruster_2"
+	icon_frame = 1
+	power = @battleship_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost7
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.33
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { battleship SCX_Carrier Carrier supportship rs_dreadnought }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_TFW_RAIDER_THRUSTER_2"
+	size = small
+	icon = "GFX_tfw_raider_thruster_2"
+	icon_frame = 1
+	power = @titan_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost7
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.33
+		ship_evasion_add = 2
+	}
+
+	prerequisites = { "tech_tfw_raider_thrusters_2" }
+	component_set = "thruster_components"
+	size_restriction = { titan SCX_Dreadnought Dreadnought Flagship rs_heavy_dreadnought_type_a rs_heavy_dreadnought_type_b rs_heavy_dreadnought_type_c rs_heavy_dreadnought_type_d rs_heavy_dreadnought_type_e rs_heavy_dreadnought_type_f rs_heavy_dreadnought_type_g rs_heavy_dreadnought_type_h }
+	
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 2.0
+				has_ai_personality_behaviour = slaver 
+		}
+	}
+}

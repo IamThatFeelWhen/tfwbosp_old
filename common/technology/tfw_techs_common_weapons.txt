@@ -1,0 +1,1612 @@
+#####################
+#  ENERGY WEAPONS   #
+#####################
+
+#########ENERGY_TORPEDOES#############	
+#1
+tech_tfw_energy_torpedoes_3 = {
+	area = physics
+	cost = @tier5cost2
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_energy_torpedoes_2" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}	
+
+#2
+tech_tfw_energy_torpedoes_4 = {
+	area = physics
+	cost = @tier5cost4
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_energy_torpedoes_3" }
+	weight = @tier5weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}	
+
+#######LASERSTORM########
+tech_tfw_laserstorm = {
+	area = physics
+	cost = @tier4cost4
+	tier = 4	
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_lasers_5" }
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#######ADV. LASERSTORM########
+tech_tfw_adv_laserstorm = {
+	area = physics
+	cost = @tier5cost2
+	tier = 5	
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_laserstorm" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+################PLASMA MISSILES
+#Plasma Missiles 1
+tech_tfw_pt1 = {
+	area = physics
+	cost = @tier5cost1
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_pt" }
+	weight = @tier5weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#QGP Missiles
+tech_tfw_pt2 = {
+	area = physics
+	cost = @tier5cost4
+	tier = 5
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_pt1" }
+	weight = @tier5weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+################Phaser Weapons
+#Phaser I
+tech_tfw_phaser_1 = {
+	area = physics
+	cost = @tier4cost4
+	tier = 4
+	category = { particles }
+	prerequisites = { "tech_disruptors_3" }
+	ai_update_type = military
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				has_technology = "tech_lasers_1"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#Phaser II
+tech_tfw_phaser_2 = {
+	area = physics
+	cost = @tier5cost2
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_phaser_1" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#Phaser III
+tech_tfw_phaser_3 = {
+	area = physics
+	cost = @tier5cost4
+	tier = 5
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_phaser_2" }
+	weight = @tier5weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#Phase Spear
+tech_tfw_phase_spear = {
+	area = physics
+	cost = @tier5cost5
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_phaser_3" "tech_energy_lance_1" }
+	weight = @tier5weight5
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+################/ENERGY WEAPONS 
+
+######################
+#  KINETIC WEAPONS   #
+######################
+
+#########KINETIC_ARTILLERY_3#############	
+tech_tfw_kinetic_artillery_3 = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_kinetic_artillery_2" "tech_tfw_gauss_6" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#########KINETIC_ARTILLERY_4#############	
+tech_tfw_kinetic_artillery_4 = {
+	area = engineering
+	cost = @tier5cost4
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_kinetic_artillery_3" "tech_tfw_gauss_7" }
+	weight = @tier5weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+###################GAUSS WEAPONS
+# TFW Gauss Mortar
+tech_tfw_gauss_6 = {
+	area = engineering
+	cost = @tier4cost4
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_mass_drivers_5" }
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+# TFW Gauss Howitzer
+tech_tfw_gauss_7 = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_gauss_6" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+###################AUTOCANNONS
+# AUTOCANNON 4
+tech_tfw_autocannons_4 = {
+	area = engineering
+	cost = @tier4cost4
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_autocannons_3" }
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+# AUTOCANNON 5
+tech_tfw_autocannons_5 = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_autocannons_4" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+# AUTOCANNON 6
+tech_tfw_autocannons_6 = {
+	area = engineering
+	cost = @tier5cost4
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_autocannons_5" }
+	weight = @tier5weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#####################/KINETIC WEAPONS
+
+
+######################
+#  MISSILE WEAPONS   #
+######################
+
+#######Missiles
+# Energon Missiles
+tech_tfw_aa_missiles_1 = {
+	area = engineering
+	cost = @tier4cost3
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_missiles_5" }
+	weight = @tier4weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+# Grinder Missiles
+tech_tfw_aa_missiles_2 = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_aa_missiles_1" }
+	weight = @tier5weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+# Tandem Missiles
+tech_tfw_as_missiles_1 = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_aa_missiles_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+# Hyperon Missiles
+tech_tfw_as_missiles_2 = {
+	area = engineering
+	cost = @tier5cost5
+	tier = 5
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_as_missiles_1" }
+	weight = @tier5weight5
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+##################CONV_TORPEDOES
+#Devastator Torpedoes
+tech_tfw_torpedoes_4 = {
+	area = engineering
+	cost = @tier4cost4
+	tier = 4
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_torpedoes_3" }
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#Devastator Torpedoes
+tech_tfw_torpedoes_5 = {
+	area = engineering
+	cost = @tier5cost2
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_torpedoes_4" }
+	weight = @tier5weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#Strangelet Torpedoes
+tech_tfw_torpedoes_6 = {
+	area = engineering
+	cost = @tier5cost5
+	tier = 5
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_torpedoes_5" }
+	weight = @tier5weight5
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+##################SWARMER MISSILES############
+tech_tfw_swarmer_missiles_3 = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_swarmer_missiles_2" }
+	weight = @tier5weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_gestalt_consciousness
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_gestalt_consciousness
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+tech_tfw_swarmer_missiles_4 = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_swarmer_missiles_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.5
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+tech_tfw_swarmer_missiles_5 = {
+	area = engineering
+	cost = @tier5cost5
+	tier = 5
+	is_rare = yes
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_swarmer_missiles_4" }
+	weight = @tier5weight5
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+################
+#  P-Defense   #
+################
+
+#################BASTION PD##################
+tech_tfw_stormfire_pd = {
+	area = physics
+	tier = 4
+	cost = @tier4cost4
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_pd_tracking_3" }
+	weight = @tier4weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}		
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+######################SPICEKEEPER#############################
+#FLAK 4
+tech_tfw_flak_batteries_4 = {
+	area = engineering
+	cost = @tier5cost1
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_flak_batteries_3" }
+	weight = @tier5weight1
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}

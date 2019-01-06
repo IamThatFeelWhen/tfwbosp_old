@@ -1,0 +1,617 @@
+# ##################
+# Common Shield Modules
+# ##################
+#Stabilized Hyper Shields (VI)
+#Small
+utility_component_template = {
+	key = "SMALL_TFW_STAB_HYPER_SHIELD"
+	size = small
+	icon = "GFX_tfw_stab_hyper_shield"
+	icon_frame = 1
+	power = @power_S7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t6_cost_tfw
+			exotic_gases = 0.361
+		}
+		upkeep = {
+			energy = @shield_s_t6_upkeep_energy
+			alloys = @shield_s_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S6_tfw
+		ship_shield_regen_add_static = @regen_S6_tfw
+	}
+	prerequisites = { "tech_tfw_stab_hyper_shields" }
+	component_set = "TFW_STAB_HYPER_SHIELD"
+	upgrades_to = "SMALL_TFW_OPT_HYPER_SHIELD"	
+}
+
+#Medium
+utility_component_template = {
+	key = "MEDIUM_TFW_STAB_HYPER_SHIELD"
+	size = medium
+	icon = "GFX_tfw_stab_hyper_shield"
+	icon_frame = 1
+	power = @power_M7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t6_cost_tfw
+			exotic_gases = 0.722
+		}
+		upkeep = {
+			energy = @shield_m_t6_upkeep_energy
+			alloys = @shield_m_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M6_tfw
+		ship_shield_regen_add_static = @regen_M6_tfw
+	}
+	prerequisites = { "tech_tfw_stab_hyper_shields" }
+	component_set = "TFW_STAB_HYPER_SHIELD"
+	upgrades_to = "MEDIUM_TFW_OPT_HYPER_SHIELD"	
+}
+
+#Large
+utility_component_template = {
+	key = "LARGE_TFW_STAB_HYPER_SHIELD"
+	size = large
+	icon = "GFX_tfw_stab_hyper_shield"
+	icon_frame = 1
+	power = @power_L7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t6_cost_tfw
+			exotic_gases = 1.444
+		}
+		upkeep = {
+			energy = @shield_l_t6_upkeep_energy
+			alloys = @shield_l_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L6_tfw
+		ship_shield_regen_add_static = @regen_L6_tfw
+	}
+	prerequisites = { "tech_tfw_stab_hyper_shields" }
+	component_set = "TFW_STAB_HYPER_SHIELD"
+	upgrades_to = "LARGE_TFW_OPT_HYPER_SHIELD"	
+}
+
+#Optimized Hyper Shield (VII)
+#Small
+utility_component_template = {
+	key = "SMALL_TFW_OPT_HYPER_SHIELD"
+	size = small
+	icon = "GFX_tfw_opt_hyper_shield"
+	icon_frame = 1
+	power = @power_S8_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t7_cost_tfw
+			exotic_gases = 0.389
+		}
+		upkeep = {
+			energy = @shield_s_t7_upkeep_energy
+			alloys = @shield_s_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S7_tfw
+		ship_shield_regen_add_static = @regen_S7_tfw
+	}
+	prerequisites = { "tech_tfw_opt_hyper_shields" }
+	component_set = "TFW_OPT_HYPER_SHIELD"
+	upgrades_to = "SMALL_TFW_ENERGON_SHIELD"	
+}
+
+#Medium
+utility_component_template = {
+	key = "MEDIUM_TFW_OPT_HYPER_SHIELD"
+	size = medium
+	icon = "GFX_tfw_opt_hyper_shield"
+	icon_frame = 1
+	power = @power_M8_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t7_cost_tfw
+			exotic_gases = 0.778
+		}
+		upkeep = {
+			energy = @shield_m_t7_upkeep_energy
+			alloys = @shield_m_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M7_tfw
+		ship_shield_regen_add_static = @regen_M7_tfw
+	}
+	prerequisites = { "tech_tfw_opt_hyper_shields" }
+	component_set = "TFW_OPT_HYPER_SHIELD"
+	upgrades_to = "MEDIUM_TFW_ENERGON_SHIELD"	
+}
+
+#Large
+utility_component_template = {
+	key = "LARGE_TFW_OPT_HYPER_SHIELD"
+	size = large
+	icon = "GFX_tfw_opt_hyper_shield"
+	icon_frame = 1
+	power = @power_L8_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t7_cost_tfw
+			exotic_gases = 1.556
+		}
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L7_tfw
+		ship_shield_regen_add_static = @regen_L7_tfw
+	}
+	prerequisites = { "tech_tfw_opt_hyper_shields" }
+	component_set = "TFW_OPT_HYPER_SHIELD"
+	upgrades_to = "LARGE_TFW_ENERGON_SHIELD"	
+}
+
+# ##################
+# Adv. Shield Modules
+# ##################
+#Energon Shield (VIII)
+#Small
+utility_component_template = {
+	key = "SMALL_TFW_ENERGON_SHIELD"
+	size = small
+	icon = "GFX_tfw_energon_shield"
+	icon_frame = 1
+	power = @power_S9_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t8_cost_tfw
+			exotic_gases = 0.416
+		}
+		upkeep = {
+			energy = @shield_s_t8_upkeep_energy_tfw
+			alloys = @shield_s_t8_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S8_tfw
+		ship_shield_regen_add_static = @regen_S8_tfw
+	}
+	prerequisites = { "tech_tfw_energon_shields" }
+	component_set = "TFW_ENERGON_SHIELD"
+	upgrades_to = "SMALL_TFW_CASCADE_SHIELD"
+}
+
+#Medium
+utility_component_template = {
+	key = "MEDIUM_TFW_ENERGON_SHIELD"
+	size = medium
+	icon = "GFX_tfw_energon_shield"
+	icon_frame = 1
+	power = @power_M9_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t8_cost_tfw
+			exotic_gases = 0.832
+		}
+		upkeep = {
+			energy = @shield_m_t8_upkeep_energy_tfw
+			alloys = @shield_m_t8_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M8_tfw
+		ship_shield_regen_add_static = @regen_M8_tfw
+	}
+	prerequisites = { "tech_tfw_energon_shields" }
+	component_set = "TFW_ENERGON_SHIELD"
+	upgrades_to = "MEDIUM_TFW_CASCADE_SHIELD"
+}
+
+#Large
+utility_component_template = {
+	key = "LARGE_TFW_ENERGON_SHIELD"
+	size = large
+	icon = "GFX_tfw_energon_shield"
+	icon_frame = 1
+	power = @power_L9_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t8_cost_tfw
+			exotic_gases = 1.664
+		}
+		upkeep = {
+			energy = @shield_l_t8_upkeep_energy_tfw
+			alloys = @shield_l_t8_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L8_tfw
+		ship_shield_regen_add_static = @regen_L8_tfw
+	}
+	prerequisites = { "tech_tfw_energon_shields" }
+	component_set = "TFW_ENERGON_SHIELD"
+	upgrades_to = "LARGE_TFW_CASCADE_SHIELD"
+}
+
+#Cascade Shield (IX)
+#Small
+utility_component_template = {
+	key = "SMALL_TFW_CASCADE_SHIELD"
+	size = small
+	icon = "GFX_tfw_cascade_shield"
+	icon_frame = 1
+	power = @power_S10_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t9_cost_tfw
+			exotic_gases = 0.5
+		}
+		upkeep = {
+			energy = @shield_s_t9_upkeep_energy_tfw
+			alloys = @shield_s_t9_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S9_tfw
+		ship_shield_regen_add_static = @regen_S9_tfw
+	}
+	prerequisites = { "tech_tfw_cascade_shields" }
+	component_set = "TFW_CASCADE_SHIELD"
+	upgrades_to = "SMALL_TFW_RESONANT_SHIELD"
+}
+
+utility_component_template = {
+	key = "MEDIUM_TFW_CASCADE_SHIELD"
+	size = medium
+	icon = "GFX_tfw_cascade_shield"
+	icon_frame = 1
+	power = @power_M10_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t9_cost_tfw
+			exotic_gases = 1.0
+		}
+		upkeep = {
+			energy = @shield_m_t9_upkeep_energy_tfw
+			alloys = @shield_m_t9_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M9_tfw
+		ship_shield_regen_add_static = @regen_M9_tfw
+	}
+	prerequisites = { "tech_tfw_cascade_shields" }
+	component_set = "TFW_CASCADE_SHIELD"
+	upgrades_to = "MEDIUM_TFW_RESONANT_SHIELD"
+}
+
+utility_component_template = {
+	key = "LARGE_TFW_CASCADE_SHIELD"
+	size = large
+	icon = "GFX_tfw_cascade_shield"
+	icon_frame = 1
+	power = @power_L10_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t9_cost_tfw
+			exotic_gases = 2.0
+		}
+		upkeep = {
+			energy = @shield_l_t9_upkeep_energy_tfw
+			alloys = @shield_l_t9_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L9_tfw
+		ship_shield_regen_add_static = @regen_L9_tfw
+	}
+	prerequisites = { "tech_tfw_cascade_shields" }
+	component_set = "TFW_CASCADE_SHIELD"
+	upgrades_to = "LARGE_TFW_RESONANT_SHIELD"
+}
+
+#Resonant Shield (X)
+#Small
+utility_component_template = {
+	key = "SMALL_TFW_RESONANT_SHIELD"
+	size = small
+	icon = "GFX_tfw_resonant_shield"
+	icon_frame = 1
+	power = @power_S11_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t10_cost_tfw
+			exotic_gases = 0.583
+		}
+		upkeep = {
+			energy = @shield_s_t10_upkeep_energy_tfw
+			alloys = @shield_s_t10_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S10_tfw
+		ship_shield_regen_add_static = @regen_S10_tfw
+	}
+	prerequisites = { "tech_tfw_resonant_shields" }
+	component_set = "TFW_RESONANT_SHIELD"
+}
+
+#Medium
+utility_component_template = {
+	key = "MEDIUM_TFW_RESONANT_SHIELD"
+	size = medium
+	icon = "GFX_tfw_resonant_shield"
+	icon_frame = 1
+	power = @power_M11_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t10_cost_tfw
+			exotic_gases = 1.166
+		}
+		upkeep = {
+			energy = @shield_m_t10_upkeep_energy_tfw
+			alloys = @shield_m_t10_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M10_tfw
+		ship_shield_regen_add_static = @regen_M10_tfw
+	}
+	prerequisites = { "tech_tfw_resonant_shields" }
+	component_set = "TFW_RESONANT_SHIELD"
+}
+
+#Large
+utility_component_template = {
+	key = "LARGE_TFW_RESONANT_SHIELD"
+	size = large
+	icon = "GFX_tfw_resonant_shield"
+	icon_frame = 1
+	power = @power_L11_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t10_cost_tfw
+			exotic_gases = 2.332
+		}
+		upkeep = {
+			energy = @shield_l_t10_upkeep_energy_tfw
+			alloys = @shield_l_t10_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L10_tfw
+		ship_shield_regen_add_static = @regen_L10_tfw
+	}
+	prerequisites = { "tech_tfw_resonant_shields" }
+	component_set = "TFW_RESONANT_SHIELD"
+}
+
+####################
+# Enigmatic Shields II
+####################
+
+# Enigmatic Deflectors
+utility_component_template = {
+	key = "SMALL_TFW_DARK_MATTER_DEFLECTOR_II"
+	size = small
+	icon = "GFX_tfw_dark_matter_shield_2"
+	icon_frame = 1
+	power = @power_S11_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t11_cost_tfw
+			sr_dark_matter = 0.5
+		}
+		upkeep = {
+			energy = @shield_s_t11_upkeep_energy_tfw
+			alloys = @shield_s_t11_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S11_tfw
+		ship_shield_regen_add_static = @regen_S11_tfw
+	}
+	prerequisites = { "tech_tfw_dark_matter_deflector_2" }
+	component_set = "TFW_DARK_MATTER_DEFLECTOR_II"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_TFW_DARK_MATTER_DEFLECTOR_II"
+	size = medium
+	icon = "GFX_tfw_dark_matter_shield_2"
+	icon_frame = 1
+	power = @power_M11_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t11_cost_tfw
+			sr_dark_matter = 1.0
+		}
+		upkeep = {
+			energy = @shield_m_t11_upkeep_energy_tfw
+			alloys = @shield_m_t11_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M11_tfw
+		ship_shield_regen_add_static = @regen_M11_tfw
+	}
+	prerequisites = { "tech_tfw_dark_matter_deflector_2" }
+	component_set = "TFW_DARK_MATTER_DEFLECTOR_II"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_TFW_DARK_MATTER_DEFLECTOR_II"
+	size = large
+	icon = "GFX_tfw_dark_matter_shield_2"
+	icon_frame = 1
+	power = @power_L11_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t11_cost_tfw
+			sr_dark_matter = 2.0
+		}
+		upkeep = {
+			energy = @shield_l_t11_upkeep_energy_tfw
+			alloys = @shield_l_t11_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L11_tfw
+		ship_shield_regen_add_static = @regen_L11_tfw
+	}
+	prerequisites = { "tech_tfw_dark_matter_deflector_2" }
+	component_set = "TFW_DARK_MATTER_DEFLECTOR_II"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+
+####################
+# Psionic Shields II
+####################
+
+utility_component_template = {
+	key = "SMALL_TFW_PSI_SHIELD_II"
+	size = small
+	icon = "GFX_tfw_psi_shield_2"
+	icon_frame = 1
+	power = @power_S12_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t12_cost_tfw
+			sr_zro = 0.222
+		}
+		upkeep = {
+			energy = @shield_s_t12_upkeep_energy_tfw
+			alloys = @shield_s_t12_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S12_tfw
+		ship_shield_regen_add_static = @regen_S12_tfw
+	}
+	prerequisites = { "tech_tfw_psionic_shield_2" }
+	component_set = "TFW_PSI_SHIELD_II"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}	
+}
+
+utility_component_template = {
+	key = "MEDIUM_TFW_PSI_SHIELD_II"
+	size = medium
+	icon = "GFX_tfw_psi_shield_2"
+	icon_frame = 1
+	power = @power_M12_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t12_cost_tfw
+			sr_zro = 0.444
+		}
+		upkeep = {
+			energy = @shield_m_t12_upkeep_energy_tfw
+			alloys = @shield_m_t12_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M12_tfw
+		ship_shield_regen_add_static = @regen_M12_tfw
+	}
+	prerequisites = { "tech_tfw_psionic_shield_2" }
+	component_set = "TFW_PSI_SHIELD_II"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}	
+}
+
+utility_component_template = {
+	key = "LARGE_TFW_PSI_SHIELD_II"
+	size = large
+	icon = "GFX_tfw_psi_shield_2"
+	icon_frame = 1
+	power = @power_L12_tfw
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t12_cost_tfw
+			sr_zro = 0.666
+		}
+		upkeep = {
+			energy = @shield_l_t12_upkeep_energy_tfw
+			alloys = @shield_l_t12_upkeep_alloys_tfw
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L12_tfw
+		ship_shield_regen_add_static = @regen_L12_tfw
+	}
+	prerequisites = { "tech_tfw_psionic_shield_2" }
+	component_set = "TFW_PSI_SHIELD_II"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = sr_zro value <= 0 }
+		}
+	}	
+}

@@ -1,0 +1,944 @@
+# ####################
+#  	Missiles	     #
+# ####################
+#Common
+### Energon Missile Launcher
+weapon_component_template = {
+	key = "TFW_AA_MISSILE_1"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 112.0 max = 148.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 1.0
+	power = -32
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			volatile_motes = @m_t6_rare
+		}		
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}	
+	tracking = 0.25
+
+	hull_damage = 1.25
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0	
+
+	missile_speed = 18
+	missile_evasion = 0.5
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 11.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_missile_as_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_1" }
+	component_set = "TFW_AA_MISSILE_1"
+	projectile_gfx = "small_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "TFW_AA_MISSILE_2"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+### Grinder Missile Launcher
+weapon_component_template = {
+	key = "TFW_AA_MISSILE_2"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 145.0 max = 193.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 1.0
+	power = -38
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			volatile_motes = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.25	
+
+	hull_damage = 1.25
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0	
+
+	missile_speed = 18
+	missile_evasion = 0.6
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 12.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_missile_aa_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_2" }
+	component_set = "TFW_AA_MISSILE_2"
+	projectile_gfx = "small_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "TFW_AS_MISSILE_1"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+#Tandem
+### Neutronium Missile Launcher
+weapon_component_template = {
+	key = "TFW_AS_MISSILE_1"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 167.0 max = 222.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 1.0
+	power = -48
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t8_cost_tfw
+			volatile_motes = @m_t8_rare_tfw
+		}		
+		upkeep = {
+			energy = @m_t8_upkeep_energy_tfw
+			alloys = @m_t8_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.20	
+
+	hull_damage = 1.25
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.5
+
+	missile_speed = 16
+	missile_evasion = 0.5
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 15.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_missile_as_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_1" }
+	component_set = "TFW_AS_MISSILE_1"
+	projectile_gfx = "small_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_tag_weight = 4
+	upgrades_to = "TFW_AS_MISSILE_2"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+### Hyperon Missile Launcher
+weapon_component_template = {
+	key = "TFW_AS_MISSILE_2"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 192.0 max = 255.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 1.0
+	power = -60
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t9_cost_tfw
+			volatile_motes = @m_t9_rare_tfw
+		}		
+		upkeep = {
+			energy = @m_t9_upkeep_energy_tfw
+			alloys = @m_t9_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.20
+
+	hull_damage = 1.25
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.5	
+
+	missile_speed = 16
+	missile_evasion = 0.5
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 16.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_missile_as_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_2" }
+	component_set = "TFW_AS_MISSILE_2"
+	projectile_gfx = "small_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_hull weapon_role_artillery }
+	ai_tag_weight = 4
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+
+# #######################
+#  Convential Torpedoes	#
+# #######################
+
+### Antimatter Torpedoes
+weapon_component_template = {
+	key = "TFW_TORPEDO_4"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	type = missile
+	damage = { min = 358.0 max = 579.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 200
+	range = 80.0
+	accuracy = 1.0
+	power = -37
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			volatile_motes = @m_t6_rare
+		}		
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+	tracking = 0.10	
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+
+	missile_speed = 15
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 17.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_torpedo_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_torpedoes_4" }
+	component_set = "TFW_TORPEDO_4"
+	projectile_gfx = "large_tfw_torpedo_04"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "TFW_TORPEDO_5"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+### Darkmatter Torpedoes
+weapon_component_template = {
+	key = "TFW_TORPEDO_5"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	type = missile
+	damage = { min = 465.0 max = 752.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 200
+	range = 80.0
+	accuracy = 1.00
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			volatile_motes = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.10
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.5
+	armor_penetration = 0.0
+
+	missile_speed = 15
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 21.0
+	missile_retarget_range = 100	
+	
+	icon = "GFX_tfw_torpedo_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_torpedoes_5" }
+	component_set = "TFW_TORPEDO_5"
+	projectile_gfx = "large_tfw_torpedo_05"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "TFW_TORPEDO_6"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+### Strangelet Torpedoes
+weapon_component_template = {
+	key = "TFW_TORPEDO_6"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	type = missile
+	damage = { min = 604.0 max = 978.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 200
+	range = 80.0
+	accuracy = 1.00
+	power = -66
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t8_cost_tfw
+			volatile_motes = @m_t8_rare_tfw
+		}		
+		upkeep = {
+			energy = @m_t8_upkeep_energy_tfw
+			alloys = @m_t8_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.10
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.5
+	armor_penetration = 0.0
+
+	missile_speed = 15
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 24.0
+	missile_retarget_range = 100	
+	
+	icon = "GFX_tfw_torpedo_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_torpedoes_6" }
+	component_set = "TFW_TORPEDO_6"
+	projectile_gfx = "large_tfw_torpedo_06"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+# ####################
+#  	Plasma Missiles  #
+# ####################
+# Small
+weapon_component_template = {
+	key = "SMALL_TFW_P_T1"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = missile	
+	damage = { min = 24.0 max = 52.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 1.0
+	power = -26
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			exotic_gases = @s_t6_rare
+		}		
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+	tracking = 0.4
+	
+	hull_damage = 1.5
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	missile_speed = 14
+	missile_evasion = 0.0
+	missile_armor = 1.0
+	missile_shield = 0.0
+	missile_health = 8.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_pt1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_pt1" }
+	component_set = "TFW_P_T1"
+	projectile_gfx = "tfw_pt1_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_TFW_P_T2"
+	ai_tag_weight = 3
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}	
+}
+
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_P_T1"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = missile
+	damage = { min = 60.0 max = 130.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 1.0
+	power = -42
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			exotic_gases = @m_t6_rare
+		}		
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+	tracking = 0.2
+	
+	hull_damage = 1.5
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	missile_speed = 14
+	missile_evasion = 0.0
+	missile_armor = 2.0
+	missile_shield = 0.0
+	missile_health = 12.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_pt1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_pt1" }
+	component_set = "TFW_P_T1"
+	projectile_gfx = "tfw_pt1_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_TFW_P_T2"
+	ai_tag_weight = 3
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}	
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_P_T1"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = missile
+	damage = { min = 144.0 max = 312.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 1.0
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			exotic_gases = @l_t6_rare
+		}		
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+	tracking = 0.05
+	
+	hull_damage = 1.5
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	missile_speed = 14
+	missile_evasion = 0.0
+	missile_armor = 3.0
+	missile_shield = 0.0
+	missile_health = 16.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_pt1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_pt1" }
+	component_set = "TFW_P_T1"
+	projectile_gfx = "tfw_pt1_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_TFW_P_T2"
+	ai_tag_weight = 3
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}	
+}
+
+# ########################
+#  	Adv. Plasma Missiles #
+# ########################
+# Small
+weapon_component_template = {
+	key = "SMALL_TFW_P_T2"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = missile
+	damage = { min = 28.0 max = 63.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 1.0
+	power = -38
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			exotic_gases = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.4
+	
+	hull_damage = 1.5
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	missile_speed = 16
+	missile_evasion = 0.0
+	missile_armor = 1.0
+	missile_shield = 0.0
+	missile_health = 10.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_pt2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_pt2" }
+	component_set = "TFW_P_T2"
+	projectile_gfx = "tfw_pt2_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}	
+}
+
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_P_T2"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = missile
+	damage = { min = 70.0 max = 158.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 1.0
+	power = -54
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			exotic_gases = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.2
+	
+	hull_damage = 1.5
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	missile_speed = 16
+	missile_evasion = 0.0
+	missile_armor = 2.0
+	missile_shield = 0.0
+	missile_health = 14.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_pt2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_pt2" }
+	component_set = "TFW_P_T2"
+	projectile_gfx = "tfw_pt2_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}	
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_P_T2"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = missile
+	damage = { min = 168.0 max = 378.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 1.0
+	power = -104
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			exotic_gases = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.05
+	
+	hull_damage = 1.5
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	missile_speed = 16
+	missile_evasion = 0.0
+	missile_armor = 3.0
+	missile_shield = 0.0
+	missile_health = 18.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_pt2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_pt2" }
+	component_set = "TFW_P_T2"
+	projectile_gfx = "tfw_pt2_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}	
+}
+
+# ####################### #
+#  	SWARMER MISSILES 	  #
+# ####################### #
+### Typhoon Missile Launcher
+weapon_component_template = {
+	key = "TFW_SWARMER_MISSILE_3"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 53.0 max = 83.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 30
+	range = 100.0
+	accuracy = 1.0
+	power = -39
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			volatile_motes = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+	tracking = 0.30	
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0	
+
+	missile_speed = 18
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 50.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_swarmer_missile_3"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_swarmer_missiles_3" }
+	component_set = "TFW_SWARMER_MISSILE_3"
+	projectile_gfx = "tfw_swarmer_missiles_03"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "TFW_SWARMER_MISSILE_4"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+### Vortex Missile Launcher
+weapon_component_template = {
+	key = "TFW_SWARMER_MISSILE_4"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 79.0 max = 142.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 30
+	range = 100.0
+	accuracy = 1.0
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t9_cost_tfw
+			volatile_motes = @m_t9_rare_tfw
+		}		
+		upkeep = {
+			energy = @m_t9_upkeep_energy_tfw
+			alloys = @m_t9_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.30	
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0	
+
+	missile_speed = 18
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 60.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_swarmer_missile_4"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_swarmer_missiles_4" }
+	component_set = "TFW_SWARMER_MISSILE_4"
+	projectile_gfx = "tfw_swarmer_missiles_04"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "TFW_SWARMER_MISSILE_5"
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}
+
+### Tempest Missile Launcher
+weapon_component_template = {
+	key = "TFW_SWARMER_MISSILE_5"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	damage = { min = 119.0 max = 244.0 }
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 30
+	range = 100.0
+	accuracy = 1.0
+	power = -66
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t11_cost_tfw
+			volatile_motes = @m_t11_rare_tfw
+		}		
+		upkeep = {
+			energy = @m_t11_upkeep_energy_tfw
+			alloys = @m_t11_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.30	
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0	
+
+	missile_speed = 18
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 70.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_swarmer_missile_5"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_swarmer_missiles_5" }
+	component_set = "TFW_SWARMER_MISSILE_5"
+	projectile_gfx = "tfw_swarmer_missiles_05"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}	
+}

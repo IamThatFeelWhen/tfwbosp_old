@@ -1,0 +1,122 @@
+###REPAIR DRONES###
+component_set = {
+	key = "TFW_AUTO_REPAIR_1"
+	
+	icon = "GFX_tfw_auto_repair_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_2"
+	
+	icon = "GFX_tfw_auto_repair_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_3"
+	
+	icon = "GFX_tfw_auto_repair_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_PSI1"
+	
+	icon = "GFX_tfw_auto_repair_psi1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_PSI2"
+	
+	icon = "GFX_tfw_auto_repair_psi2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_PSI3"
+	
+	icon = "GFX_tfw_auto_repair_psi3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_SYNTH1"
+	
+	icon = "GFX_tfw_auto_repair_synth1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_SYNTH2"
+	
+	icon = "GFX_tfw_auto_repair_synth2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTO_REPAIR_SYNTH3"
+	
+	icon = "GFX_tfw_auto_repair_synth3"
+	icon_frame = 1	
+}
+
+###AP_PLANTS###
+component_set = {
+	key = "TFW_SHIELD_AMPLIFIER_1"
+	
+	icon = "GFX_tfw_shield_amplifier_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_SHIELD_AMPLIFIER_2"
+	
+	icon = "GFX_tfw_shield_amplifier_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_SHIELD_AMPLIFIER_3"
+	
+	icon = "GFX_tfw_shield_amplifier_3"
+	icon_frame = 1	
+}
+
+#HIVE
+component_set = {
+	key = "TFW_HIVE_AMPLIFIER_1"
+	
+	icon = "GFX_tfw_hive_amplifier_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_HIVE_AMPLIFIER_2"
+	
+	icon = "GFX_tfw_hive_amplifier_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_HIVE_AMPLIFIER_3"
+	
+	icon = "GFX_tfw_hive_amplifier_3"
+	icon_frame = 1	
+}
+
+#########ENIGMATIC###########
+component_set = {
+	key = "TFW_ENIGMATIC_DECODER_2"
+	
+	icon = "GFX_tfw_enigmatic_decoder_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ENIGMATIC_ENCODER_2"
+	
+	icon = "GFX_tfw_enigmatic_encoder_2"
+	icon_frame = 1	
+}

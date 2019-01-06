@@ -1,0 +1,320 @@
+#####################SINTHETICS###############
+# ####################
+#  	MOLECULAR CRUSHER
+# ####################
+# I
+###Small
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_S_1"   
+	size = small    
+	entity = "large_laser_gun_entity"
+	damage = { min = 21.0 max = 67.0 }
+	windup = { min = 3.0 max = 25.0 }
+	type = instant
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 40.0
+	accuracy = 0.8
+	tracking = 0.5
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25
+	
+	icon = "GFX_tfw_mol_crusher_1"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_1" }   
+	component_set = "TFW_MOL_CRUSHER_1"   
+	projectile_gfx = "tfw_mol_crusher_s_1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	upgrades_to = "TFW_MOL_CRUSHER_S_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+###Medium
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_M_1"   
+	size = medium    
+	entity = "large_laser_gun_entity"
+	damage = { min = 52.0 max = 168.0 }
+	windup = { min = 3.0 max = 25.0 }
+	type = instant
+	power = -42
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 60.0
+	accuracy = 0.8
+	tracking = 0.3
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25
+	
+	icon = "GFX_tfw_mol_crusher_1"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_1" }   
+	component_set = "TFW_MOL_CRUSHER_1"   
+	projectile_gfx = "tfw_mol_crusher_m_1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	upgrades_to = "TFW_MOL_CRUSHER_M_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+###Large
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_L_1"   
+	size = large    
+	entity = "large_laser_gun_entity"
+	damage = { min = 124.0 max = 403.0 }
+	windup = { min = 3.0 max = 25.0 }
+	type = instant
+	power = -80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 80.0
+	accuracy = 0.8
+	tracking = 0.05
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25
+	
+	icon = "GFX_tfw_mol_crusher_1"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_1" }   
+	component_set = "TFW_MOL_CRUSHER_1"   
+	projectile_gfx = "tfw_mol_crusher_l_1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	upgrades_to = "TFW_MOL_CRUSHER_L_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+# II
+###Small
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_S_2"   
+	size = small    
+	entity = "large_laser_gun_entity"
+	damage = { min = 25.0 max = 84.0 }
+	windup = { min = 3.0 max = 25.0 }
+	type = instant
+	power = -31
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+		}
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 40.0
+	accuracy = 0.8
+	tracking = 0.5
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25
+	
+	icon = "GFX_tfw_mol_crusher_2"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_2" }   
+	component_set = "TFW_MOL_CRUSHER_2"   
+	projectile_gfx = "tfw_mol_crusher_s_2"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+###Medium
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_M_2"   
+	size = medium    
+	entity = "large_laser_gun_entity"
+	damage = { min = 63.0 max = 209.0 }
+	windup = { min = 3.0 max = 25.0 }
+	type = instant
+	power = -53
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+		}
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 60.0
+	accuracy = 0.8
+	tracking = 0.3
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25
+	
+	icon = "GFX_tfw_mol_crusher_2"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_2" }   
+	component_set = "TFW_MOL_CRUSHER_2"   
+	projectile_gfx = "tfw_mol_crusher_m_2"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+###Large
+weapon_component_template = {
+	key = "TFW_MOL_CRUSHER_L_2"   
+	size = large    
+	entity = "large_laser_gun_entity"
+	damage = { min = 152.0 max = 502.0 }
+	windup = { min = 3.0 max = 25.0 }
+	type = instant
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+	total_fire_time = 50
+	range = 80.0
+	accuracy = 0.8
+	tracking = 0.05
+
+	hull_damage = 2.0
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.25
+	
+	icon = "GFX_tfw_mol_crusher_2"    
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_molecular_crusher_2" }   
+	component_set = "TFW_MOL_CRUSHER_2"   
+	projectile_gfx = "tfw_mol_crusher_l_2"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 3
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}

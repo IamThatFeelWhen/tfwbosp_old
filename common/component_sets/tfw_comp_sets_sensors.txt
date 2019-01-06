@@ -1,0 +1,25 @@
+###SENSORS###
+component_set = {
+	key = "TFW_SHIP_SENSOR_5"
+	
+	icon = "GFX_tfw_sensor_5"
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_SHIP_SENSOR_6"
+	
+	icon = "GFX_tfw_sensor_6"
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_SHIP_SENSOR_7"
+	
+	icon = "GFX_tfw_sensor_7"
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_SHIP_PSI_SENSOR"
+	
+	icon = "GFX_tfw_psi_sensor"
+	icon_frame = 1	
+}

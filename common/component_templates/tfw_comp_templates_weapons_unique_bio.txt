@@ -1,0 +1,221 @@
+####################################ADVANCED#########################################
+# ####################
+#  	BIO CANNON		 #
+# ####################
+# Small
+weapon_component_template = {
+	key = "SMALL_TFW_BIOCANNON"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	damage = { min = 54.0 max = 114.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @s_t8_upkeep_energy_tfw
+			alloys = @s_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 35
+	range = 40.0
+	accuracy = 0.8
+	tracking = 0.4
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_biocannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_biocannon" }
+	component_set = "TFW_BIOCANNON"
+	projectile_gfx = "tfw_biocannon_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 1
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_xenophobe }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_BIOCANNON"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	damage = { min = 135.0 max = 285.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -47
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @m_t8_upkeep_energy_tfw
+			alloys = @m_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 35
+	range = 60.0
+	accuracy = 0.8
+	tracking = 0.2
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_biocannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_biocannon" }
+	component_set = "TFW_BIOCANNON"
+	projectile_gfx = "tfw_biocannon_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 1
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_xenophobe }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_BIOCANNON"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	damage = { min = 324.0 max = 684.0 }
+	windup = { min = 2.0 max = 20.0 }
+	power = -96
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @l_t8_upkeep_energy_tfw
+			alloys = @l_t8_upkeep_alloys_tfw
+		}
+	}
+	total_fire_time = 35
+	range = 80.0
+	accuracy = 0.8
+	tracking = 0.05
+
+	hull_damage = 1.0
+	shield_damage = 1.5
+	shield_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.0	
+	
+	icon = "GFX_tfw_biocannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_biocannon" }
+	component_set = "TFW_BIOCANNON"
+	projectile_gfx = "tfw_biocannon_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 1
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_xenophobe }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}			
+}
+
+##############################
+#  	DEVOURER TORPEDOES		 #
+##############################
+weapon_component_template = {
+	key = "TFW_INFECTOR"
+	size = torpedo
+	entity = "turret_missile_large_entity"
+	type = missile
+	damage = { min = 522.0 max = 1032.0 }
+	windup = { min = 2.0 max = 20.0 }
+	total_fire_time = 100
+	range = 100.0
+	accuracy = 1.0
+	power = -66
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t9_cost_tfw
+		}
+		upkeep = {
+			energy = @l_t9_upkeep_energy_tfw
+			alloys = @l_t9_upkeep_alloys_tfw
+		}
+	}
+	tracking = 0.1
+
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 2.0
+	armor_penetration = 0.0	
+
+	missile_speed = 15
+	missile_evasion = 0.0
+	missile_armor = 0.0
+	missile_shield = 0.0
+	missile_health = 50.0
+	missile_retarget_range = 100
+	
+	icon = "GFX_tfw_infector"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_infector" }
+	component_set = "TFW_INFECTOR"
+	projectile_gfx = "tfw_infector_large"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 2
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_xenophobe }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}			
+}
+

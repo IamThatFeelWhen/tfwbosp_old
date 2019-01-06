@@ -1,0 +1,1421 @@
+@attack_range_manned = 8
+@attack_range_adv_manned = 10
+@attack_range_unmanned = 9
+@attack_range_adv_unmanned = 10
+
+@launch_time = 1.5
+
+@speed1 = 300
+@speed2 = 350
+@speed3 = 400
+@speed4 = 450
+@speed5 = 500
+
+@count_manned = 8
+@count_drone_1 = 10
+@count_drone_2 = 12
+@count_swarm_1 = 12
+@count_swarm_2 = 14
+@count_hive_1 = 10
+@count_hive_2 = 13
+@count_hive_3 = 16
+
+@regen = 0.13
+@regen_manned = 0.13
+@regen_drone = 0.18
+@regen_hive = 0.15
+
+@power1 = -20
+@power2 = -34
+@power3 = -45
+@power4 = -59
+@power5 = -70
+@power6 = -84
+
+@power2_psi = -20
+@power3_psi = -30
+@power4_psi = -40
+@power5_psi = -50
+@power6_psi = -60
+
+@power2_drone = -40
+@power3_drone = -50
+@power4_drone = -60
+@power5_drone = -70
+@power6_drone = -80
+
+############################### COMMMON #############################
+# Strike Craft 4 (COMMON)
+strike_craft_component_template = {
+	key = "TFW_BOMBER_4"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_manned
+	launch_time = @launch_time
+	
+	damage = { min = 8 max = 16 }
+	cooldown = 2.0
+	range = @attack_range_adv_manned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 55
+	armor = 10
+	shield = 50
+	evasion = 0.80
+	
+	speed = @speed4
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_weapon"
+	
+	icon = "GFX_tfw_bomber_4"
+	icon_frame = 1
+	component_set = "TFW_BOMBER_4"
+	prerequisites = { "tech_tfw_strike_craft_4" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_BOMBER_5"
+}
+
+# Strike Craft 5 (COMMON)
+strike_craft_component_template = {
+	key = "TFW_BOMBER_5"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_manned
+	launch_time = @launch_time
+	
+	damage = { min = 10 max = 22 }
+	cooldown = 2.0
+	range = @attack_range_adv_manned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 60
+	armor = 20
+	shield = 60
+	evasion = 0.80
+	
+	speed = @speed5
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_5_weapon"
+	
+	icon = "GFX_tfw_bomber_5"
+	icon_frame = 1
+	component_set = "TFW_BOMBER_5"
+	prerequisites = { "tech_tfw_strike_craft_5" }
+	tags = { weapon_type_strike_craft }
+}
+
+################################# SPIRITUALISTS ######################################
+# Strike Craft 1 (SPIRITUALISTS)
+strike_craft_component_template = {
+	key = "TFW_PSI_BOMBER_DEF_1"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power2_psi
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+		}
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 2 max = 8 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.60
+	
+	health = 35
+	armor = 0
+	shield = 10
+	evasion = 0.50
+	
+	speed = @speed1
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_psi_weapon"
+	
+	icon = "GFX_tfw_psi_bomber_def_1"
+	icon_frame = 1
+	component_set = "TFW_PSI_BOMBER_DEF_1"
+	prerequisites = { "tech_tfwr_strike_craft_1_psi" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_PSI_BOMBER_DEF_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 2 (SPIRITUALISTS)
+strike_craft_component_template = {
+	key = "TFW_PSI_BOMBER_DEF_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power3_psi
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 4 max = 9 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 40
+	armor = 0
+	shield = 20
+	evasion = 0.75
+	
+	speed = @speed2
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_psi_weapon"
+	
+	icon = "GFX_tfw_psi_bomber_def_2"
+	icon_frame = 1
+	component_set = "TFW_PSI_BOMBER_DEF_2"
+	prerequisites = { "tech_tfwr_strike_craft_2_psi" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_PSI_BOMBER_DEF_3"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 3 (SPIRITUALISTS)
+strike_craft_component_template = {
+	key = "TFW_PSI_BOMBER_DEF_3"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power4_psi
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 6 max = 12 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 45
+	armor = 4
+	shield = 30
+	evasion = 0.75
+	
+	speed = @speed3
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_psi_weapon"
+	
+	icon = "GFX_tfw_psi_bomber_def_3"
+	icon_frame = 1
+	component_set = "TFW_PSI_BOMBER_DEF_3"
+	prerequisites = { "tech_tfwr_strike_craft_3_psi" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_PSI_BOMBER"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 4 (SPIRITUALISTS)
+strike_craft_component_template = {
+	key = "TFW_PSI_BOMBER"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power5_psi
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 8 max = 16 }
+	cooldown = 2.0
+	range = @attack_range_adv_unmanned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 50
+	armor = 8
+	shield = 40
+	evasion = 0.75
+	
+	speed = @speed4
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_psi_weapon"
+	
+	icon = "GFX_tfw_psi_bomber"
+	icon_frame = 1
+	component_set = "TFW_PSI_BOMBER"
+	prerequisites = { "tech_tfw_psi_strike_craft" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_PSI_BOMBER_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 5 (SPIRITUALISTS)
+strike_craft_component_template = {
+	key = "TFW_PSI_BOMBER_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power6_psi
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+		
+	count = @count_manned
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 10 max = 22 }
+	cooldown = 2.0
+	range = @attack_range_adv_unmanned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 55
+	armor = 16
+	shield = 50
+	evasion = 0.75
+	
+	speed = @speed5
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_5_psi_weapon"
+	
+	icon = "GFX_tfw_psi_bomber_2"
+	icon_frame = 1
+	component_set = "TFW_PSI_BOMBER_2"
+	prerequisites = { "tech_tfw_psi_strike_craft_2" }
+	tags = { weapon_type_strike_craft }
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+################################# MATERIALISTS ######################################
+# Strike Craft 1 (MATERIALISTS)
+strike_craft_component_template = {
+	key = "TFW_DRONE_BOMBER_DEF_1"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power2_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+		
+	count = @count_drone_1
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 2 max = 8 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.60
+	
+	health = 30
+	armor = 0
+	shield = 10
+	evasion = 0.50
+	
+	speed = @speed1
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_drone_weapon"
+	
+	icon = "GFX_tfw_drone_bomber_def_1"
+	icon_frame = 1
+	component_set = "TFW_DRONE_BOMBER_DEF_1"
+	prerequisites = { "tech_tfwr_strike_craft_1_materialist" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_DRONE_BOMBER_DEF_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_materialist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 2 (MATERIALISTS)
+strike_craft_component_template = {
+	key = "TFW_DRONE_BOMBER_DEF_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power3_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+		
+	count = @count_drone_1
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 4 max = 9 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 35
+	armor = 0
+	shield = 20
+	evasion = 0.75
+	
+	speed = @speed2
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_drone_weapon"
+	
+	icon = "GFX_tfw_drone_bomber_def_2"
+	icon_frame = 1
+	component_set = "TFW_DRONE_BOMBER_DEF_2"
+	prerequisites = { "tech_tfwr_strike_craft_2_materialist" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_DRONE_BOMBER_DEF_3"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_materialist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 3 (MATERIALISTS)
+strike_craft_component_template = {
+	key = "TFW_DRONE_BOMBER_DEF_3"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power4_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+		
+	count = @count_drone_1
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 6 max = 12 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 40
+	armor = 4
+	shield = 30
+	evasion = 0.75
+	
+	speed = @speed3
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_drone_weapon"
+	
+	icon = "GFX_tfw_drone_bomber_def_3"
+	icon_frame = 1
+	component_set = "TFW_DRONE_BOMBER_DEF_3"
+	prerequisites = { "tech_tfwr_strike_craft_3_materialist" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_DRONE_BOMBER"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_materialist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 4 (MATERIALISTS)
+strike_craft_component_template = {
+	key = "TFW_DRONE_BOMBER"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power5_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+		
+	count = @count_drone_2
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 8 max = 16 }
+	cooldown = 2.0
+	range = @attack_range_adv_unmanned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 45
+	armor = 8
+	shield = 40
+	evasion = 0.75
+	
+	speed = @speed4
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_drone_weapon"
+	
+	icon = "GFX_tfw_drone_bomber"
+	icon_frame = 1
+	component_set = "TFW_DRONE_BOMBER"
+	prerequisites = { "tech_tfw_strike_drone" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_DRONE_BOMBER_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_materialist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 5 (MATERIALISTS)
+strike_craft_component_template = {
+	key = "TFW_DRONE_BOMBER_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power6_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @l_t8_upkeep_energy_tfw
+			alloys = @l_t8_upkeep_alloys_tfw
+		}
+	}
+		
+	count = @count_drone_2
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 10 max = 22 }
+	cooldown = 2.0
+	range = @attack_range_adv_unmanned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 50
+	armor = 16
+	shield = 50
+	evasion = 0.75
+	
+	speed = @speed5
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_5_drone_weapon"
+	
+	icon = "GFX_tfw_drone_bomber_2"
+	icon_frame = 1
+	component_set = "TFW_DRONE_BOMBER_2"
+	prerequisites = { "tech_tfw_strike_drone_2" }
+	tags = { weapon_type_strike_craft }
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_materialist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+################################# MACHINES ######################################
+# Strike Craft 1 (MACHINES)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_SWARM_DEF_1"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power2_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+		
+	count = @count_swarm_1
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 2 max = 8 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.60
+	
+	health = 30
+	armor = 0
+	shield = 10
+	evasion = 0.55
+	
+	speed = @speed1
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_swarm_weapon"
+	
+	component_set = "TFW_STRIKE_SWARM_DEF_1"
+	prerequisites = { "tech_tfwr_strike_craft_1_machine" }
+	
+	icon = "GFX_tfw_machine_strike_swarm_def_1"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_SWARM_DEF_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 2 (MACHINES)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_SWARM_DEF_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power3_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+		
+	count = @count_swarm_1
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 4 max = 9 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 35
+	armor = 0
+	shield = 20
+	evasion = 0.8
+	
+	speed = @speed2
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_swarm_weapon"
+	
+	component_set = "TFW_STRIKE_SWARM_DEF_2"
+	prerequisites = { "tech_tfwr_strike_craft_2_machine" }
+	
+	icon = "GFX_tfw_machine_strike_swarm_def_2"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_SWARM_DEF_3"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 3 (MACHINES)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_SWARM_DEF_3"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power4_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+		
+	count = @count_swarm_1
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+	
+	damage = { min = 6 max = 12 }
+	cooldown = 2.0
+	range = @attack_range_unmanned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 40
+	armor = 4.5
+	shield = 30
+	evasion = 0.80
+	
+	speed = @speed3
+	rotation_speed = 0.1
+	acceleration = 0.5
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_swarm_weapon"
+	
+	component_set = "TFW_STRIKE_SWARM_DEF_3"
+	prerequisites = { "tech_tfwr_strike_craft_3_machine" }
+	
+	icon = "GFX_tfw_machine_strike_swarm_def_3"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_SWARM"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 4 (MACHINES)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_SWARM"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power5_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	count = @count_swarm_2
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 8 max = 16 }
+	cooldown = 2.0
+	range = @attack_range_adv_unmanned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 45
+	armor = 9
+	shield = 40
+	evasion = 0.8
+	
+	speed = @speed4
+	rotation_speed = 0.15
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_swarm_weapon"
+	
+	component_set = "TFW_STRIKE_SWARM"
+	prerequisites = { "tech_tfw_machine_strike_swarm" }
+	
+	icon = "GFX_tfw_machine_strike_swarm"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_SWARM_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+# Strike Craft 5 (MACHINES)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_SWARM_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power6_drone
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t8_cost_tfw
+		}
+		upkeep = {
+			energy = @l_t8_upkeep_energy_tfw
+			alloys = @l_t8_upkeep_alloys_tfw
+		}
+	}
+
+	count = @count_swarm_2
+	regeneration_per_day = @regen_drone
+	launch_time = @launch_time
+	
+	damage = { min = 10 max = 22 }
+	cooldown = 2.0
+	range = @attack_range_adv_unmanned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 50
+	armor = 18
+	shield = 50
+	evasion = 0.80
+	
+	speed = @speed5
+	rotation_speed = 0.15
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_5_swarm_weapon"
+	
+	component_set = "TFW_STRIKE_SWARM_2"
+	prerequisites = { "tech_tfw_machine_strike_swarm_2" }
+	
+	icon = "GFX_tfw_machine_strike_swarm_2"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+################################# HIVE ######################################	
+### Strike Craft 1 (HIVE)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_HIVE_DEF_1"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+		}
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+		
+	count = @count_hive_1
+	regeneration_per_day = @regen_hive
+	launch_time = @launch_time
+	
+	damage = { min = 2 max = 8 }
+	cooldown = 2.0
+	range = @attack_range_manned
+	accuracy = 1.0
+	tracking = 0.60
+	
+	health = 30
+	armor = 0
+	shield = 5
+	evasion = 0.65
+	
+	speed = @speed1
+	rotation_speed = 0.2
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_hive_weapon"
+	
+	component_set = "TFW_STRIKE_HIVE_DEF_1"
+	prerequisites = { "tech_tfwr_strike_craft_1_hive" }
+	
+	icon = "GFX_tfw_strike_craft_hive_def_1"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_HIVE_DEF_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+### Strike Craft 2 (HIVE)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_HIVE_DEF_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+		
+	count = @count_hive_2
+	regeneration_per_day = @regen_hive
+	launch_time = @launch_time
+	
+	damage = { min = 4 max = 9 }
+	cooldown = 2.0
+	range = @attack_range_manned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 35
+	armor = 0
+	shield = 10
+	evasion = 0.85
+	
+	speed = @speed2
+	rotation_speed = 0.2
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_hive_weapon"
+	
+	component_set = "TFW_STRIKE_HIVE_DEF_2"
+	prerequisites = { "tech_tfwr_strike_craft_2_hive" }
+	
+	icon = "GFX_tfw_strike_craft_hive_def_2"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_HIVE_DEF_3"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+### Strike Craft 3 (HIVE)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_HIVE_DEF_3"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+		
+	count = @count_hive_2
+	regeneration_per_day = @regen_hive
+	launch_time = @launch_time
+	
+	damage = { min = 6 max = 12 }
+	cooldown = 2.0
+	range = @attack_range_manned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 40
+	armor = 0
+	shield = 20
+	evasion = 0.85
+	
+	speed = @speed2
+	rotation_speed = 0.2
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_hive_weapon"
+	
+	component_set = "TFW_STRIKE_HIVE_DEF_3"
+	prerequisites = { "tech_tfwr_strike_craft_3_hive" }
+	
+	icon = "GFX_tfw_strike_craft_hive_def_3"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_HIVE"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+### Strike Craft 4 (HIVE)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_HIVE"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+		}
+		upkeep = {
+			energy = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+
+	count = @count_hive_3
+	regeneration_per_day = @regen_hive
+	launch_time = @launch_time
+	
+	damage = { min = 8 max = 16 }
+	cooldown = 2.0
+	range = @attack_range_adv_manned
+	accuracy = 1.0
+	tracking = 0.80
+	
+	health = 45
+	armor = 5
+	shield = 30
+	evasion = 0.9
+	
+	speed = @speed4
+	rotation_speed = 0.2
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_4_hive_weapon"
+	
+	component_set = "TFW_STRIKE_HIVE"
+	prerequisites = { "tech_tfw_strike_craft_hive" }
+	
+	icon = "GFX_tfw_strike_craft_hive"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "TFW_STRIKE_HIVE_2"
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+### Strike Craft 5 (HIVE)
+strike_craft_component_template = {
+	key = "TFW_STRIKE_HIVE_2"
+	size = LARGE
+	entity = "bomber_entity"
+	power = @power6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	count = @count_hive_3
+	regeneration_per_day = @regen_hive
+	launch_time = @launch_time
+	
+	damage = { min = 10 max = 22 }
+	cooldown = 2.0
+	range = @attack_range_adv_manned
+	accuracy = 1.0
+	tracking = 0.70
+	
+	health = 50
+	armor = 10
+	shield = 40
+	evasion = 0.9
+	
+	speed = @speed5
+	rotation_speed = 0.2
+	acceleration = 0.7
+	
+	shield_penetration = 1
+	armor_damage = 1.50
+	
+	ship_behavior = "bombers_behavior"
+	
+	weapon_type = instant
+	projectile_gfx = "bomber_5_hive_weapon"
+	
+	component_set = "TFW_STRIKE_HIVE_2"
+	prerequisites = { "tech_tfw_strike_craft_hive_2" }
+	
+	icon = "GFX_tfw_strike_craft_hive_2"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft }
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}

@@ -1,0 +1,354 @@
+# ##################################
+# Missile Weapons (And missile-like)
+# ##################################
+
+#A-S
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "small_missile_tfw_as"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_missile_small_hit_entity_as"
+	shield_hit_entity = "tfw_missile_small_shield_hit_entity_as"
+	muzzle_flash_entity = "missile_small_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "as_missile_small_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.5
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "medium_missile_tfw_as"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_missile_medium_hit_entity_as"
+	shield_hit_entity = "tfw_missile_medium_shield_hit_entity_as"
+	muzzle_flash_entity = "missile_medium_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "as_missile_medium_entity"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.5
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_missile_tfw_as"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_missile_large_hit_entity_as"
+	shield_hit_entity = "tfw_missile_large_shield_hit_entity_as"
+	muzzle_flash_entity = "missile_large_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "as_missile_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.5
+	}
+}
+
+#A-A
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "small_missile_tfw_aa"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_missile_small_hit_entity_aa"
+	shield_hit_entity = "tfw_missile_small_shield_hit_entity_aa"
+	muzzle_flash_entity = "missile_small_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "aa_missile_small_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.5
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "medium_missile_tfw_aa"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_missile_medium_hit_entity_aa"
+	shield_hit_entity = "tfw_missile_medium_shield_hit_entity_aa"
+	muzzle_flash_entity = "missile_medium_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "aa_missile_large_entity"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.5
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_missile_tfw_aa"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_missile_large_hit_entity_aa"
+	shield_hit_entity = "tfw_missile_large_shield_hit_entity_aa"
+	muzzle_flash_entity = "missile_large_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "aa_missile_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.5
+	}
+}
+
+# Plasma Missiles 1
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_pt1_small"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_pt1_hit_entity_small"
+	shield_hit_entity = "missile_small_shield_hit_entity"
+	muzzle_flash_entity = "tfw_pt1_muzzle_flash_entity_small"
+	
+	#missile specific data
+	entity = "tfw_pt1_entity_small"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_pt1_medium"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_pt1_hit_entity_medium"
+	shield_hit_entity = "missile_medium_shield_hit_entity"
+	muzzle_flash_entity = "tfw_pt1_muzzle_flash_entity_medium"
+	
+	#missile specific data
+	entity = "tfw_pt1_entity_medium"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_pt1_large"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_pt1_hit_entity_large"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "tfw_pt1_muzzle_flash_entity_large"
+	
+	#missile specific data
+	entity = "tfw_pt1_entity_large"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+# Plasma Missiles 2 
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_pt2_small"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_pt2_hit_entity_small"
+	shield_hit_entity = "missile_small_shield_hit_entity"
+	muzzle_flash_entity = "tfw_pt2_muzzle_flash_entity_small"
+	
+	#missile specific data
+	entity = "tfw_pt2_entity_small"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_pt2_medium"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_pt2_hit_entity_medium"
+	shield_hit_entity = "missile_medium_shield_hit_entity"
+	muzzle_flash_entity = "tfw_pt2_muzzle_flash_entity_medium"
+	
+	#missile specific data
+	entity = "tfw_pt2_entity_medium"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_pt2_large"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_pt2_hit_entity_large"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "tfw_pt2_muzzle_flash_entity_large"
+	
+	#missile specific data
+	entity = "tfw_pt2_entity_large"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#######SWARMER
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_swarmer_missiles_03"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "swarmer_missiles_03_hit_entity"
+	shield_hit_entity = "swarmer_missiles_03_shield_hit_entity"
+	muzzle_flash_entity = "swarmer_missiles_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "swarmer_missiles_03_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_swarmer_missiles_04"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "swarmer_missiles_04_hit_entity"
+	shield_hit_entity = "swarmer_missiles_04_shield_hit_entity"
+	muzzle_flash_entity = "swarmer_missiles_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "swarmer_missiles_04_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_swarmer_missiles_05"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "swarmer_missiles_05_hit_entity"
+	shield_hit_entity = "swarmer_missiles_05_shield_hit_entity"
+	muzzle_flash_entity = "swarmer_missiles_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "swarmer_missiles_05_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+###############CONV_TORPEDOES########################################
+#4
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_tfw_torpedo_04"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_torpedo_04_large_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "torpedo_large_muzzle_entity"
+	
+	#torpedo specific data
+	entity = "torpedo_04_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#5
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_tfw_torpedo_05"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_torpedo_05_large_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "torpedo_large_muzzle_entity"
+	
+	#torpedo specific data
+	entity = "torpedo_05_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#6
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_tfw_torpedo_06"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "tfw_torpedo_06_large_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "torpedo_large_muzzle_entity"
+	
+	#torpedo specific data
+	entity = "torpedo_06_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+############################Biological Ascension####################################################
+######## Devourer
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_infector_medium"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "infector_medium_hit_entity"
+	shield_hit_entity = "infector_medium_shield_hit_entity"
+	muzzle_flash_entity = "infector_medium_muzzle_entity"
+	
+	#missile specific data
+	entity = "infector_medium_entity"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "tfw_infector_large"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "infector_large_hit_entity"
+	shield_hit_entity = "infector_large_shield_hit_entity"
+	muzzle_flash_entity = "infector_large_muzzle_entity"
+	
+	#missile specific data
+	entity = "infector_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

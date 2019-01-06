@@ -1,0 +1,168 @@
+###STRIKE_CRAFT###
+
+################################### COMMMON ##################################
+#I 
+#II 
+#III
+#IV
+component_set = {
+	key = "TFW_BOMBER_4"
+	
+	icon = "GFX_tfw_bomber_4"
+	icon_frame = 1	
+}
+#V
+component_set = {
+	key = "TFW_BOMBER_5"
+	
+	icon = "GFX_tfw_bomber_5"
+	icon_frame = 1	
+}
+
+################################# SPIRITUALISTS ######################################
+#I
+component_set = {
+	key = "TFW_PSI_BOMBER_DEF_1"
+	
+	icon = "GFX_tfw_psi_bomber_def_1"
+	icon_frame = 1	
+}
+#II 
+component_set = {
+	key = "TFW_PSI_BOMBER_DEF_2"
+	
+	icon = "GFX_tfw_psi_bomber_def_2"
+	icon_frame = 1	
+}
+#III
+component_set = {
+	key = "TFW_PSI_BOMBER_DEF_3"
+	
+	icon = "GFX_tfw_psi_bomber_def_3"
+	icon_frame = 1	
+}
+#IV
+component_set = {
+	key = "TFW_PSI_BOMBER"
+	
+	icon = "GFX_tfw_psi_bomber"
+	icon_frame = 1	
+}
+#V
+component_set = {
+	key = "TFW_PSI_BOMBER_2"
+	
+	icon = "GFX_tfw_psi_bomber_2"
+	icon_frame = 1	
+}
+
+################################# MATERIALISTS ######################################
+#I
+component_set = {
+	key = "TFW_DRONE_BOMBER_DEF_1"
+	
+	icon = "GFX_tfw_drone_bomber_def_1"
+	icon_frame = 1	
+}
+#II
+component_set = {
+	key = "TFW_DRONE_BOMBER_DEF_2"
+	
+	icon = "GFX_tfw_drone_bomber_def_2"
+	icon_frame = 1	
+}
+#III
+component_set = {
+	key = "TFW_DRONE_BOMBER_DEF_3"
+	
+	icon = "GFX_tfw_drone_bomber_def_3"
+	icon_frame = 1	
+}
+#IV
+component_set = {
+	key = "TFW_DRONE_BOMBER"
+	
+	icon = "GFX_tfw_drone_bomber"
+	icon_frame = 1	
+}
+#V
+component_set = {
+	key = "TFW_DRONE_BOMBER_2"
+	
+	icon = "GFX_tfw_drone_bomber_2"
+	icon_frame = 1	
+}
+
+################################# MACHINES ######################################
+#I
+component_set = {
+	key = "TFW_STRIKE_SWARM_DEF_1"
+	
+	icon = "GFX_tfw_machine_strike_swarm_def_1"
+	icon_frame = 1	
+}
+#II
+component_set = {
+	key = "TFW_STRIKE_SWARM_DEF_2"
+	
+	icon = "GFX_tfw_machine_strike_swarm_def_2"
+	icon_frame = 1	
+}
+#III
+component_set = {
+	key = "TFW_STRIKE_SWARM_DEF_3"
+	
+	icon = "GFX_tfw_machine_strike_swarm_def_3"
+	icon_frame = 1	
+}
+#IV
+component_set = {
+	key = "TFW_STRIKE_SWARM"
+	
+	icon = "GFX_tfw_machine_strike_swarm"
+	icon_frame = 1	
+}
+#V
+component_set = {
+	key = "TFW_STRIKE_SWARM_2"
+	
+	icon = "GFX_tfw_machine_strike_swarm_2"
+	icon_frame = 1	
+}
+
+################################# HIVE ######################################
+#I
+component_set = {
+	key = "TFW_STRIKE_HIVE_DEF_1"
+	
+	icon = "GFX_tfw_strike_craft_hive_def_1"
+	icon_frame = 1	
+}
+#II
+component_set = {
+	key = "TFW_STRIKE_HIVE_DEF_2"
+	
+	icon = "GFX_tfw_strike_craft_hive_def_2"
+	icon_frame = 1	
+}
+#III
+component_set = {
+	key = "TFW_STRIKE_HIVE_DEF_3"
+	
+	icon = "GFX_tfw_strike_craft_hive_def_3"
+	icon_frame = 1	
+}
+#IV
+component_set = {
+	key = "TFW_STRIKE_HIVE"
+	
+	icon = "GFX_tfw_strike_craft_hive"
+	icon_frame = 1	
+}
+#V
+component_set = {
+	key = "TFW_STRIKE_HIVE_2"
+	
+	icon = "GFX_tfw_strike_craft_hive_2"
+	icon_frame = 1	
+}

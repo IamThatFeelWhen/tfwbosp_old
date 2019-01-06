@@ -1,0 +1,14 @@
+###########THRUSTERS
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_raider_thruster_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_raider_thruster_1.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_raider_thruster_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_raider_thruster_2.dds"
+	}
+}

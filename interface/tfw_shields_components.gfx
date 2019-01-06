@@ -1,0 +1,48 @@
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_stab_hyper_shield"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_stab_hyper_shield.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_opt_hyper_shield"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_opt_hyper_shield.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_energon_shield"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_energon_shield.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_cascade_shield"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_cascade_shield.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_resonant_shield"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_resonant_shield.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_psi_shield_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_psi_shield_2.dds"
+	}
+}
+
+spriteTypes{
+	spriteType = {
+		name = "GFX_tfw_dark_matter_shield_2"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_dark_matter_shield_2.dds"
+	}
+}

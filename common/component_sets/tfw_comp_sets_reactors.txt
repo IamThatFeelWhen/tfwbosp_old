@@ -1,0 +1,86 @@
+# Icons set here are the ones shown in compnent editor list.
+
+##########################################
+#SINGULARUTY
+
+component_set = {
+	key = "TFW_SINGULARITY_REACTOR"
+	
+	icon = "GFX_tfw_singularity_reactor"
+	icon_frame = 1	
+}
+
+#SINGULARUTY_OPTIMIZED
+
+component_set = {
+	key = "TFW_SINGULARITY_REACTOR_OPTIMIZED"
+	
+	icon = "GFX_tfw_singularity_opt_reactor"
+	icon_frame = 1	
+}
+
+##########################################
+#BIO
+#1 
+component_set = {
+	key = "TFW_BIO_REACTOR_I"
+	
+	icon = "GFX_tfw_bioreactor_1"
+	icon_frame = 1	
+}
+
+#2
+component_set = {
+	key = "TFW_BIO_REACTOR_II"
+	
+	icon = "GFX_tfw_bioreactor_2"
+	icon_frame = 1	
+}
+
+##########################################
+#SYNT
+#WIMP
+component_set = {
+	key = "TFW_WIMP_REACTOR"
+	
+	icon = "GFX_tfw_wimp_reactor"
+	icon_frame = 1	
+}
+
+#TACHYON 
+component_set = {
+	key = "TFW_TACHYON_REACTOR"
+	
+	icon = "GFX_tfw_tachyon_reactor"
+	icon_frame = 1	
+}
+
+##########################################
+#PSIONIC
+#1
+
+component_set = {
+	key = "TFW_PSI_REACTOR_1"
+	
+	icon = "GFX_tfw_reactor_psi1"
+	icon_frame = 1	
+}
+
+#2
+component_set = {
+	key = "TFW_PSI_REACTOR_2"
+	
+	icon = "GFX_tfw_reactor_psi2"
+	icon_frame = 1	
+}
+
+##########################################
+#Unique
+# Dark Matter (Enigmatic)
+
+component_set = {
+	key = "TFW_DARKMATTER_REACTOR_2"
+	
+	icon = "GFX_tfw_darkmatter_reactor_2"
+	icon_frame = 1	
+}

@@ -1,0 +1,50 @@
+###SHIELDS###
+
+component_set = {
+	key = "TFW_STAB_HYPER_SHIELD"
+	
+	icon = "GFX_tfw_stab_hyper_shield"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_OPT_HYPER_SHIELD"
+	
+	icon = "GFX_tfw_opt_hyper_shield"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ENERGON_SHIELD"
+	
+	icon = "GFX_tfw_energon_shield"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_CASCADE_SHIELD"
+	
+	icon = "GFX_tfw_cascade_shield"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_RESONANT_SHIELD"
+	
+	icon = "GFX_tfw_resonant_shield"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_PSI_SHIELD_II"
+	
+	icon = "GFX_tfw_psi_shield_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_DARK_MATTER_DEFLECTOR_II"
+	
+	icon = "GFX_tfw_dark_matter_shield_2"
+	icon_frame = 1	
+}

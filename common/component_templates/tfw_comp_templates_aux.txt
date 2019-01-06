@@ -1,0 +1,686 @@
+# ######################
+#      SOME STUFF      #
+# ######################
+
+##############SHIELD AMPLIFIERS#######################
+####1
+utility_component_template = {
+	key = "TFW_SHIELD_AMPLIFIER_1"
+	size = aux
+	icon = "GFX_tfw_shield_amplifier_1"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			exotic_gases = 2
+		}
+	}
+	
+	modifier = {
+		ship_shield_mult = 0.1
+		ship_shield_regen_add_perc = 3
+	}
+	
+	prerequisites = { "tech_tfw_shield_amplifier_1" }
+	component_set = "TFW_SHIELD_AMPLIFIER_1"
+	upgrades_to = "TFW_SHIELD_AMPLIFIER_2"
+	
+	ai_weight = {
+		weight = 11
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+}
+
+####2
+utility_component_template = {
+	key = "TFW_SHIELD_AMPLIFIER_2"
+	size = aux
+	icon = "GFX_tfw_shield_amplifier_2"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			exotic_gases = 3
+		}
+	}
+	
+	modifier = {
+		ship_shield_mult = 0.15
+		ship_shield_regen_add_perc = 6
+	}
+	
+	prerequisites = { "tech_tfw_shield_amplifier_2" }
+	component_set = "TFW_SHIELD_AMPLIFIER_2"
+	upgrades_to = "TFW_SHIELD_AMPLIFIER_3"
+
+	ai_weight = {
+		weight = 12
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+}
+
+####3
+utility_component_template = {
+	key = "TFW_SHIELD_AMPLIFIER_3"
+	size = aux
+	icon = "GFX_tfw_shield_amplifier_3"
+	icon_frame = 1
+	power = -60
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+			exotic_gases = 4
+		}
+	}
+	
+	modifier = {
+		ship_shield_mult = 0.2
+		ship_shield_regen_add_perc = 9
+	}
+	
+	prerequisites = { "tech_tfw_shield_amplifier_3" }
+	component_set = "TFW_SHIELD_AMPLIFIER_3"
+	
+	ai_weight = {
+		weight = 13
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+}
+
+##############HIVE AMPLIFIERS#######################
+####HIVE AMPLIFIER 1
+utility_component_template = {
+	key = "TFW_HIVE_AMPLIFIER_1"
+	size = aux
+	icon = "GFX_tfw_hive_amplifier_1"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 12
+			exotic_gases = 1
+		}
+	}	
+	
+	ship_modifier = {
+		ship_accuracy_add = 5
+		ship_evasion_mult = 0.05
+	}
+	prerequisites = { "tech_tfw_hive_amplifier_1" }
+	component_set = "TFW_HIVE_AMPLIFIER_1"
+	upgrades_to = "TFW_HIVE_AMPLIFIER_2"
+	
+	ai_weight = {
+		weight = 11
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}		
+}
+
+####HIVE AMPLIFIER 2
+utility_component_template = {
+	key = "TFW_HIVE_AMPLIFIER_2"
+	size = aux
+	icon = "GFX_tfw_hive_amplifier_2"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			exotic_gases = 2
+		}
+	}	
+	
+	ship_modifier = {
+		ship_accuracy_add = 10
+		ship_evasion_mult = 0.10
+	}
+	prerequisites = { "tech_tfw_hive_amplifier_2" }
+	component_set = "TFW_HIVE_AMPLIFIER_2"
+	upgrades_to = "TFW_HIVE_AMPLIFIER_3"
+	
+	ai_weight = {
+		weight = 12
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+####HIVE AMPLIFIER 3
+utility_component_template = {
+	key = "TFW_HIVE_AMPLIFIER_3"
+	size = aux
+	icon = "GFX_tfw_hive_amplifier_3"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 28
+			exotic_gases = 3
+		}
+	}	
+	
+	ship_modifier = {
+		ship_accuracy_add = 15
+		ship_evasion_mult = 0.15
+	}
+	prerequisites = { "tech_tfw_hive_amplifier_3" }
+	component_set = "TFW_HIVE_AMPLIFIER_3"
+	
+	ai_weight = {
+		weight = 13
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_energy
+			has_monthly_income = { resource = exotic_gases value > 0 }
+		}
+
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = exotic_gases value <= 0 }
+		}
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_hive_mind }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+#################
+# REPAIR DRONES #
+#################
+#Repair Drone I
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_1"
+	size = aux
+	icon = "GFX_tfw_auto_repair_1"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_static = 1.0
+		ship_armor_regen_add_static = 2.5
+	}
+	prerequisites = { "tech_tfw_auto_repair_1" }
+	component_set = "TFW_AUTO_REPAIR_1"
+	upgrades_to = "TFW_AUTO_REPAIR_2"
+	
+	ai_weight = {
+		weight = 11
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+}
+
+#Repair Drone II
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_2"
+	size = aux
+	icon = "GFX_tfw_auto_repair_2"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_static = 1.5
+		ship_armor_regen_add_static = 3.0
+	}
+	prerequisites = { "tech_tfw_auto_repair_2" }
+	component_set = "TFW_AUTO_REPAIR_2"
+	upgrades_to = "TFW_AUTO_REPAIR_3"
+	
+	ai_weight = {
+		weight = 12
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+}
+
+#Repair Drone III
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_3"
+	size = aux
+	icon = "GFX_tfw_auto_repair_3"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_static = 2.0
+		ship_armor_regen_add_static = 3.5
+	}
+	prerequisites = { "tech_tfw_auto_repair_3" }
+	component_set = "TFW_AUTO_REPAIR_3"
+	
+	ai_weight = {
+		weight = 13
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+}
+
+########################SYNTH#################################
+#Repair Bots I
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_SYNTH1"
+	size = aux
+	icon = "GFX_tfw_auto_repair_synth1"
+	icon_frame = 1
+	power = -15
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+	}
+	
+	modifier = {
+		ship_hull_regen_add_static = 1.5
+		ship_armor_regen_add_static = 2.5 
+	}
+	
+	prerequisites = { "tech_tfw_auto_repair_synth1" }
+	component_set = "TFW_AUTO_REPAIR_SYNTH1"
+	upgrades_to = "TFW_AUTO_REPAIR_SYNTH2"
+	
+	ai_weight = {
+		weight = 11
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+#Repair Bots II
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_SYNTH2"
+	size = aux
+	icon = "GFX_tfw_auto_repair_synth2"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_static = 2.0
+		ship_armor_regen_add_static = 3.0
+	}
+	prerequisites = { "tech_tfw_auto_repair_synth2" }
+	component_set = "TFW_AUTO_REPAIR_SYNTH2"
+	upgrades_to = "TFW_AUTO_REPAIR_SYNTH3"
+	
+	ai_weight = {
+		weight = 12
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+#Repair Bots III
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_SYNTH3"
+	size = aux
+	icon = "GFX_tfw_auto_repair_synth3"
+	icon_frame = 1
+	power = -35
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_static = 2.5
+		ship_armor_regen_add_static = 3.5
+	}
+	prerequisites = { "tech_tfw_auto_repair_synth3" }
+	component_set = "TFW_AUTO_REPAIR_SYNTH3"
+	
+	ai_weight = {
+		weight = 13
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_authority = auth_machine_intelligence }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+########################PSI################################### 
+#Psi Repair Drone I
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_PSI1"
+	size = aux
+	icon = "GFX_tfw_auto_repair_psi1"
+	icon_frame = 1
+	power = -8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_static = 1.0
+		ship_armor_regen_add_static = 2.5
+	}
+	prerequisites = { "tech_tfw_auto_repair_psi1" }
+	component_set = "TFW_AUTO_REPAIR_PSI1"
+	upgrades_to = "TFW_AUTO_REPAIR_PSI2"
+
+	ai_weight = {
+		weight = 11
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+#Psi Repair Drone II
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_PSI2"
+	size = aux
+	icon = "GFX_tfw_auto_repair_psi2"
+	icon_frame = 1
+	power = -18
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_static = 1.5
+		ship_armor_regen_add_static = 3.0
+	}
+	prerequisites = { "tech_tfw_auto_repair_psi2" }
+	component_set = "TFW_AUTO_REPAIR_PSI2"
+	upgrades_to = "TFW_AUTO_REPAIR_PSI3"
+	
+	ai_weight = {
+		weight = 12
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+#Psi Repair Drone III
+utility_component_template = {
+	key = "TFW_AUTO_REPAIR_PSI3"
+	size = aux
+	icon = "GFX_tfw_auto_repair_psi3"
+	icon_frame = 1
+	power = -28
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+		}
+	}
+
+	modifier = {
+		ship_hull_regen_add_static = 2.0
+		ship_armor_regen_add_static = 3.5
+	}
+	prerequisites = { "tech_tfw_auto_repair_psi3" }
+	component_set = "TFW_AUTO_REPAIR_PSI3"
+	
+	ai_weight = {
+		weight = 13
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_explosive
+		}		
+	}
+	
+	valid_for_country = {
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+	}	
+}
+
+###############################
+# Enigmatic Encoder and Decoder
+###############################
+
+utility_component_template = {
+	key = "TFW_ENIGMATIC_DECODER_2"
+	size = aux
+	icon = "GFX_tfw_enigmatic_decoder_2"
+	icon_frame = 1
+	power = -30
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	
+	prerequisites = { tech_tfw_enigmatic_decoder_2 }
+	component_set = "TFW_ENIGMATIC_DECODER_2"
+
+	ship_modifier = {
+		ship_tracking_add = 15
+		ship_accuracy_add = 15
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 2
+			OR = {
+				is_preferred_weapons = weapon_type_energy
+				is_preferred_weapons = weapon_type_kinetic
+			}		
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TFW_ENIGMATIC_ENCODER_2"
+	size = aux
+	icon = "GFX_tfw_enigmatic_encoder_2"
+	icon_frame = 1
+	power = -30
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	
+	prerequisites = { tech_tfw_enigmatic_encoder_2 }
+	component_set = "TFW_ENIGMATIC_ENCODER_2"
+
+	modifier = {
+		ship_evasion_mult = 0.30
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 2
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}		
+		}
+	}
+}

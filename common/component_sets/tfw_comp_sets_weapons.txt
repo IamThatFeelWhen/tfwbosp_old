@@ -1,0 +1,252 @@
+#############KINETIC#############
+component_set = {
+	key = "TFW_GAUSS_MORTAR"  #localisation and link to component_templates
+	icon = "GFX_tfw_gauss_6"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_GAUSS_HOWITZER"  #localisation and link to component_templates
+	icon = "GFX_tfw_gauss_7"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTOCANNON_4"  #localisation and link to component_templates
+	icon = "GFX_tfw_autocannon_4"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTOCANNON_5"  #localisation and link to component_templates
+	icon = "GFX_tfw_autocannon_5"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AUTOCANNON_6"  #localisation and link to component_templates
+	icon = "GFX_tfw_autocannon_6"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_KINETIC_ARTILLERY_3"  #localisation and link to component_templates
+	icon = "GFX_tfw_kinetic_artillery_3"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_KINETIC_ARTILLERY_4"  #localisation and link to component_templates
+	icon = "GFX_tfw_kinetic_artillery_4"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+#############ENERGY#############
+component_set = {
+	key = "TFW_LASERSTORM"  #localisation and link to component_templates
+	icon = "GFX_tfw_laserstorm"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ADV_LASERSTORM"  #localisation and link to component_templates
+	icon = "GFX_tfw_adv_laserstorm"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_PHASER_1"  #localisation and link to component_templates
+	icon = "GFX_tfw_phaser_1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_PHASER_2"  #localisation and link to component_templates
+	icon = "GFX_tfw_phaser_2"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_PHASER_3"  #localisation and link to component_templates
+	icon = "GFX_tfw_phaser_3"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_PHASE_SPEAR"  #localisation and link to component_templates
+	icon = "GFX_tfw_phase_spear"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ENERGY_TORPEDO_3"  #localisation and link to component_templates
+	icon = "GFX_tfw_energy_torpedo_3"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ENERGY_TORPEDO_4"  #localisation and link to component_templates
+	icon = "GFX_tfw_energy_torpedo_4"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_P_T1"  #localisation and link to component_templates
+	icon = "GFX_tfw_pt1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_P_T2"  #localisation and link to component_templates
+	icon = "GFX_tfw_pt2"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+
+#############MISSILE#############
+component_set = {
+	key = "TFW_AA_MISSILE_1"  #localisation and link to component_templates
+	icon = "GFX_tfw_missile_aa_1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AA_MISSILE_2"  #localisation and link to component_templates
+	icon = "GFX_tfw_missile_aa_2"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AS_MISSILE_1"  #localisation and link to component_templates
+	icon = "GFX_tfw_missile_as_1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_AS_MISSILE_2"  #localisation and link to component_templates
+	icon = "GFX_tfw_missile_as_2"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_TORPEDO_4"  #localisation and link to component_templates
+	icon = "GFX_tfw_torpedo_4"    #linked to icon with */interface
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_TORPEDO_5"  #localisation and link to component_templates
+	icon = "GFX_tfw_torpedo_5"    #linked to icon with */interface
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_TORPEDO_6"  #localisation and link to component_templates
+	icon = "GFX_tfw_torpedo_6"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_SWARMER_MISSILE_3"  #localisation and link to component_templates
+	icon = "GFX_tfw_swarmer_missile_3"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_SWARMER_MISSILE_4"  #localisation and link to component_templates
+	icon = "GFX_tfw_swarmer_missile_4"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_SWARMER_MISSILE_5"  #localisation and link to component_templates
+	icon = "GFX_tfw_swarmer_missile_5"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+#############ADVANCED AND XL#############
+component_set = {
+	key = "TFW_BIOCANNON" 
+	icon = "GFX_tfw_biocannon"   
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_PSICANNON"  
+	icon = "GFX_tfw_psicannon" 
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_GRAVICANNON" 
+	icon = "GFX_tfw_gravicannon" 
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_INFECTOR" 
+	icon = "GFX_tfw_infector" 
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_PSILANCE"
+	icon = "GFX_tfw_psilance"   
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_GRAVILANCE" 
+	icon = "GFX_tfw_gravilance"  
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_ENERGY_LANCE_3" 
+	icon = "GFX_tfw_energy_lance_3"  
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_KINETIC_HAMMER" 
+	icon = "GFX_tfw_kinetic_hammer"  
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_ARC_EMITTER_3"
+	icon = "GFX_tfw_arc_emitter_3"
+	icon_frame = 1	
+}
+
+#############P-Ds#############
+component_set = {
+	key = "TFW_FLAK_4"  
+	icon = "GFX_tfw_flak_batteries_4"   
+	icon_frame = 1	
+}
+component_set = {
+	key = "TFW_STORMFIRE_PD"  
+	icon = "GFX_tfw_stormfire_pd"   
+	icon_frame = 1	
+}
+
+#############AURA##############
+component_set = {
+	key = "TFW_ATTRACTOR_AURA"
+	icon = "GFX_tfw_attractor"
+	icon_frame = 1	
+}
+#############UNIQUE#############
+
+#including Machine stuff
+component_set = {
+	key = "TFW_MOL_CRUSHER_1"  #localisation and link to component_templates
+	icon = "GFX_tfw_mol_crusher_1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_MOL_CRUSHER_2"  #localisation and link to component_templates
+	icon = "GFX_tfw_mol_crusher_2"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_MOL_CRUSHER_3"  #localisation and link to component_templates
+	icon = "GFX_tfw_mol_crusher_3"    #linked to icon with */interface
+	icon_frame = 1	
+}
+

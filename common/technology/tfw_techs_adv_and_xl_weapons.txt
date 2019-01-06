@@ -1,0 +1,693 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 500
+@tier1cost2 = 750
+@tier1cost3 = 1000
+
+@tier2cost1 = 1500
+@tier2cost2 = 2000
+@tier2cost3 = 2500
+
+@tier3cost1 = 4000
+@tier3cost2 = 5000
+@tier3cost3 = 6000
+
+@tier4cost1 = 8000
+@tier4cost2 = 10000
+@tier4cost3 = 12000
+#-----
+@tier4cost4 = 13500
+
+@tier5cost1 = 15000
+@tier5cost2 = 17500
+@tier5cost3 = 20000
+#-----
+@tier5cost4 = 23000
+@tier5cost5 = 26000
+@tier5cost6 = 29000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+
+@tier2weight1 = 85
+@tier2weight2 = 75
+@tier2weight3 = 70
+
+@tier3weight1 = 65
+@tier3weight2 = 60
+@tier3weight3 = 50
+
+@tier4weight1 = 45
+@tier4weight2 = 40
+@tier4weight3 = 35
+#-----
+@tier4weight4 = 32
+
+@tier5weight1 = 30
+@tier5weight2 = 25
+@tier5weight3 = 20
+#-----
+@tier5weight4 = 16
+@tier5weight5 = 12
+@tier5weight6 = 10
+
+###############
+#   WEAPONS   #
+###############
+
+###############################################ADVANCED BIO WEAPONS##################################################
+######BIOCANNON 
+tech_tfw_biocannon = {
+	area = society
+	cost = @tier4cost4
+	tier = 4
+	is_rare = yes
+	category = { biology }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_rapid_cell_replication" }
+	weight = @tier4weight4
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2	#weapons are good
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+####DEVOURER TORPEDOES
+tech_tfw_infector = {
+	area = society
+	cost = @tier5cost2
+	tier = 5
+	is_rare = yes
+	category = { biology }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_biocannon" }
+	weight = @tier5weight2
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+		}	
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0
+				NOT = { has_ascension_perk = ap_evolutionary_mastery }
+		}		
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+###############################################ADVANCED PSI WEAPONS##################################################
+######PSICANNON
+tech_tfw_psicannon = {
+	area = society
+	cost = @tier4cost4
+	tier = 4
+	is_rare = yes
+	category = { psionics }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_focused_psi_flows" }
+	weight = @tier4weight4
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+}
+
+######PSILANCE
+tech_tfw_psilance = {
+	area = society
+	cost = @tier5cost2
+	tier = 5
+	is_rare = yes
+	category = { psionics }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_psicannon" }
+	weight = @tier5weight2
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+				NOT = { has_ascension_perk = ap_transcendence }
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2	#weapons are good
+		modifier = {
+			factor = 0
+				NOT = { has_ascension_perk = ap_transcendence }
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}	
+	}
+}
+
+###############################################ADVANCED SYNT WEAPONS##################################################
+######GRAVICANNON
+tech_tfw_gravicannon = {
+	area = physics
+	cost = @tier4cost4
+	tier = 4
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_adv_weapons" }
+	weight = @tier4weight4
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_fanatic_spiritualist"
+				has_ethic = "ethic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_fanatic_spiritualist"
+				has_ethic = "ethic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+######GRAVILANCE
+tech_tfw_gravilance = {
+	area = physics
+	cost = @tier5cost2
+	tier = 5
+	is_rare = yes
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_tfw_gravicannon" }
+	weight = @tier5weight2
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = { 
+				has_ascension_perk = ap_synthetic_evolution 
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_fanatic_spiritualist"
+				has_ethic = "ethic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0
+			NOR = { 
+				has_ascension_perk = ap_synthetic_evolution 
+				has_ascension_perk = ap_synthetic_age
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_ethic = "ethic_fanatic_spiritualist"
+				has_ethic = "ethic_spiritualist"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+############################################################################COMMON###############################################################################
+#######KINETIC_HAMMER#########
+# Common
+tech_tfw_kinetic_hammer = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = { propulsion }
+	ai_update_type = military	
+	prerequisites = { "tech_mass_accelerator_2" "tech_tfw_gauss_6" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+	
+	ai_weight = {
+		factor = 2	#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+#######ARC_EMITTER_III#########
+# Common
+tech_tfw_arc_emitter_3 = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_arc_emitter_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2	#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}
+	}
+}
+
+########ENERGY LANCE 3#########
+tech_tfw_energy_lance_3 = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_tfw_laserstorm" "tech_energy_lance_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			has_global_flag = "tfw_bosp_weapons_off"
+		}	
+	}
+}
